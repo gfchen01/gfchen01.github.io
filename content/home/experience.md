@@ -27,7 +27,7 @@ experience:
     company_url: ''
     company_logo: 
     location: Huzhou, Zhejiang
-    date_start: '2021-03'
+    date_start: '2021-03-15'
     date_end:
     description: |2-
 
@@ -39,7 +39,7 @@ experience:
     company_url: ''
     company_logo: org-gc
     location: Hangzhou, Zhejiang
-    date_start: '2020-06'
+    date_start: '2020-06-01'
     date_end: '2022-11'
     description: |2-
         Responsibilities include:
@@ -54,7 +54,7 @@ experience:
     company_url: ''
     company_logo:
     location: Hangzhou, Zhejiang
-    date_start: '2021-04'
+    date_start: '2021-04-01'
     date_end: '2022-06'
     description: |2-
 
