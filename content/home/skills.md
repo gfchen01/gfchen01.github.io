@@ -30,7 +30,7 @@ feature:
     name: Lua
   - description: 100%
     icon: cpp
-    icon_pack:custom
+    icon_pack: custom
     name: C++
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
