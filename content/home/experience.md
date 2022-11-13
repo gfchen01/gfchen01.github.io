@@ -40,7 +40,7 @@ experience:
     company_logo: org-gc
     location: Hangzhou, Zhejiang
     date_start: '2020-06-01'
-    date_end: '2022-11'
+    date_end: '2022-11-15'
     description: |2-
         Responsibilities include:
         
@@ -55,7 +55,7 @@ experience:
     company_logo:
     location: Hangzhou, Zhejiang
     date_start: '2021-04-01'
-    date_end: '2022-06'
+    date_end: '2022-06-10'
     description: |2-
 
       Research on:
