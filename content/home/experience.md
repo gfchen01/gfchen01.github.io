@@ -22,28 +22,46 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
+  - title: Research Assistant
+    company: FAST-FAR Lab - ZJU
+    company_url: ''
+    company_logo: 
+    location: Huzhou, Zhejiang
+    date_start: '2021-03'
+    date_end:
+    description: |2-
+
+        * Research on Swarm Perception and Planning
+        * Develop Multi-Robot Perception Module
+  
+  - title: Group Leader
+    company: ZJUNlict - ZJU RoboCup Team
     company_url: ''
     company_logo: org-gc
-    location: California
-    date_start: '2021-01-01'
-    date_end: ''
+    location: Hangzhou, Zhejiang
+    date_start: '2020-06'
+    date_end: '2022-11'
     description: |2-
         Responsibilities include:
         
-        * Analysing
-        * Modelling
-        * Deploying
-
-  - title: Professor of Semiconductor Physics
-    company: University X
+        * Maintainence
+          * Kick Module
+          * Denfense Module
+        * Path Planning and Motion Control
+  
+  - title: Research Assistant
+    company: Prof. Zhiqiang Ge Group, State Key Laboratory of Industrial Control
     company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+    company_logo:
+    location: Hangzhou, Zhejiang
+    date_start: '2021-04'
+    date_end: '2022-06'
+    description: |2-
+
+      Research on:
+        * Soft sensor
+        * Probablistic Generative Model, Variational Autoencoder
+
 
 design:
   columns: '2'

@@ -72,4 +72,4 @@ highlight_name: true
 
 Guofei Chen is a bechalor student at Control Science and Engineering Department, Zhejiang University. His research interests include multi-robot systems (Swarms) and robot perception and planning problems. He also has a strong interest in statistical inference and combinatorial mathematics.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
