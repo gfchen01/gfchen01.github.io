@@ -9,174 +9,7 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>TinySQL</title><link>https://gfchen01.github.io/project/tinysql/</link><pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/tinysql/</guid><description>&lt;p>TinySQL is a database management system supporting SQL. The project is self contained and designed originally. Guofei Chen was the architect of the project, as well as the code reviewer.&lt;/p>
-&lt;p>Here let&amp;rsquo;s briefly talk about the design details of this SQL project.&lt;/p>
-&lt;p>Download the
-&lt;a href="https://gfchen01.github.io/uploads/TinySQL_Technical_Report.pdf" target="_blank">Chinese technical report&lt;/a>
-.&lt;/p>
-&lt;h2 id="architecture">Architecture&lt;/h2>
-&lt;p>
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img alt="" srcset="
-/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp 400w,
-/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_73bd2112f797544fafb8f4e3a4db69fc.webp 760w,
-/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://gfchen01.github.io/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp"
-width="498"
-height="585"
-loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/p>
-&lt;p>This is the architecture of the database. &lt;strong>The meaning of arrow is: If A-&amp;gt;B, then A module will use functions and classes in B module.&lt;/strong> To have a detailed understanding of the relations between modules, please refer to our documentation.&lt;/p>
-&lt;p>The duty of different modules:
-Interface: Deal with the syntax tree given by SQL-Parser，judge the exact operation type of the command（e.g., create，select, etc.) Transfer the table name, the attribute to project on, and the key value to look for. Give them to the executor.&lt;/p>
-&lt;p>Executor: Determine the execution order, and finish atomic operations.&lt;/p>
-&lt;p>Catalog Manager: Manage the basic information of table, including its name, attributes, whether there are indexes on certain attribute, etc.&lt;/p>
-&lt;p>Index Manager : Manage the index file store on the disk. To be specific, we use B+ tree for index.&lt;/p>
-&lt;p>Record Manager : Manage the data of different tables. We store different tables in different files and use row-based mechanism to design the file structure.&lt;/p>
-&lt;p>Buffer Manager : Manage the data stored in cache(memory) and its relation with disk files. For modules above, &amp;ldquo;files&amp;rdquo; and &amp;ldquo;memory&amp;rdquo; are invisible.&lt;/p>
-&lt;h2 id="an-overview-of-important-design-details">An overview of important design details&lt;/h2>
-&lt;ol>
-&lt;li>This is a row-based database, and use tuple to manage files. We delete records lazily and optimize the file on a regular basis to constrain its size.&lt;/li>
-&lt;li>Storage mechanisms:
-a. Record Manager: Tables are stored seperately in different binary files. Pages in the file is constrained to be 4KB.
-b. Index Manager: Indexes are stored seperately in different binary files. The structure of a page is:
-| BlockType (4) | ParentBlockId(4) | CurrentSize (4) | MaxSize (4) | ParentBlockId (4) | BlockId(4) | key-id pairs&amp;hellip; (to 4096B)
-c. Catalog Manager: A string file stores the information of each table. The information can be decoded by catalog manager, and is readable (to some extent).&lt;/li>
-&lt;li>We only support data records that are smaller than 4KB, which is a page size.&lt;/li>
-&lt;li>An external parser is used in source code. You can find their work &lt;a href="https://github.com/hyrise/sql-parser" target="_blank" rel="noopener">here&lt;/a>&lt;/li>
-&lt;/ol>
-&lt;!-- ## Some Examples:
-###
-### Select
-### -->
-&lt;h2 id="please-star-our-project-on-github-if-you-like-it">Please star our project on github if you like it!&lt;/h2></description></item><item><title>Probabilistic Generative Model with Long-Term Memory and its Application in Chemical Process Modeling</title><link>https://gfchen01.github.io/publication/conference-paper/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/conference-paper/</guid><description>&lt;!--
-&lt;div class="alert alert-note">
-&lt;div>
-Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-&lt;/div>
-&lt;/div>
--->
-&lt;!--
-&lt;div class="alert alert-note">
-&lt;div>
-Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
-&lt;/div>
-&lt;/div>
--->
-&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --></description></item><item><title>Slides</title><link>https://gfchen01.github.io/slides/example/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/slides/example/</guid><description>&lt;h1 id="create-slides-in-markdown-with-wowchemy">Create slides in Markdown with Wowchemy&lt;/h1>
-&lt;p>&lt;a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy&lt;/a> | &lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p>
-&lt;hr>
-&lt;h2 id="features">Features&lt;/h2>
-&lt;ul>
-&lt;li>Efficiently write slides in Markdown&lt;/li>
-&lt;li>3-in-1: Create, Present, and Publish your slides&lt;/li>
-&lt;li>Supports speaker notes&lt;/li>
-&lt;li>Mobile friendly slides&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="controls">Controls&lt;/h2>
-&lt;ul>
-&lt;li>Next: &lt;code>Right Arrow&lt;/code> or &lt;code>Space&lt;/code>&lt;/li>
-&lt;li>Previous: &lt;code>Left Arrow&lt;/code>&lt;/li>
-&lt;li>Start: &lt;code>Home&lt;/code>&lt;/li>
-&lt;li>Finish: &lt;code>End&lt;/code>&lt;/li>
-&lt;li>Overview: &lt;code>Esc&lt;/code>&lt;/li>
-&lt;li>Speaker notes: &lt;code>S&lt;/code>&lt;/li>
-&lt;li>Fullscreen: &lt;code>F&lt;/code>&lt;/li>
-&lt;li>Zoom: &lt;code>Alt + Click&lt;/code>&lt;/li>
-&lt;li>&lt;a href="https://revealjs.com/pdf-export/" target="_blank" rel="noopener">PDF Export&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="code-highlighting">Code Highlighting&lt;/h2>
-&lt;p>Inline code: &lt;code>variable&lt;/code>&lt;/p>
-&lt;p>Code block:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">porridge&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;blueberry&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">porridge&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;blueberry&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Eating...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
-&lt;h2 id="math">Math&lt;/h2>
-&lt;p>In-line math: $x + y = z$&lt;/p>
-&lt;p>Block math:&lt;/p>
-&lt;p>$$
-f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$&lt;/p>
-&lt;hr>
-&lt;h2 id="fragments">Fragments&lt;/h2>
-&lt;p>Make content appear incrementally&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{% fragment %}} One {{% /fragment %}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{% fragment %}} **Two** {{% /fragment %}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{% fragment %}} Three {{% /fragment %}}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Press &lt;code>Space&lt;/code> to play!&lt;/p>
-&lt;span class="fragment " >
-One
-&lt;/span>
-&lt;span class="fragment " >
-&lt;strong>Two&lt;/strong>
-&lt;/span>
-&lt;span class="fragment " >
-Three
-&lt;/span>
-&lt;hr>
-&lt;p>A fragment can accept two optional parameters:&lt;/p>
-&lt;ul>
-&lt;li>&lt;code>class&lt;/code>: use a custom style (requires definition in custom CSS)&lt;/li>
-&lt;li>&lt;code>weight&lt;/code>: sets the order in which a fragment appears&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;h2 id="speaker-notes">Speaker Notes&lt;/h2>
-&lt;p>Add speaker notes to your presentation&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{% speaker_note %}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Only the speaker can read these notes
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Press &lt;span class="sb">`S`&lt;/span> key to view
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{% /speaker_note %}}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Press the &lt;code>S&lt;/code> key to view the speaker notes!&lt;/p>
-&lt;aside class="notes">
-&lt;ul>
-&lt;li>Only the speaker can read these notes&lt;/li>
-&lt;li>Press &lt;code>S&lt;/code> key to view&lt;/li>
-&lt;/ul>
-&lt;/aside>
-&lt;hr>
-&lt;h2 id="themes">Themes&lt;/h2>
-&lt;ul>
-&lt;li>black: Black background, white text, blue links (default)&lt;/li>
-&lt;li>white: White background, black text, blue links&lt;/li>
-&lt;li>league: Gray background, white text, blue links&lt;/li>
-&lt;li>beige: Beige background, dark text, brown links&lt;/li>
-&lt;li>sky: Blue background, thin dark text, blue links&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;ul>
-&lt;li>night: Black background, thick white text, orange links&lt;/li>
-&lt;li>serif: Cappuccino background, gray text, brown links&lt;/li>
-&lt;li>simple: White background, black text, blue links&lt;/li>
-&lt;li>solarized: Cream-colored background, dark green text, blue links&lt;/li>
-&lt;/ul>
-&lt;hr>
-&lt;section data-noprocess data-shortcode-slide
-data-background-image="/media/boards.jpg"
->
-&lt;h2 id="custom-slide">Custom Slide&lt;/h2>
-&lt;p>Customize the slide style and background&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">background-image&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;/media/boards.jpg&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">background-color&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;#0000FF&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;my-style&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
-&lt;h2 id="custom-css-example">Custom CSS Example&lt;/h2>
-&lt;p>Let&amp;rsquo;s make headers navy colored.&lt;/p>
-&lt;p>Create &lt;code>assets/css/reveal_custom.css&lt;/code> with:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h1&lt;/span>&lt;span class="o">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h2&lt;/span>&lt;span class="o">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h3&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">navy&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
-&lt;h1 id="questions">Questions?&lt;/h1>
-&lt;p>&lt;a href="https://discord.gg/z8wNYzb" target="_blank" rel="noopener">Ask&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title/><link>https://gfchen01.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/admin/config.yml</guid><description/></item><item><title>A Mapping &amp; Planning Method for RoboCup Small Size League</title><link>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</guid><description>&lt;h1 id="a-mapping--planning-method-for-robocup-small-size-league">A Mapping &amp;amp; Planning Method for RoboCup Small Size League&lt;/h1>
+&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>A Mapping &amp; Planning Method for RoboCup Small Size League</title><link>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</link><pubDate>Sun, 12 Jun 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</guid><description>&lt;h1 id="a-mapping--planning-method-for-robocup-small-size-league">A Mapping &amp;amp; Planning Method for RoboCup Small Size League&lt;/h1>
 &lt;h2 id="introduction-based-on-visibility">Introduction based on Visibility&lt;/h2>
 &lt;p>&lt;a href="https://ssl.robocup.org/" target="_blank" rel="noopener">RoboCup SSL&lt;/a> is a platform that asks participants to design robots and compete autonomously on playing soccer. Participants have to obey restrictions on robots&amp;rsquo; themselves and rules during game play. You can find details &lt;a href="">here&lt;/a>. The most worth noticing facts are (for software group):&lt;/p>
 &lt;ol>
@@ -336,7 +169,49 @@ The former is proposed, and the latter is RRT*. The outcome of RRT* is not alway
 &lt;/tbody>
 &lt;/table>
 &lt;p>Apparently, the proposed algorithm becomes inefficient when the number agent increases, but it suffices to deal with the challenges in RoboCup SSL matches. And we have been using it in the 2022 Zhejiang Provincial RoboCup matches. It performed well.&lt;/p>
-&lt;p>From the experiments above, we can draw the conclusion that the proposed algorithm meets the need of SSL and outperforms standard planning algorithms such as RRT*.&lt;/p></description></item><item><title>Improving the Sampling in Gaussian Mixture Varitional Encoder - An Important but Easy to Ignore Step</title><link>https://gfchen01.github.io/post/gmm_vae/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/gmm_vae/</guid><description>&lt;h1 id="soft-sensor-using-gaussian-mixture-variational-auto-encoder--embed-unsupervised-category">Soft Sensor Using Gaussian Mixture Variational Auto-Encoder : Embed Unsupervised Category&lt;/h1>
+&lt;p>From the experiments above, we can draw the conclusion that the proposed algorithm meets the need of SSL and outperforms standard planning algorithms such as RRT*.&lt;/p></description></item><item><title>TinySQL</title><link>https://gfchen01.github.io/project/tinysql/</link><pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/tinysql/</guid><description>&lt;p>TinySQL is a database management system supporting SQL. The project is self contained and designed originally. Guofei Chen was the architect of the project, as well as the code reviewer.&lt;/p>
+&lt;p>Here let&amp;rsquo;s briefly talk about the design details of this SQL project.&lt;/p>
+&lt;p>Download the
+&lt;a href="https://gfchen01.github.io/uploads/TinySQL_Technical_Report.pdf" target="_blank">Chinese technical report&lt;/a>
+.&lt;/p>
+&lt;h2 id="architecture">Architecture&lt;/h2>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp 400w,
+/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_73bd2112f797544fafb8f4e3a4db69fc.webp 760w,
+/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://gfchen01.github.io/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp"
+width="498"
+height="585"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>This is the architecture of the database. &lt;strong>The meaning of arrow is: If A-&amp;gt;B, then A module will use functions and classes in B module.&lt;/strong> To have a detailed understanding of the relations between modules, please refer to our documentation.&lt;/p>
+&lt;p>The duty of different modules:
+Interface: Deal with the syntax tree given by SQL-Parser，judge the exact operation type of the command（e.g., create，select, etc.) Transfer the table name, the attribute to project on, and the key value to look for. Give them to the executor.&lt;/p>
+&lt;p>Executor: Determine the execution order, and finish atomic operations.&lt;/p>
+&lt;p>Catalog Manager: Manage the basic information of table, including its name, attributes, whether there are indexes on certain attribute, etc.&lt;/p>
+&lt;p>Index Manager : Manage the index file store on the disk. To be specific, we use B+ tree for index.&lt;/p>
+&lt;p>Record Manager : Manage the data of different tables. We store different tables in different files and use row-based mechanism to design the file structure.&lt;/p>
+&lt;p>Buffer Manager : Manage the data stored in cache(memory) and its relation with disk files. For modules above, &amp;ldquo;files&amp;rdquo; and &amp;ldquo;memory&amp;rdquo; are invisible.&lt;/p>
+&lt;h2 id="an-overview-of-important-design-details">An overview of important design details&lt;/h2>
+&lt;ol>
+&lt;li>This is a row-based database, and use tuple to manage files. We delete records lazily and optimize the file on a regular basis to constrain its size.&lt;/li>
+&lt;li>Storage mechanisms:
+a. Record Manager: Tables are stored seperately in different binary files. Pages in the file is constrained to be 4KB.
+b. Index Manager: Indexes are stored seperately in different binary files. The structure of a page is:
+| BlockType (4) | ParentBlockId(4) | CurrentSize (4) | MaxSize (4) | ParentBlockId (4) | BlockId(4) | key-id pairs&amp;hellip; (to 4096B)
+c. Catalog Manager: A string file stores the information of each table. The information can be decoded by catalog manager, and is readable (to some extent).&lt;/li>
+&lt;li>We only support data records that are smaller than 4KB, which is a page size.&lt;/li>
+&lt;li>An external parser is used in source code. You can find their work &lt;a href="https://github.com/hyrise/sql-parser" target="_blank" rel="noopener">here&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;!-- ## Some Examples:
+###
+### Select
+### -->
+&lt;h2 id="please-star-our-project-on-github-if-you-like-it">Please star our project on github if you like it!&lt;/h2></description></item><item><title>Improving the Sampling in Gaussian Mixture Varitional Encoder - An Important but Easy to Ignore Step</title><link>https://gfchen01.github.io/post/gmm_vae/</link><pubDate>Sun, 23 Jan 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/gmm_vae/</guid><description>&lt;h1 id="soft-sensor-using-gaussian-mixture-variational-auto-encoder--embed-unsupervised-category">Soft Sensor Using Gaussian Mixture Variational Auto-Encoder : Embed Unsupervised Category&lt;/h1>
 &lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>VAE is widely used in process industry for a long time. However, these works mostly focus on the nonlinear feature, and the complex dynamic processes with multi-mode characteristics are seldomly considered. Gaussian Mixture VAE(GM-VAE) can capture the multi-mode character of process, but in the GM-VAE put-forward before, an important structure is erroneous (in the view point of Bayesian Inference). I have fixed this issue using Gumbel-Softmax reparameterization and improved the model&amp;rsquo;s performance.&lt;/p>
 &lt;p>This work is advised by Prof. Ge at Zhejiang University. I deeply appreciate his help, and you can follow his work on Google Scholar (10k+ citations). &lt;a href="https://scholar.google.com/citations?user=g_EMkuMAAAAJ" target="_blank" rel="noopener">link&lt;/a>&lt;/p>
@@ -550,4 +425,129 @@ column by the gas chromatograph results in a large measuring delay.&lt;/p>
 &lt;p>Yuan, X., Huang, B., Wang, Y., Yang, C., &amp;amp; Gui, W. (2018). Deep learning-based feature representation and its application for soft sensor modeling with variable-wise weighted SAE. &lt;em>IEEE Transactions on Industrial Informatics&lt;/em>, &lt;em>14&lt;/em>(7), 3235-3243&lt;/p>
 &lt;p>Sun, Q., &amp;amp; Ge, Z. (2020). Gated stacked target-related autoencoder: A novel deep feature extraction and layerwise ensemble method for industrial soft sensor application. &lt;em>IEEE Transactions on Cybernetics&lt;/em>.&lt;/p>
 &lt;h4 id="dirichlet-process">Dirichlet Process&lt;/h4>
-&lt;p>Radford M. Neal, Markov Chain Sampling Methods for Dirichlet Process Mixture Models, &lt;em>Journal of Computational and Graphical Statistics&lt;/em>, 9:2, 249-265, 2000&lt;/p></description></item></channel></rss>
+&lt;p>Radford M. Neal, Markov Chain Sampling Methods for Dirichlet Process Mixture Models, &lt;em>Journal of Computational and Graphical Statistics&lt;/em>, 9:2, 249-265, 2000&lt;/p></description></item><item><title>Probabilistic Generative Model with Long-Term Memory and its Application in Chemical Process Modeling</title><link>https://gfchen01.github.io/publication/conference-paper/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/conference-paper/</guid><description>&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --></description></item><item><title>Slides</title><link>https://gfchen01.github.io/slides/example/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/slides/example/</guid><description>&lt;h1 id="create-slides-in-markdown-with-wowchemy">Create slides in Markdown with Wowchemy&lt;/h1>
+&lt;p>&lt;a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy&lt;/a> | &lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p>
+&lt;hr>
+&lt;h2 id="features">Features&lt;/h2>
+&lt;ul>
+&lt;li>Efficiently write slides in Markdown&lt;/li>
+&lt;li>3-in-1: Create, Present, and Publish your slides&lt;/li>
+&lt;li>Supports speaker notes&lt;/li>
+&lt;li>Mobile friendly slides&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="controls">Controls&lt;/h2>
+&lt;ul>
+&lt;li>Next: &lt;code>Right Arrow&lt;/code> or &lt;code>Space&lt;/code>&lt;/li>
+&lt;li>Previous: &lt;code>Left Arrow&lt;/code>&lt;/li>
+&lt;li>Start: &lt;code>Home&lt;/code>&lt;/li>
+&lt;li>Finish: &lt;code>End&lt;/code>&lt;/li>
+&lt;li>Overview: &lt;code>Esc&lt;/code>&lt;/li>
+&lt;li>Speaker notes: &lt;code>S&lt;/code>&lt;/li>
+&lt;li>Fullscreen: &lt;code>F&lt;/code>&lt;/li>
+&lt;li>Zoom: &lt;code>Alt + Click&lt;/code>&lt;/li>
+&lt;li>&lt;a href="https://revealjs.com/pdf-export/" target="_blank" rel="noopener">PDF Export&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="code-highlighting">Code Highlighting&lt;/h2>
+&lt;p>Inline code: &lt;code>variable&lt;/code>&lt;/p>
+&lt;p>Code block:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="n">porridge&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;blueberry&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="n">porridge&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="s2">&amp;#34;blueberry&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Eating...&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="math">Math&lt;/h2>
+&lt;p>In-line math: $x + y = z$&lt;/p>
+&lt;p>Block math:&lt;/p>
+&lt;p>$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p>
+&lt;hr>
+&lt;h2 id="fragments">Fragments&lt;/h2>
+&lt;p>Make content appear incrementally&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">{{% fragment %}} One {{% /fragment %}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{% fragment %}} **Two** {{% /fragment %}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{% fragment %}} Three {{% /fragment %}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Press &lt;code>Space&lt;/code> to play!&lt;/p>
+&lt;span class="fragment " >
+One
+&lt;/span>
+&lt;span class="fragment " >
+&lt;strong>Two&lt;/strong>
+&lt;/span>
+&lt;span class="fragment " >
+Three
+&lt;/span>
+&lt;hr>
+&lt;p>A fragment can accept two optional parameters:&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>class&lt;/code>: use a custom style (requires definition in custom CSS)&lt;/li>
+&lt;li>&lt;code>weight&lt;/code>: sets the order in which a fragment appears&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="speaker-notes">Speaker Notes&lt;/h2>
+&lt;p>Add speaker notes to your presentation&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{% speaker_note %}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Only the speaker can read these notes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">-&lt;/span> Press &lt;span class="sb">`S`&lt;/span> key to view
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {{% /speaker_note %}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Press the &lt;code>S&lt;/code> key to view the speaker notes!&lt;/p>
+&lt;aside class="notes">
+&lt;ul>
+&lt;li>Only the speaker can read these notes&lt;/li>
+&lt;li>Press &lt;code>S&lt;/code> key to view&lt;/li>
+&lt;/ul>
+&lt;/aside>
+&lt;hr>
+&lt;h2 id="themes">Themes&lt;/h2>
+&lt;ul>
+&lt;li>black: Black background, white text, blue links (default)&lt;/li>
+&lt;li>white: White background, black text, blue links&lt;/li>
+&lt;li>league: Gray background, white text, blue links&lt;/li>
+&lt;li>beige: Beige background, dark text, brown links&lt;/li>
+&lt;li>sky: Blue background, thin dark text, blue links&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;ul>
+&lt;li>night: Black background, thick white text, orange links&lt;/li>
+&lt;li>serif: Cappuccino background, gray text, brown links&lt;/li>
+&lt;li>simple: White background, black text, blue links&lt;/li>
+&lt;li>solarized: Cream-colored background, dark green text, blue links&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;section data-noprocess data-shortcode-slide
+data-background-image="/media/boards.jpg"
+>
+&lt;h2 id="custom-slide">Custom Slide&lt;/h2>
+&lt;p>Customize the slide style and background&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">background-image&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;/media/boards.jpg&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">background-color&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;#0000FF&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">slide&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;my-style&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="custom-css-example">Custom CSS Example&lt;/h2>
+&lt;p>Let&amp;rsquo;s make headers navy colored.&lt;/p>
+&lt;p>Create &lt;code>assets/css/reveal_custom.css&lt;/code> with:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-css" data-lang="css">&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h1&lt;/span>&lt;span class="o">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h2&lt;/span>&lt;span class="o">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">.&lt;/span>&lt;span class="nc">reveal&lt;/span> &lt;span class="nt">section&lt;/span> &lt;span class="nt">h3&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">color&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="kc">navy&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h1 id="questions">Questions?&lt;/h1>
+&lt;p>&lt;a href="https://discord.gg/z8wNYzb" target="_blank" rel="noopener">Ask&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title/><link>https://gfchen01.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/admin/config.yml</guid><description/></item></channel></rss>
