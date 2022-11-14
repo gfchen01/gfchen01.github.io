@@ -9,7 +9,7 @@ headless: true
 # Order that this section appears on the page.
 weight: 40
 
-title: Experience
+title: Research Experience
 subtitle:
 
 # Date format for experience
@@ -24,20 +24,19 @@ date_format: Jan 2006
 experience:
   - title: Research Assistant
     company: FAST-FAR Lab - ZJU
-    company_url: ''
+    company_url: 'http://zju-fast.com/fei-gao/'
     company_logo: 
     location: Huzhou, Zhejiang
     date_start: '2021-03-15'
     date_end:
     description: |2-
-
-        * Research on Swarm Perception and Planning
-        * Develop Multi-Robot Perception Module
+      * Robot Perception with Range Measurements
+      * Swarm Perception and Motion Planning
   
   - title: Group Leader
     company: ZJUNlict - ZJU RoboCup Team
-    company_url: ''
-    company_logo: org-gc
+    company_url: 'https://ssl.robocup.org/wp-content/uploads/2020/03/2020_ETDP_ZJUNlict.pdf'
+    company_logo:
     location: Hangzhou, Zhejiang
     date_start: '2020-06-01'
     date_end: '2022-11-15'
@@ -50,17 +49,16 @@ experience:
         * Path Planning and Motion Control
   
   - title: Research Assistant
-    company: Prof. Zhiqiang Ge Group, State Key Laboratory of Industrial Control
-    company_url: ''
+    company: Prof. [Zhiqiang Ge](https://scholar.google.com/citations?user=g_EMkuMAAAAJ) Group, State Key Laboratory of Industrial Control
+    company_url: 'https://person.zju.edu.cn/en/gezhiqiang#0'
     company_logo:
     location: Hangzhou, Zhejiang
     date_start: '2021-04-01'
     date_end: '2022-06-10'
     description: |2-
 
-      Research on:
-        * Soft sensor
-        * Probablistic Generative Model, Variational Autoencoder
+      * Data driven soft sensor
+      * Probablistic Generative Model, Variational Autoencoder
 
 
 design:

@@ -16,19 +16,19 @@ subtitle:
 # - Add/remove as many `feature` blocks below as you like.
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
-  - description: 90%
+  - description:
     icon: linux
     icon_pack: fab
     name: Linux
-  - description: 100%
+  - description:
     icon: ros
     icon_pack: custom
     name: ROS
-  - description: 50%
+  - description:
     icon: lua
     icon_pack: custom
     name: Lua
-  - description: 100%
+  - description:
     icon: cpp
     icon_pack: custom
     name: C++

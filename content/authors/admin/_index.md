@@ -30,7 +30,7 @@ education:
   courses:
     - course: BE in Automation
       institution: Zhejiang University
-      year: 2022
+      year: 2023
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
