@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Guofei Chen</title><link>https://gfchen01.github.io/project/</link><atom:link href="https://gfchen01.github.io/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate><image><url>https://gfchen01.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>https://gfchen01.github.io/project/</link></image><item><title>TinySQL</title><link>https://gfchen01.github.io/project/tinysql/</link><pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/tinysql/</guid><description>&lt;p>TinySQL is a database management system supporting SQL. The project is self contained and designed originally. Guofei Chen was the architect of the project, as well as the code reviewer.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Projects | Guofei Chen</title><link>https://gfchen01.cc/project/</link><atom:link href="https://gfchen01.cc/project/index.xml" rel="self" type="application/rss+xml"/><description>Projects</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 05 Jun 2022 00:00:00 +0000</lastBuildDate><image><url>https://gfchen01.cc/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Projects</title><link>https://gfchen01.cc/project/</link></image><item><title>TinySQL</title><link>https://gfchen01.cc/project/tinysql/</link><pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.cc/project/tinysql/</guid><description>&lt;p>TinySQL is a database management system supporting SQL. The project is self contained and designed originally. Guofei Chen was the architect of the project, as well as the code reviewer.&lt;/p>
 &lt;p>Here let&amp;rsquo;s briefly talk about the design details of this SQL project.&lt;/p>
 &lt;p>Download the
-&lt;a href="https://gfchen01.github.io/uploads/TinySQL_Technical_Report.pdf" target="_blank">Chinese technical report&lt;/a>
+&lt;a href="https://gfchen01.cc/uploads/TinySQL_Technical_Report.pdf" target="_blank">Chinese technical report&lt;/a>
 .&lt;/p>
 &lt;h2 id="architecture">Architecture&lt;/h2>
 &lt;p>
@@ -11,7 +11,7 @@
 /project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp 400w,
 /project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_73bd2112f797544fafb8f4e3a4db69fc.webp 760w,
 /project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
-src="https://gfchen01.github.io/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp"
+src="https://gfchen01.cc/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp"
 width="498"
 height="585"
 loading="lazy" data-zoomable />&lt;/div>
