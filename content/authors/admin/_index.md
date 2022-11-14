@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Guofei Chen 陈国斐
+title: Guofei Chen
 
 # Full name (for SEO)
 first_name: Guofei
@@ -18,7 +18,7 @@ organizations:
     url: https://www.zju.edu.cn/english/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include multi-robot systems, robot perception. I am also widely interested in learning and combinatorial mathematics.
 
 # Interests to show in About widget
 interests:

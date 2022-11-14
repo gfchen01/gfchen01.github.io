@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['modifypage_222',['modifyPage',['../classBufferManager.html#adf643fa6054886bcea2e336d848d96ad',1,'BufferManager']]]
+];

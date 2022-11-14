@@ -1,6 +1,6 @@
 ---
-title: TinySQL - A Relational Database from Scratch
-summary: An example of using the in-built project page.
+title: TinySQL
+summary: A Relational Database from Scratch
 date: '2022-06-05T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
@@ -11,12 +11,14 @@ image:
   focal_point: Smart
 
 links:
-  - icon: twitter
-    icon_pack: fab
-    name: Follow
-    url: https://twitter.com/georgecushen
-url_code: ''
-url_pdf: ''
+  - name: Documentation
+    url: 'project/tinysql/DOC/html/index.html'
+  
+  - name: Tech Report(Chinese)
+    url: 'project/tinysql/TinySQL_Techinal_Report'
+
+url_code: 'https://github.com/gfchen01/tinySQL'
+url_pdf:
 url_slides: ''
 url_video: ''
 
@@ -25,15 +27,49 @@ url_video: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+# slides: example
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+TinySQL is a database management system supporting SQL. The project is self contained and designed originally. Guofei Chen was the architect of the project, as well as the code reviewer.
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+Here let's briefly talk about the design details of this SQL project.
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+Download the {{< staticref "uploads/TinySQL_Technical_Report.pdf" "newtab" >}}Chinese technical report{{< /staticref >}}.
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+## Architecture
+![](Picture/tinySQL.png)
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+This is the architecture of the database. **The meaning of arrow is: If A->B, then A module will use functions and classes in B module.** To have a detailed understanding of the relations between modules, please refer to our documentation.
+
+The duty of different modules:
+Interface: Deal with the syntax tree given by SQL-Parser，judge the exact operation type of the command（e.g., create，select, etc.) Transfer the table name, the attribute to project on, and the key value to look for. Give them to the executor.
+
+Executor: Determine the execution order, and finish atomic operations.
+
+Catalog Manager: Manage the basic information of table, including its name, attributes, whether there are indexes on certain attribute, etc.
+
+Index Manager : Manage the index file store on the disk. To be specific, we use B+ tree for index.
+
+Record Manager : Manage the data of different tables. We store different tables in different files and use row-based mechanism to design the file structure.
+
+Buffer Manager : Manage the data stored in cache(memory) and its relation with disk files. For modules above, "files" and "memory" are invisible.
+
+## An overview of important design details
+1. This is a row-based database, and use tuple to manage files. We delete records lazily and optimize the file on a regular basis to constrain its size.
+2. Storage mechanisms: 
+   a. Record Manager: Tables are stored seperately in different binary files. Pages in the file is constrained to be 4KB.
+   b. Index Manager: Indexes are stored seperately in different binary files. The structure of a page is:
+   | BlockType (4) | ParentBlockId(4) | CurrentSize (4) | MaxSize (4) | ParentBlockId (4) | BlockId(4) | key-id pairs... (to 4096B)
+   c. Catalog Manager: A string file stores the information of each table. The information can be decoded by catalog manager, and is readable (to some extent).
+3. We only support data records that are smaller than 4KB, which is a page size.
+4. An external parser is used in source code. You can find their work [here](https://github.com/hyrise/sql-parser)
+
+<!-- ## Some Examples:
+
+### 
+
+### Select
+
+###  -->
+
+## Please star our project on github if you like it!

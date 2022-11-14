@@ -1,0 +1,13 @@
+<map id="include/buffer/buffer_manager.h" name="include/buffer/buffer_manager.h">
+<area shape="rect" id="node1" title="本部分负责缓冲区的管理，包括缓冲区与磁盘的交互以及页面替换等。（具体参数待修改，接口应该不会改动）" alt="" coords="224,5,359,47"/>
+<area shape="rect" id="node2" href="$buffer__manager_8cpp.html" title=" " alt="" coords="5,102,177,129"/>
+<area shape="rect" id="node3" href="$catalog_8h_source.html" title=" " alt="" coords="61,191,228,218"/>
+<area shape="rect" id="node7" href="$Index_8h_source.html" title=" " alt="" coords="193,273,339,300"/>
+<area shape="rect" id="node8" href="$record__manager_8h.html" title=" " alt="" coords="195,348,337,389"/>
+<area shape="rect" id="node10" href="$bpTree__block_8h_source.html" title=" " alt="" coords="355,95,497,136"/>
+<area shape="rect" id="node11" href="$bpTree__disk_8h_source.html" title=" " alt="" coords="304,184,447,225"/>
+<area shape="rect" id="node4" href="$exec__engine_8h.html" title=" " alt="" coords="16,437,193,464"/>
+<area shape="rect" id="node5" href="$interface_8h_source.html" title=" " alt="" coords="27,512,182,539"/>
+<area shape="rect" id="node6" href="$interface_8cpp.html" title=" " alt="" coords="43,587,166,613"/>
+<area shape="rect" id="node9" href="$record__manager_8cpp.html" title=" " alt="" coords="217,437,397,464"/>
+</map>
