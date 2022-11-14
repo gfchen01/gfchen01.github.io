@@ -1,0 +1,12 @@
+<map id="hsql::WithDescription" name="hsql::WithDescription">
+<area shape="rect" id="node1" title=" " alt="" coords="475,128,621,155"/>
+<area shape="rect" id="node2" href="$structhsql_1_1SelectStatement.html" title=" " alt="" coords="195,128,345,155"/>
+<area shape="rect" id="node5" href="$structhsql_1_1Expr.html" title=" " alt="" coords="507,295,589,321"/>
+<area shape="rect" id="node8" href="$structhsql_1_1TableRef.html" title=" " alt="" coords="981,171,1088,197"/>
+<area shape="rect" id="node3" href="$structhsql_1_1SQLStatement.html" title=" " alt="" coords="5,128,145,155"/>
+<area shape="rect" id="node4" href="$structhsql_1_1LimitDescription.html" title=" " alt="" coords="742,180,890,207"/>
+<area shape="rect" id="node7" href="$structhsql_1_1GroupByDescription.html" title=" " alt="" coords="731,99,901,125"/>
+<area shape="rect" id="node9" href="$structhsql_1_1JoinDefinition.html" title=" " alt="" coords="749,231,883,257"/>
+<area shape="rect" id="node6" href="$structhsql_1_1ColumnType.html" title=" " alt="" coords="207,305,333,332"/>
+<area shape="rect" id="node10" href="$structhsql_1_1Alias.html" title=" " alt="" coords="775,281,857,308"/>
+</map>

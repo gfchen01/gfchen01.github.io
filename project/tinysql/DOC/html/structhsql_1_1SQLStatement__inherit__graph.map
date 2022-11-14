@@ -1,0 +1,16 @@
+<map id="hsql::SQLStatement" name="hsql::SQLStatement">
+<area shape="rect" id="node1" title=" " alt="" coords="5,309,145,336"/>
+<area shape="rect" id="node2" href="$structhsql_1_1AlterStatement.html" title=" " alt="" coords="214,5,355,32"/>
+<area shape="rect" id="node3" href="$structhsql_1_1CreateStatement.html" title=" " alt="" coords="208,56,361,83"/>
+<area shape="rect" id="node4" href="$structhsql_1_1DeleteStatement.html" title=" " alt="" coords="209,107,361,133"/>
+<area shape="rect" id="node5" href="$structhsql_1_1DropStatement.html" title=" " alt="" coords="213,157,356,184"/>
+<area shape="rect" id="node6" href="$structhsql_1_1ExecuteStatement.html" title=" " alt="" coords="203,208,366,235"/>
+<area shape="rect" id="node7" href="$structhsql_1_1ExportStatement.html" title=" " alt="" coords="209,259,361,285"/>
+<area shape="rect" id="node8" href="$structhsql_1_1ImportStatement.html" title=" " alt="" coords="209,309,360,336"/>
+<area shape="rect" id="node9" href="$structhsql_1_1InsertStatement.html" title=" " alt="" coords="211,360,358,387"/>
+<area shape="rect" id="node10" href="$structhsql_1_1PrepareStatement.html" title=" " alt="" coords="205,411,364,437"/>
+<area shape="rect" id="node11" href="$structhsql_1_1SelectStatement.html" title=" " alt="" coords="209,461,360,488"/>
+<area shape="rect" id="node12" href="$structhsql_1_1ShowStatement.html" title=" " alt="" coords="211,512,358,539"/>
+<area shape="rect" id="node13" href="$structhsql_1_1TransactionStatement.html" title=" " alt="" coords="193,563,376,589"/>
+<area shape="rect" id="node14" href="$structhsql_1_1UpdateStatement.html" title=" " alt="" coords="207,613,363,640"/>
+</map>

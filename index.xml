@@ -9,16 +9,63 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>TinySQL - A Relational Database from Scratch</title><link>https://gfchen01.github.io/project/tinysql/</link><pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/tinysql/</guid><description>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p>
-&lt;p>Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p>
-&lt;p>Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p>
-&lt;p>Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p>
-&lt;p>Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p></description></item><item><title>An example preprint / working paper</title><link>https://gfchen01.github.io/publication/preprint/</link><pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/preprint/</guid><description>&lt;div class="alert alert-note">
+&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>TinySQL</title><link>https://gfchen01.github.io/project/tinysql/</link><pubDate>Sun, 05 Jun 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/tinysql/</guid><description>&lt;p>TinySQL is a database management system supporting SQL. The project is self contained and designed originally. Guofei Chen was the architect of the project, as well as the code reviewer.&lt;/p>
+&lt;p>Here let&amp;rsquo;s briefly talk about the design details of this SQL project.&lt;/p>
+&lt;p>Download the
+&lt;a href="https://gfchen01.github.io/uploads/TinySQL_Technical_Report.pdf" target="_blank">Chinese technical report&lt;/a>
+.&lt;/p>
+&lt;h2 id="architecture">Architecture&lt;/h2>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="" srcset="
+/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp 400w,
+/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_73bd2112f797544fafb8f4e3a4db69fc.webp 760w,
+/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://gfchen01.github.io/project/tinysql/Picture/tinySQL_hu9460315ac09f128ce770fa46db4f673b_36066_2ad487ebcbecbc02020d638c18c08b43.webp"
+width="498"
+height="585"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>This is the architecture of the database. &lt;strong>The meaning of arrow is: If A-&amp;gt;B, then A module will use functions and classes in B module.&lt;/strong> To have a detailed understanding of the relations between modules, please refer to our documentation.&lt;/p>
+&lt;p>The duty of different modules:
+Interface: Deal with the syntax tree given by SQL-Parser，judge the exact operation type of the command（e.g., create，select, etc.) Transfer the table name, the attribute to project on, and the key value to look for. Give them to the executor.&lt;/p>
+&lt;p>Executor: Determine the execution order, and finish atomic operations.&lt;/p>
+&lt;p>Catalog Manager: Manage the basic information of table, including its name, attributes, whether there are indexes on certain attribute, etc.&lt;/p>
+&lt;p>Index Manager : Manage the index file store on the disk. To be specific, we use B+ tree for index.&lt;/p>
+&lt;p>Record Manager : Manage the data of different tables. We store different tables in different files and use row-based mechanism to design the file structure.&lt;/p>
+&lt;p>Buffer Manager : Manage the data stored in cache(memory) and its relation with disk files. For modules above, &amp;ldquo;files&amp;rdquo; and &amp;ldquo;memory&amp;rdquo; are invisible.&lt;/p>
+&lt;h2 id="an-overview-of-important-design-details">An overview of important design details&lt;/h2>
+&lt;ol>
+&lt;li>This is a row-based database, and use tuple to manage files. We delete records lazily and optimize the file on a regular basis to constrain its size.&lt;/li>
+&lt;li>Storage mechanisms:
+a. Record Manager: Tables are stored seperately in different binary files. Pages in the file is constrained to be 4KB.
+b. Index Manager: Indexes are stored seperately in different binary files. The structure of a page is:
+| BlockType (4) | ParentBlockId(4) | CurrentSize (4) | MaxSize (4) | ParentBlockId (4) | BlockId(4) | key-id pairs&amp;hellip; (to 4096B)
+c. Catalog Manager: A string file stores the information of each table. The information can be decoded by catalog manager, and is readable (to some extent).&lt;/li>
+&lt;li>We only support data records that are smaller than 4KB, which is a page size.&lt;/li>
+&lt;li>An external parser is used in source code. You can find their work &lt;a href="https://github.com/hyrise/sql-parser" target="_blank" rel="noopener">here&lt;/a>&lt;/li>
+&lt;/ol>
+&lt;!-- ## Some Examples:
+###
+### Select
+### -->
+&lt;h2 id="please-star-our-project-on-github-if-you-like-it">Please star our project on github if you like it!&lt;/h2></description></item><item><title>Probabilistic Generative Model with Long-Term Memory and its Application in Chemical Process Modeling</title><link>https://gfchen01.github.io/publication/conference-paper/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/conference-paper/</guid><description>&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!--
+&lt;div class="alert alert-note">
 &lt;div>
 Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
 &lt;/div>
 &lt;/div>
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">code, math, and images&lt;/a>.&lt;/p></description></item><item><title>Slides</title><link>https://gfchen01.github.io/slides/example/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/slides/example/</guid><description>&lt;h1 id="create-slides-in-markdown-with-wowchemy">Create slides in Markdown with Wowchemy&lt;/h1>
+-->
+&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --></description></item><item><title>Slides</title><link>https://gfchen01.github.io/slides/example/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/slides/example/</guid><description>&lt;h1 id="create-slides-in-markdown-with-wowchemy">Create slides in Markdown with Wowchemy&lt;/h1>
 &lt;p>&lt;a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy&lt;/a> | &lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h2 id="features">Features&lt;/h2>
@@ -129,31 +176,7 @@ data-background-image="/media/boards.jpg"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
 &lt;h1 id="questions">Questions?&lt;/h1>
 &lt;p>&lt;a href="https://discord.gg/z8wNYzb" target="_blank" rel="noopener">Ask&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title>Example Project</title><link>https://gfchen01.github.io/project/example/</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/example/</guid><description>&lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p>
-&lt;p>Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p>
-&lt;p>Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p>
-&lt;p>Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p>
-&lt;p>Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p></description></item><item><title>External Project</title><link>https://gfchen01.github.io/project/external-project/</link><pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/external-project/</guid><description/></item><item><title>An example journal article</title><link>https://gfchen01.github.io/publication/journal-article/</link><pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/journal-article/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-&lt;/div>
-&lt;/div>
-&lt;div class="alert alert-note">
-&lt;div>
-Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
-&lt;/div>
-&lt;/div>
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">code, math, and images&lt;/a>.&lt;/p></description></item><item><title>An example conference paper</title><link>https://gfchen01.github.io/publication/conference-paper/</link><pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/conference-paper/</guid><description>&lt;div class="alert alert-note">
-&lt;div>
-Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-&lt;/div>
-&lt;/div>
-&lt;div class="alert alert-note">
-&lt;div>
-Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
-&lt;/div>
-&lt;/div>
-&lt;p>Supplementary notes can be added here, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">code, math, and images&lt;/a>.&lt;/p></description></item><item><title/><link>https://gfchen01.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/admin/config.yml</guid><description/></item><item><title>A Mapping &amp; Planning Method for RoboCup Small Size League</title><link>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</guid><description>&lt;h1 id="a-mapping--planning-method-for-robocup-small-size-league">A Mapping &amp;amp; Planning Method for RoboCup Small Size League&lt;/h1>
+&lt;p>&lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p></description></item><item><title/><link>https://gfchen01.github.io/admin/config.yml</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/admin/config.yml</guid><description/></item><item><title>A Mapping &amp; Planning Method for RoboCup Small Size League</title><link>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</guid><description>&lt;h1 id="a-mapping--planning-method-for-robocup-small-size-league">A Mapping &amp;amp; Planning Method for RoboCup Small Size League&lt;/h1>
 &lt;h2 id="introduction-based-on-visibility">Introduction based on Visibility&lt;/h2>
 &lt;p>&lt;a href="https://ssl.robocup.org/" target="_blank" rel="noopener">RoboCup SSL&lt;/a> is a platform that asks participants to design robots and compete autonomously on playing soccer. Participants have to obey restrictions on robots&amp;rsquo; themselves and rules during game play. You can find details &lt;a href="">here&lt;/a>. The most worth noticing facts are (for software group):&lt;/p>
 &lt;ol>
