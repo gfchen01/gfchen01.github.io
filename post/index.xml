@@ -1,405 +1,375 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Guofei Chen</title><link>https://gfchen01.github.io/post/</link><atom:link href="https://gfchen01.github.io/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate><image><url>https://gfchen01.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Posts</title><link>https://gfchen01.github.io/post/</link></image><item><title>Welcome to Wowchemy, the website builder for Hugo</title><link>https://gfchen01.github.io/post/getting-started/</link><pubDate>Sun, 13 Dec 2020 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/getting-started/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">libr&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;hello&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="overview">Overview&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts | Guofei Chen</title><link>https://gfchen01.github.io/post/</link><atom:link href="https://gfchen01.github.io/post/index.xml" rel="self" type="application/rss+xml"/><description>Posts</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><image><url>https://gfchen01.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url><title>Posts</title><link>https://gfchen01.github.io/post/</link></image><item><title>A Mapping &amp; Planning Method for RoboCup Small Size League</title><link>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/a-novel-mapping-planning-method-for-robocup-ssl/</guid><description>&lt;h1 id="a-mapping--planning-method-for-robocup-small-size-league">A Mapping &amp;amp; Planning Method for RoboCup Small Size League&lt;/h1>
+&lt;h2 id="introduction-based-on-visibility">Introduction based on Visibility&lt;/h2>
+&lt;p>&lt;a href="https://ssl.robocup.org/" target="_blank" rel="noopener">RoboCup SSL&lt;/a> is a platform that asks participants to design robots and compete autonomously on playing soccer. Participants have to obey restrictions on robots&amp;rsquo; themselves and rules during game play. You can find details &lt;a href="">here&lt;/a>. The most worth noticing facts are (for software group):&lt;/p>
 &lt;ol>
-&lt;li>The Wowchemy website builder for Hugo, along with its starter templates, is designed for professional creators, educators, and teams/organizations - although it can be used to create any kind of site&lt;/li>
-&lt;li>The template can be modified and customised to suit your needs. It&amp;rsquo;s a good platform for anyone looking to take control of their data and online identity whilst having the convenience to start off with a &lt;strong>no-code solution (write in Markdown and customize with YAML parameters)&lt;/strong> and having &lt;strong>flexibility to later add even deeper personalization with HTML and CSS&lt;/strong>&lt;/li>
-&lt;li>You can work with all your favourite tools and apps with hundreds of plugins and integrations to speed up your workflows, interact with your readers, and much more&lt;/li>
+&lt;li>Robot design: a robot must fit inside a 0.18 meters wide and 0.15 meters high cylinder at any point in time. A dribbling device is permitted under certain restrictions. A vision pattern is a needed for robot identification.&lt;/li>
+&lt;li>Perception: both teams share the same vision information provided by SSL, which contains the robots&amp;rsquo; id and pose. (Extra devices are allowed, e.g., IMU) and referee instructions are sent by a software called referee box.&lt;/li>
 &lt;/ol>
-&lt;p>&lt;a href="https://wowchemy.com" target="_blank" rel="noopener">
-&lt;figure >
-&lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="https://raw.githubusercontent.com/wowchemy/wowchemy-hugo-modules/main/starters/academic/preview.png" alt="The template is mobile first with a responsive design to ensure that your site looks stunning on every device." loading="lazy" data-zoomable />&lt;/div>
-&lt;/div>&lt;/figure>
-&lt;/a>&lt;/p>
-&lt;h2 id="get-started">Get Started&lt;/h2>
-&lt;ul>
-&lt;li>👉 &lt;a href="https://wowchemy.com/templates/" target="_blank" rel="noopener">&lt;strong>Create a new site&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>📚 &lt;a href="https://wowchemy.com/docs/" target="_blank" rel="noopener">&lt;strong>Personalize your site&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>💬 &lt;a href="https://discord.gg/z8wNYzb" target="_blank" rel="noopener">Chat with the &lt;strong>Wowchemy community&lt;/strong>&lt;/a> or &lt;a href="https://discourse.gohugo.io" target="_blank" rel="noopener">&lt;strong>Hugo community&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>🐦 Twitter: &lt;a href="https://twitter.com/wowchemy" target="_blank" rel="noopener">@wowchemy&lt;/a> &lt;a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">@GeorgeCushen&lt;/a> &lt;a href="https://twitter.com/search?q=%23MadeWithWowchemy&amp;amp;src=typed_query" target="_blank" rel="noopener">#MadeWithWowchemy&lt;/a>&lt;/li>
-&lt;li>💡 &lt;a href="https://github.com/wowchemy/wowchemy-hugo-themes/issues" target="_blank" rel="noopener">Request a &lt;strong>feature&lt;/strong> or report a &lt;strong>bug&lt;/strong> for &lt;em>Wowchemy&lt;/em>&lt;/a>&lt;/li>
-&lt;li>⬆️ &lt;strong>Updating Wowchemy?&lt;/strong> View the &lt;a href="https://wowchemy.com/docs/hugo-tutorials/update/" target="_blank" rel="noopener">Update Tutorial&lt;/a> and &lt;a href="https://wowchemy.com/updates/" target="_blank" rel="noopener">Release Notes&lt;/a>&lt;/li>
-&lt;/ul>
-&lt;h2 id="crowd-funded-open-source-software">Crowd-funded open-source software&lt;/h2>
-&lt;p>To help us develop this template and software sustainably under the MIT license, we ask all individuals and businesses that use it to help support its ongoing maintenance and development via sponsorship.&lt;/p>
-&lt;h3 id="-click-here-to-become-a-sponsor-and-help-support-wowchemys-future-httpswowchemycomsponsor">&lt;a href="https://wowchemy.com/sponsor/" target="_blank" rel="noopener">❤️ Click here to become a sponsor and help support Wowchemy&amp;rsquo;s future ❤️&lt;/a>&lt;/h3>
-&lt;p>As a token of appreciation for sponsoring, you can &lt;strong>unlock &lt;a href="https://wowchemy.com/sponsor/" target="_blank" rel="noopener">these&lt;/a> awesome rewards and extra features 🦄✨&lt;/strong>&lt;/p>
-&lt;h2 id="ecosystem">Ecosystem&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>&lt;a href="https://github.com/wowchemy/hugo-academic-cli" target="_blank" rel="noopener">Hugo Academic CLI&lt;/a>:&lt;/strong> Automatically import publications from BibTeX&lt;/li>
-&lt;/ul>
-&lt;h2 id="inspiration">Inspiration&lt;/h2>
-&lt;p>&lt;a href="https://academic-demo.netlify.com/" target="_blank" rel="noopener">Check out the latest &lt;strong>demo&lt;/strong>&lt;/a> of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href="https://wowchemy.com/user-stories/" target="_blank" rel="noopener">view the &lt;strong>showcase&lt;/strong>&lt;/a> of personal, project, and business sites.&lt;/p>
-&lt;h2 id="features">Features&lt;/h2>
-&lt;ul>
-&lt;li>&lt;strong>Page builder&lt;/strong> - Create &lt;em>anything&lt;/em> with &lt;a href="https://wowchemy.com/docs/page-builder/" target="_blank" rel="noopener">&lt;strong>widgets&lt;/strong>&lt;/a> and &lt;a href="https://wowchemy.com/docs/content/writing-markdown-latex/" target="_blank" rel="noopener">&lt;strong>elements&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Edit any type of content&lt;/strong> - Blog posts, publications, talks, slides, projects, and more!&lt;/li>
-&lt;li>&lt;strong>Create content&lt;/strong> in &lt;a href="https://wowchemy.com/docs/content/writing-markdown-latex/" target="_blank" rel="noopener">&lt;strong>Markdown&lt;/strong>&lt;/a>, &lt;a href="https://wowchemy.com/docs/import/jupyter/" target="_blank" rel="noopener">&lt;strong>Jupyter&lt;/strong>&lt;/a>, or &lt;a href="https://wowchemy.com/docs/install-locally/" target="_blank" rel="noopener">&lt;strong>RStudio&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Plugin System&lt;/strong> - Fully customizable &lt;a href="https://wowchemy.com/docs/customization/" target="_blank" rel="noopener">&lt;strong>color&lt;/strong> and &lt;strong>font themes&lt;/strong>&lt;/a>&lt;/li>
-&lt;li>&lt;strong>Display Code and Math&lt;/strong> - Code highlighting and &lt;a href="https://en.wikibooks.org/wiki/LaTeX/Mathematics" target="_blank" rel="noopener">LaTeX math&lt;/a> supported&lt;/li>
-&lt;li>&lt;strong>Integrations&lt;/strong> - &lt;a href="https://analytics.google.com" target="_blank" rel="noopener">Google Analytics&lt;/a>, &lt;a href="https://disqus.com" target="_blank" rel="noopener">Disqus commenting&lt;/a>, Maps, Contact Forms, and more!&lt;/li>
-&lt;li>&lt;strong>Beautiful Site&lt;/strong> - Simple and refreshing one page design&lt;/li>
-&lt;li>&lt;strong>Industry-Leading SEO&lt;/strong> - Help get your website found on search engines and social media&lt;/li>
-&lt;li>&lt;strong>Media Galleries&lt;/strong> - Display your images and videos with captions in a customizable gallery&lt;/li>
-&lt;li>&lt;strong>Mobile Friendly&lt;/strong> - Look amazing on every screen with a mobile friendly version of your site&lt;/li>
-&lt;li>&lt;strong>Multi-language&lt;/strong> - 34+ language packs including English, 中文, and Português&lt;/li>
-&lt;li>&lt;strong>Multi-user&lt;/strong> - Each author gets their own profile page&lt;/li>
-&lt;li>&lt;strong>Privacy Pack&lt;/strong> - Assists with GDPR&lt;/li>
-&lt;li>&lt;strong>Stand Out&lt;/strong> - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li>
-&lt;li>&lt;strong>One-Click Deployment&lt;/strong> - No servers. No databases. Only files.&lt;/li>
-&lt;/ul>
-&lt;h2 id="themes">Themes&lt;/h2>
-&lt;p>Wowchemy and its templates come with &lt;strong>automatic day (light) and night (dark) mode&lt;/strong> built-in. Alternatively, visitors can choose their preferred mode - click the moon icon in the top right of the &lt;a href="https://academic-demo.netlify.com/" target="_blank" rel="noopener">Demo&lt;/a> to see it in action! Day/night mode can also be disabled by the site admin in &lt;code>params.toml&lt;/code>.&lt;/p>
-&lt;p>&lt;a href="https://wowchemy.com/docs/customization" target="_blank" rel="noopener">Choose a stunning &lt;strong>theme&lt;/strong> and &lt;strong>font&lt;/strong>&lt;/a> for your site. Themes are fully customizable.&lt;/p>
-&lt;h2 id="license">License&lt;/h2>
-&lt;p>Copyright 2016-present &lt;a href="https://georgecushen.com" target="_blank" rel="noopener">George Cushen&lt;/a>.&lt;/p>
-&lt;p>Released under the &lt;a href="https://github.com/wowchemy/wowchemy-hugo-themes/blob/master/LICENSE.md" target="_blank" rel="noopener">MIT&lt;/a> license.&lt;/p></description></item><item><title>Writing technical content in Markdown</title><link>https://gfchen01.github.io/post/writing-technical-content/</link><pubDate>Fri, 12 Jul 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/writing-technical-content/</guid><description>&lt;p>Wowchemy is designed to give technical content creators a seamless experience. You can focus on the content and Wowchemy handles the rest.&lt;/p>
-&lt;p>&lt;strong>Highlight your code snippets, take notes on math classes, and draw diagrams from textual representation.&lt;/strong>&lt;/p>
-&lt;p>On this page, you&amp;rsquo;ll find some examples of the types of technical content that can be rendered with Wowchemy.&lt;/p>
-&lt;h2 id="examples">Examples&lt;/h2>
-&lt;h3 id="code">Code&lt;/h3>
-&lt;p>Wowchemy supports a Markdown extension for highlighting code syntax. You can customize the styles under the &lt;code>syntax_highlighter&lt;/code> option in your &lt;code>config/_default/params.yaml&lt;/code> file.&lt;/p>
-&lt;pre>&lt;code>```python
-import pandas as pd
-data = pd.read_csv(&amp;quot;data.csv&amp;quot;)
-data.head()
-```
-&lt;/code>&lt;/pre>
-&lt;p>renders as&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">import&lt;/span> &lt;span class="nn">pandas&lt;/span> &lt;span class="k">as&lt;/span> &lt;span class="nn">pd&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">data&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">pd&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">read_csv&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;data.csv&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">data&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">head&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="mindmaps">Mindmaps&lt;/h3>
-&lt;p>Wowchemy supports a Markdown extension for mindmaps.&lt;/p>
-&lt;p>Simply insert a Markdown &lt;code>markmap&lt;/code> code block and optionally set the height of the mindmap as shown in the example below.&lt;/p>
-&lt;p>A simple mindmap defined as a Markdown list:&lt;/p>
-&lt;div class="highlight">
-&lt;pre class="chroma">
-&lt;code>
-```markmap {height="200px"}
-- Hugo Modules
-- wowchemy
-- wowchemy-plugins-netlify
-- wowchemy-plugins-netlify-cms
-- wowchemy-plugins-reveal
-```
-&lt;/code>
-&lt;/pre>
-&lt;/div>
-&lt;p>renders as&lt;/p>
-&lt;div class="markmap" style="height: 200px;">
-&lt;pre>- Hugo Modules
-- wowchemy
-- wowchemy-plugins-netlify
-- wowchemy-plugins-netlify-cms
-- wowchemy-plugins-reveal&lt;/pre>
-&lt;/div>
-&lt;p>A more advanced mindmap with formatting, code blocks, and math:&lt;/p>
-&lt;div class="highlight">
-&lt;pre class="chroma">
-&lt;code>
-```markmap
-- Mindmaps
-- Links
-- [Wowchemy Docs](https://wowchemy.com/docs/)
-- [Discord Community](https://discord.gg/z8wNYzb)
-- [GitHub](https://github.com/wowchemy/wowchemy-hugo-themes)
-- Features
-- Markdown formatting
-- **inline** ~~text~~ *styles*
-- multiline
-text
-- `inline code`
--
-```js
-console.log('hello');
-console.log('code block');
-```
-- Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$
-```
-&lt;/code>
-&lt;/pre>
-&lt;/div>
-&lt;p>renders as&lt;/p>
-&lt;div class="markmap" style="height: 500px;">
-&lt;pre>- Mindmaps
-- Links
-- [Wowchemy Docs](https://wowchemy.com/docs/)
-- [Discord Community](https://discord.gg/z8wNYzb)
-- [GitHub](https://github.com/wowchemy/wowchemy-hugo-themes)
-- Features
-- Markdown formatting
-- **inline** ~~text~~ *styles*
-- multiline
-text
-- `inline code`
--
-```js
-console.log('hello');
-console.log('code block');
-```
-- Math: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$&lt;/pre>
-&lt;/div>
-&lt;h3 id="charts">Charts&lt;/h3>
-&lt;p>Wowchemy supports the popular &lt;a href="https://plot.ly/" target="_blank" rel="noopener">Plotly&lt;/a> format for interactive charts.&lt;/p>
-&lt;p>Save your Plotly JSON in your page folder, for example &lt;code>line-chart.json&lt;/code>, and then add the &lt;code>{{&amp;lt; chart data=&amp;quot;line-chart&amp;quot; &amp;gt;}}&lt;/code> shortcode where you would like the chart to appear.&lt;/p>
-&lt;p>Demo:&lt;/p>
-&lt;div id="chart-846293571" class="chart">&lt;/div>
-&lt;script>
-(function() {
-let a = setInterval( function() {
-if ( typeof window.Plotly === 'undefined' ) {
-return;
-}
-clearInterval( a );
-Plotly.d3.json("./line-chart.json", function(chart) {
-Plotly.plot('chart-846293571', chart.data, chart.layout, {responsive: true});
-});
-}, 500 );
-})();
-&lt;/script>
-&lt;p>You might also find the &lt;a href="http://plotly-json-editor.getforge.io/" target="_blank" rel="noopener">Plotly JSON Editor&lt;/a> useful.&lt;/p>
-&lt;h3 id="math">Math&lt;/h3>
-&lt;p>Wowchemy supports a Markdown extension for $\LaTeX$ math. You can enable this feature by toggling the &lt;code>math&lt;/code> option in your &lt;code>config/_default/params.yaml&lt;/code> file.&lt;/p>
-&lt;p>To render &lt;em>inline&lt;/em> or &lt;em>block&lt;/em> math, wrap your LaTeX math with &lt;code>{{&amp;lt; math &amp;gt;}}$...${{&amp;lt; /math &amp;gt;}}&lt;/code> or &lt;code>{{&amp;lt; math &amp;gt;}}$$...$${{&amp;lt; /math &amp;gt;}}&lt;/code>, respectively. (We wrap the LaTeX math in the Wowchemy &lt;em>math&lt;/em> shortcode to prevent Hugo rendering our math as Markdown. The &lt;em>math&lt;/em> shortcode is new in v5.5-dev.)&lt;/p>
-&lt;p>Example &lt;strong>math block&lt;/strong>:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; math &amp;gt;&lt;span class="nb">}}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb">$$&lt;/span>&lt;span class="nb">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="nv">\gamma&lt;/span>&lt;span class="nb">_{n} &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\frac&lt;/span>&lt;span class="nb">{ &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> | &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n} &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">} &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb">^T &lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">[&lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F &lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb"> x_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">]&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> |}{&lt;/span>&lt;span class="nv">\left&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\|\nabla&lt;/span>&lt;span class="nb"> F&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb">{x}_{n}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\nabla&lt;/span>&lt;span class="nb"> F&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nv">\mathbf&lt;/span>&lt;span class="nb">{x}_{n&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\right&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\|&lt;/span>&lt;span class="nb">^&lt;/span>&lt;span class="m">2&lt;/span>&lt;span class="nb">}
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="s">$$&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; /math &amp;gt;&lt;span class="nb">}}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
-$$\gamma_{n} = \frac{ \left | \left (\mathbf x_{n} - \mathbf x_{n-1} \right )^T \left [\nabla F (\mathbf x_{n}) - \nabla F (\mathbf x_{n-1}) \right ] \right |}{\left \|\nabla F(\mathbf{x}_{n}) - \nabla F(\mathbf{x}_{n-1}) \right \|^2}$$
-&lt;p>Example &lt;strong>inline math&lt;/strong> &lt;code>{{&amp;lt; math &amp;gt;}}$\nabla F(\mathbf{x}_{n})${{&amp;lt; /math &amp;gt;}}&lt;/code> renders as
-$\nabla F(\mathbf{x}_{n})$.&lt;/p>
-&lt;p>Example &lt;strong>multi-line math&lt;/strong> using the math linebreak (&lt;code>\\&lt;/code>):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-latex" data-lang="latex">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; math &amp;gt;&lt;span class="nb">}}&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="sb">$$&lt;/span>&lt;span class="nb">f&lt;/span>&lt;span class="o">(&lt;/span>&lt;span class="nb">k;p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">}&lt;/span>&lt;span class="o">)&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="nb"> &lt;/span>&lt;span class="nv">\begin&lt;/span>&lt;span class="nb">{cases}p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">} &amp;amp; &lt;/span>&lt;span class="nv">\text&lt;/span>&lt;span class="nb">{if }k&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="nb">, &lt;/span>&lt;span class="nv">\\&lt;/span>&lt;span class="nb">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">&lt;/span>&lt;span class="m">1&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="nb">p_{&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">}^{&lt;/span>&lt;span class="o">*&lt;/span>&lt;span class="nb">} &amp;amp; &lt;/span>&lt;span class="nv">\text&lt;/span>&lt;span class="nb">{if }k&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="m">0&lt;/span>&lt;span class="nb">.&lt;/span>&lt;span class="nv">\end&lt;/span>&lt;span class="nb">{cases}&lt;/span>&lt;span class="s">$$&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">{{&lt;/span>&amp;lt; /math &amp;gt;&lt;span class="nb">}}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
-$$
-f(k;p_{0}^{*}) = \begin{cases}p_{0}^{*} &amp; \text{if }k=1, \\
-1-p_{0}^{*} &amp; \text{if }k=0.\end{cases}
-$$
-&lt;h3 id="diagrams">Diagrams&lt;/h3>
-&lt;p>Wowchemy supports a Markdown extension for diagrams. You can enable this feature by toggling the &lt;code>diagram&lt;/code> option in your &lt;code>config/_default/params.toml&lt;/code> file or by adding &lt;code>diagram: true&lt;/code> to your page front matter.&lt;/p>
-&lt;p>An example &lt;strong>flowchart&lt;/strong>:&lt;/p>
-&lt;pre>&lt;code>```mermaid
-graph TD
-A[Hard] --&amp;gt;|Text| B(Round)
-B --&amp;gt; C{Decision}
-C --&amp;gt;|One| D[Result 1]
-C --&amp;gt;|Two| E[Result 2]
-```
-&lt;/code>&lt;/pre>
-&lt;p>renders as&lt;/p>
-&lt;div class="mermaid">graph TD
-A[Hard] -->|Text| B(Round)
-B --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-&lt;/div>
-&lt;p>An example &lt;strong>sequence diagram&lt;/strong>:&lt;/p>
-&lt;pre>&lt;code>```mermaid
-sequenceDiagram
-Alice-&amp;gt;&amp;gt;John: Hello John, how are you?
-loop Healthcheck
-John-&amp;gt;&amp;gt;John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John--&amp;gt;&amp;gt;Alice: Great!
-John-&amp;gt;&amp;gt;Bob: How about you?
-Bob--&amp;gt;&amp;gt;John: Jolly good!
-```
-&lt;/code>&lt;/pre>
-&lt;p>renders as&lt;/p>
-&lt;div class="mermaid">sequenceDiagram
-Alice->>John: Hello John, how are you?
-loop Healthcheck
-John->>John: Fight against hypochondria
-end
-Note right of John: Rational thoughts!
-John-->>Alice: Great!
-John->>Bob: How about you?
-Bob-->>John: Jolly good!
-&lt;/div>
-&lt;p>An example &lt;strong>Gantt diagram&lt;/strong>:&lt;/p>
-&lt;pre>&lt;code>```mermaid
-gantt
-section Section
-Completed :done, des1, 2014-01-06,2014-01-08
-Active :active, des2, 2014-01-07, 3d
-Parallel 1 : des3, after des1, 1d
-Parallel 2 : des4, after des1, 1d
-Parallel 3 : des5, after des3, 1d
-Parallel 4 : des6, after des4, 1d
-```
-&lt;/code>&lt;/pre>
-&lt;p>renders as&lt;/p>
-&lt;div class="mermaid">gantt
-section Section
-Completed :done, des1, 2014-01-06,2014-01-08
-Active :active, des2, 2014-01-07, 3d
-Parallel 1 : des3, after des1, 1d
-Parallel 2 : des4, after des1, 1d
-Parallel 3 : des5, after des3, 1d
-Parallel 4 : des6, after des4, 1d
-&lt;/div>
-&lt;p>An example &lt;strong>class diagram&lt;/strong>:&lt;/p>
-&lt;pre>&lt;code>```mermaid
-classDiagram
-Class01 &amp;lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --&amp;gt; C2 : Where am i?
-Class09 --* C3
-Class09 --|&amp;gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &amp;lt;--&amp;gt; C2: Cool label
-```
-&lt;/code>&lt;/pre>
-&lt;p>renders as&lt;/p>
-&lt;div class="mermaid">classDiagram
-Class01 &lt;|-- AveryLongClass : Cool
-Class03 *-- Class04
-Class05 o-- Class06
-Class07 .. Class08
-Class09 --> C2 : Where am i?
-Class09 --* C3
-Class09 --|> Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-Class08 &lt;--> C2: Cool label
-&lt;/div>
-&lt;p>An example &lt;strong>state diagram&lt;/strong>:&lt;/p>
-&lt;pre>&lt;code>```mermaid
-stateDiagram
-[*] --&amp;gt; Still
-Still --&amp;gt; [*]
-Still --&amp;gt; Moving
-Moving --&amp;gt; Still
-Moving --&amp;gt; Crash
-Crash --&amp;gt; [*]
-```
-&lt;/code>&lt;/pre>
-&lt;p>renders as&lt;/p>
-&lt;div class="mermaid">stateDiagram
-[*] --> Still
-Still --> [*]
-Still --> Moving
-Moving --> Still
-Moving --> Crash
-Crash --> [*]
-&lt;/div>
-&lt;h3 id="todo-lists">Todo lists&lt;/h3>
-&lt;p>You can even write your todo lists in Markdown too:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">&lt;span class="k">- [x]&lt;/span> Write math example
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">- [x]&lt;/span> Write diagram example
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">- [ ]&lt;/span> Do something else
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Write math example
-&lt;ul>
-&lt;li>&lt;input checked="" disabled="" type="checkbox"> Write diagram example&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>&lt;input disabled="" type="checkbox"> Do something else&lt;/li>
-&lt;/ul>
-&lt;h3 id="tables">Tables&lt;/h3>
-&lt;p>Save your spreadsheet as a CSV file in your page&amp;rsquo;s folder and then render it by adding the &lt;em>Table&lt;/em> shortcode to your page:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{{&amp;lt;&lt;/span> &lt;span class="nx">table&lt;/span> &lt;span class="nx">path&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;results.csv&amp;#34;&lt;/span> &lt;span class="nx">header&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;true&amp;#34;&lt;/span> &lt;span class="nx">caption&lt;/span>&lt;span class="p">=&lt;/span>&lt;span class="s">&amp;#34;Table 1: My results&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;}}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
-&lt;table class="table">
-&lt;tr> &lt;th>customer_id&lt;/th> &lt;th>score&lt;/th> &lt;/tr>
+&lt;p>I am a member of ZJUNlict, the 2nd best team in the history in &lt;a href="https://ssl.robocup.org/hall-of-fame/" target="_blank" rel="noopener">hall of fame&lt;/a>, and probably the best team in recent 5 years. You may find this video of the race helpful, and you can find our team description paper &lt;a href="https://ssl.robocup.org/wp-content/uploads/2019/03/2019_ETDP_ZJUNlict.pdf" target="_blank" rel="noopener">here&lt;/a>, which can give you an overview of our hardware design and competition philosophy.&lt;/p>
+&lt;!-- &lt;iframe src="//player.bilibili.com/player.html?aid=375588815&amp;bvid=BV1so4y1m7U5&amp;cid=339262048&amp;page=1&amp;high_quality=1&amp;danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">&lt;/iframe> -->
+&lt;iframe src="//player.bilibili.com/player.html?aid=970397167&amp;bvid=BV18p4y1r7Vm&amp;cid=258810918&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> &lt;/iframe>
+&lt;!-- &lt;video src="https://www.bilibili.com/video/BV18p4y1r7Vm"> -->
+&lt;p>In this blog I will talk about path planning in SSL and propose a mapping &amp;amp; planning method to address the problem better. Of course, path planning is not the main challenge in the environment. But in my opinion, there are two drawbacks of current algorithm: RRT*. First, the sampling process in RRT* is inefficient in a very sparse environment in SSL matches, as there are only limited kind and number of obstacles on the field. Second, RRT* is asymptotically optimal, which is harmful to decision in some circumstances. Take a look at the figure below.&lt;/p>
+&lt;center>
+&lt;img src="./Picture/D_star.gif" width="100%"/>
+&lt;img src="./Picture/RRT_star.gif" width="100%"/>
+&lt;/center>
+The former is proposed, and the latter is RRT*. The outcome of RRT* is not always the same as it samples the field, but in this occasion, which is pretty common in matches (imagine other cars are defending the **F** car), this outcome occurs frequently. But if we build the graph based on visibility, we can get an almost optimal path in a deterministic algorithm. By the way, it is also much more efficient, and we may compare the planning time of RRT* and my proposed algorithm in the above circumstance:
+&lt;table>
+&lt;thead>
 &lt;tr>
-&lt;td data-table-dtype="number">1&lt;/td>
-&lt;td data-table-dtype="number">0&lt;/td>
+&lt;th>RRT* (averaging 31 plannings)&lt;/th>
+&lt;th>Proposed(averaging 31 plannings)&lt;/th>
 &lt;/tr>
+&lt;/thead>
+&lt;tbody>
 &lt;tr>
-&lt;td data-table-dtype="number">2&lt;/td>
-&lt;td data-table-dtype="text">0.5&lt;/td>
+&lt;td>2.338 ms&lt;/td>
+&lt;td>0.411 ms&lt;/td>
 &lt;/tr>
-&lt;tr>
-&lt;td data-table-dtype="number">3&lt;/td>
-&lt;td data-table-dtype="number">1&lt;/td>
-&lt;/tr>
-&lt;caption>Table 1: My results&lt;/caption>
+&lt;/tbody>
 &lt;/table>
-&lt;h3 id="callouts">Callouts&lt;/h3>
-&lt;p>Academic supports a &lt;a href="https://wowchemy.com/docs/content/writing-markdown-latex/#callouts" target="_blank" rel="noopener">shortcode for callouts&lt;/a>, also referred to as &lt;em>asides&lt;/em>, &lt;em>hints&lt;/em>, or &lt;em>alerts&lt;/em>. By wrapping a paragraph in &lt;code>{{% callout note %}} ... {{% /callout %}}&lt;/code>, it will render as an aside.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{% callout note %}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{% /callout %}}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
-&lt;div class="alert alert-note">
-&lt;div>
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
-&lt;/div>
-&lt;/div>
-&lt;h3 id="spoilers">Spoilers&lt;/h3>
-&lt;p>Add a spoiler to a page to reveal text, such as an answer to a question, after a button is clicked.&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">spoiler&lt;/span> &lt;span class="na">text&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;Click to view the spoiler&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">You found me!
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="p">/&lt;/span>&lt;span class="nt">spoiler&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
-&lt;details class="spoiler " id="spoiler-6">
-&lt;summary>Click to view the spoiler&lt;/summary>
-&lt;p>You found me!&lt;/p>
-&lt;/details>
-&lt;h3 id="icons">Icons&lt;/h3>
-&lt;p>Academic enables you to use a wide range of &lt;a href="https://wowchemy.com/docs/getting-started/page-builder/#icons" target="_blank" rel="noopener">icons from &lt;em>Font Awesome&lt;/em> and &lt;em>Academicons&lt;/em>&lt;/a> in addition to &lt;a href="https://wowchemy.com/docs/content/writing-markdown-latex/#emojis" target="_blank" rel="noopener">emojis&lt;/a>.&lt;/p>
-&lt;p>Here are some examples using the &lt;code>icon&lt;/code> shortcode to render icons:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-markdown" data-lang="markdown">&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">icon&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;terminal&amp;#34;&lt;/span> &lt;span class="na">pack&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;fas&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}} Terminal
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">icon&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;python&amp;#34;&lt;/span> &lt;span class="na">pack&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;fab&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}} Python
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{{&lt;span class="p">&amp;lt;&lt;/span> &lt;span class="nt">icon&lt;/span> &lt;span class="na">name&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;r-project&amp;#34;&lt;/span> &lt;span class="na">pack&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;fab&amp;#34;&lt;/span> &lt;span class="p">&amp;gt;&lt;/span>}} R
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>renders as&lt;/p>
+&lt;p>The next part introduces the details of proposed mapping and planning algorithm.&lt;/p>
+&lt;h2 id="mapping--planning-algorithm">Mapping &amp;amp; Planning Algorithm&lt;/h2>
+&lt;h3 id="problem-formulation">Problem Formulation&lt;/h3>
+&lt;p>Given an initial position $I$, a target position $G$, a finite map $M$. Output a path $P$ in the map $M$ so that when the robot follows $P$, it can reach the target position $G$ and avoid collision with obstacles on $M$.&lt;/p>
+&lt;h3 id="mapping-details">Mapping details&lt;/h3>
+&lt;p>The mapping &amp;amp; planning module could receive the pose of all the robots on the field, also the state of race (e.g., ball placement, penalty, or normal state). The module plan the path of each robot separately, i.e., one robot at a time. I do not use a grid map here; keep it in mind that there are only 3 kinds of obstacles in the field, I suggest we should represent them in the minimal representation of the geometric shapes below: (obstacles are drawn in green lines below)&lt;/p>
+&lt;ol>
+&lt;li>
+&lt;p>Circles, for robots&lt;/p>
 &lt;p>
-&lt;i class="fas fa-terminal pr-1 fa-fw">&lt;/i> Terminal&lt;br>
-&lt;i class="fab fa-python pr-1 fa-fw">&lt;/i> Python&lt;br>
-&lt;i class="fab fa-r-project pr-1 fa-fw">&lt;/i> R&lt;/p>
-&lt;h3 id="did-you-find-this-page-helpful-consider-sharing-it-">Did you find this page helpful? Consider sharing it 🙌&lt;/h3></description></item><item><title>Display Jupyter Notebooks with Academic</title><link>https://gfchen01.github.io/post/jupyter/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/jupyter/</guid><description>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="kn">from&lt;/span> &lt;span class="nn">IPython.core.display&lt;/span> &lt;span class="kn">import&lt;/span> &lt;span class="n">Image&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">Image&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>
 &lt;figure >
 &lt;div class="d-flex justify-content-center">
-&lt;div class="w-100" >&lt;img src="./index_1_0.png" alt="png" loading="lazy" data-zoomable />&lt;/div>
+&lt;div class="w-100" >&lt;img src="./Picture/Circle_obst.png" alt="" loading="lazy" data-zoomable />&lt;/div>
 &lt;/div>&lt;/figure>
 &lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-python" data-lang="python">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">print&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s2">&amp;#34;Welcome to Academic!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;pre>&lt;code>Welcome to Academic!
-&lt;/code>&lt;/pre>
-&lt;h2 id="install-python-and-jupyterlab">Install Python and JupyterLab&lt;/h2>
-&lt;p>&lt;a href="https://www.anaconda.com/distribution/#download-section" target="_blank" rel="noopener">Install Anaconda&lt;/a> which includes Python 3 and JupyterLab.&lt;/p>
-&lt;p>Alternatively, install JupyterLab with &lt;code>pip3 install jupyterlab&lt;/code>.&lt;/p>
-&lt;h2 id="create-or-upload-a-jupyter-notebook">Create or upload a Jupyter notebook&lt;/h2>
-&lt;p>Run the following commands in your Terminal, substituting &lt;code>&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code> and &lt;code>&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code> with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">jupyter lab index.ipynb
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The &lt;code>jupyter&lt;/code> command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p>
-&lt;h2 id="edit-your-post-metadata">Edit your post metadata&lt;/h2>
-&lt;p>The first cell of your Jupter notebook will contain your post metadata (&lt;a href="https://sourcethemes.com/academic/docs/front-matter/" target="_blank" rel="noopener">front matter&lt;/a>).&lt;/p>
-&lt;p>In Jupter, choose &lt;em>Markdown&lt;/em> as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">---
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">title: My post&amp;#39;s title
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">date: 2019-09-01
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"># Put any other Academic metadata here...
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">---
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Edit the metadata of your post, using the &lt;a href="https://sourcethemes.com/academic/docs/managing-content" target="_blank" rel="noopener">documentation&lt;/a> as a guide to the available options.&lt;/p>
-&lt;p>To set a &lt;a href="https://sourcethemes.com/academic/docs/managing-content/#featured-image" target="_blank" rel="noopener">featured image&lt;/a>, place an image named &lt;code>featured&lt;/code> into your post&amp;rsquo;s folder.&lt;/p>
-&lt;p>For other tips, such as using math, see the guide on &lt;a href="https://wowchemy.com/docs/content/writing-markdown-latex/" target="_blank" rel="noopener">writing content with Academic&lt;/a>.&lt;/p>
-&lt;h2 id="convert-notebook-to-markdown">Convert notebook to Markdown&lt;/h2>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir&lt;span class="o">=&lt;/span>.
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="example">Example&lt;/h2>
-&lt;p>This post was created with Jupyter. The orginal files can be found at &lt;a href="https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter" target="_blank" rel="noopener">https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;/li>
+&lt;li>
+&lt;p>Rectangles, for the penalty area (robots are not allowed in penalty except the goalie)&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Rectangle_obst.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Long circle, for ball placement restricted area (During &lt;a href="https://robocup-ssl.github.io/ssl-rules/sslrules.html#_ball_placement" target="_blank" rel="noopener">ball placement&lt;/a> state, all robots of the non-placing team have to keep at least 0.5 meters distance to the line between the ball and the placement position)&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Long_Circle_obst.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h3 id="planning-details">Planning details&lt;/h3>
+&lt;p>We can detect if a robot will collide the above geometric shapes when: a. moving on a line segment in the field; b. at a certain position. We can do this in O(1) by checking the minimal distance between the robot and the geometric shape. The planning algorithm stores points as a graph using a KD Tree.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/BuildGraph.png" alt="BuildGraph" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Please do note that &amp;ldquo;Sample_and_addPoints&amp;rdquo; function will make changes to the graph, so the number of nodePairs also changes in the outer loop. Here is the detail of $Sample_and_addPoints$:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Sample_addPoint.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>This is expressed in recursion for convenience. This algorithm will first check if the obstacle is marked (to make sure this will stop), then sample around the obstacle, and check each sampled point whether it will lead to collision with any other obstacles. If not, add the point to the graph; if it leads to collision, check each obstacle that the point collides with whether they are marked. If they aren&amp;rsquo;t marked, call the algorithm recursively on it.&lt;/p>
+&lt;p>The BuildGraph algorithm aims to achieve the following goal:&lt;/p>
+&lt;blockquote>
+&lt;p>For any pair of nodes in the graph, either the edge between them is collision-free, or the obstacles that could cause collision are sampled.&lt;/p>
+&lt;/blockquote>
+&lt;p>Here is an example. The graph is marked in green, the target is always the point at right.&lt;/p>
+&lt;p>Assume &lt;strong>F&lt;/strong> car is going to the point connected with purple line:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Mapping_illu1.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Then &lt;strong>B&lt;/strong> car got on its way. The direct path will certainly lead to collision, so add &lt;strong>B&lt;/strong> car to obstacle and sample around it:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Mapping_illu2.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>&lt;strong>E&lt;/strong> car comes and covers one of the point in the graph above. Add &lt;strong>E&lt;/strong> car to obstacle as well.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Mapping_illu3.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>&lt;strong>A&lt;/strong> car then comes and stands on one of the lines of the graph above. Add &lt;strong>A&lt;/strong> car to obstacle and sample it. Because it&amp;rsquo;s very close to &lt;strong>F&lt;/strong>, increase the sampling rate from 4 to 8. As you can see, the algorithm tried able to get the the point around &lt;strong>E&lt;/strong> exactly in the same way as trying getting to the target, as in step 2.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Mapping_illu4.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>To have some insight on the algorithm, you can think this way: the algorithm tries to take a straight path to its target, and if she finds it impossible, she finds a point around the obstacle in order to avoid the obstacle. The whole process is close to building a visibility graph, but the recursion process could get rid of a lot of points that are not necessary.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Mapping1.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;center> In this case, there's no need to consider E and B.&lt;/center>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/Mapping2.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;center>Slightly move E upwards and cover one sampling point around D, then E and B will be added.&lt;/center>
+&lt;p>We choose the following sampling method: For circles, sample four points evenly around them when it&amp;rsquo;s far away (&amp;gt;1000mm) and six points around them when it&amp;rsquo;s near. For rectangles, imagine a similar expand and take four corners of the expanded rectangle. For long circle, combine two circles and the algorithm will automatically get rid of the points in the long circle. This is tested by a wide range of experiments, and they outperform RRT* in most cases.&lt;/p>
+&lt;h2 id="control-trajectory-and-dynamic-safety-search">Control, Trajectory, and Dynamic Safety Search&lt;/h2>
+&lt;p>As for execution, a trajectory optimization is actually unnecessary. We use a direct method instead: make the robot follow the straight line path using trapezoidal velocity planning and guarantee the replan frequency is high enough. That&amp;rsquo;s because the vehicle supports omni-directional movement, so the lack of trajectory optimization would just do a little harm to the overall performance.&lt;/p>
+&lt;p>However, there is one thing worth considering: the environment on the field is highly dynamic. Proper compensation should be made. One idea is to extend the circle obstacles to long circles, according to their speeds. This way seeks to solve the problem in planning phase. In practice, we adopt the dynamic safety search method. I will briefly summarize the idea below.&lt;/p>
+&lt;p>Dynamic safety search is centralized, so there is a &amp;ldquo;central&amp;rdquo; robot that we can control and we assume any other obstacles(including the teammates) cannot be controlled. It first looks for the obstacles (specifically, circles) that is within a certain range. (To avoid unnecessary searches) Then it samples uniformly in the direction of the obstacles&amp;rsquo; acceleration, and checks whether after a short period the obstacle will lead to a crash given the robot&amp;rsquo;s path. If it does lead to a collision, we will add a compensation on the robot&amp;rsquo;s velocity command, which is also generated by sampling in the direction of the robot&amp;rsquo;s acceleration. Dynamic safety search is time consuming because if we look for a more precise compensation of speed, then we must raise the sampling rate.&lt;/p>
+&lt;h2 id="experiment-and-conclusion">Experiment and Conclusion&lt;/h2>
+&lt;p>Here is a clip of a simulated match. The debug module is time consuming, thus it is not applicable to draw the graph during any real match. (Both teams use the same multi-robot strategy and planning algorithms) The graph of different robots are drawn in different colors. The ball is the little pink circle, and the planning time (averaged) are at the right corner (ms, counts).&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/sim_match.gif" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>I turned off other debug options as our focus here is the mapping algorithm. It appears to be quite messy, and quickly leads to our thinking about we can do the search on the same graph. Unfortunately, making this change require a lot of changes on the framework, and still haven&amp;rsquo;t been inplemented.&lt;/p>
+&lt;p>Compared it with RRT* and A*, on the same computer (i7-9750U). These are results from 10,000 times plannings with 12 agents playing in the same environment.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>RRT* (averaged 10,000)&lt;/th>
+&lt;th>Proposed (averaged 10,000)&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>0.43 ms&lt;/td>
+&lt;td>2.61 ms&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>Apparently, the proposed algorithm becomes inefficient when the number agent increases, but it suffices to deal with the challenges in RoboCup SSL matches. And we have been using it in the 2022 Zhejiang Provincial RoboCup matches. It performed well.&lt;/p>
+&lt;p>From the experiments above, we can draw the conclusion that the proposed algorithm meets the need of SSL and outperforms standard planning algorithms such as RRT*.&lt;/p></description></item><item><title>Improving the Sampling in Gaussian Mixture Varitional Encoder - An Important but Easy to Ignore Step</title><link>https://gfchen01.github.io/post/gmm_vae/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/gmm_vae/</guid><description>&lt;h1 id="soft-sensor-using-gaussian-mixture-variational-auto-encoder--embed-unsupervised-category">Soft Sensor Using Gaussian Mixture Variational Auto-Encoder : Embed Unsupervised Category&lt;/h1>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>VAE is widely used in process industry for a long time. However, these works mostly focus on the nonlinear feature, and the complex dynamic processes with multi-mode characteristics are seldomly considered. Gaussian Mixture VAE(GM-VAE) can capture the multi-mode character of process, but in the GM-VAE put-forward before, an important structure is erroneous (in the view point of Bayesian Inference). I have fixed this issue using Gumbel-Softmax reparameterization and improved the model&amp;rsquo;s performance.&lt;/p>
+&lt;p>This work is advised by Prof. Ge at Zhejiang University. I deeply appreciate his help, and you can follow his work on Google Scholar (10k+ citations). &lt;a href="https://scholar.google.com/citations?user=g_EMkuMAAAAJ" target="_blank" rel="noopener">link&lt;/a>&lt;/p>
+&lt;p>For those who are familiar with VAE, please directly jump to Part IV: Unsupervised Categories and Multi-mode: GM-VAE. But I strongly recommend that you read the &amp;ldquo;why we use VAE in process industry&amp;rdquo;, to have some insight into our task.&lt;/p>
+&lt;h2 id="soft-sensor">Soft Sensor&lt;/h2>
+&lt;p>&amp;ldquo;Soft Sensor&amp;rdquo; can be viewed as the contradiction of &amp;ldquo;Hard Sensor&amp;rdquo;. The principle of sensors are based on some physics laws, and modern sensors typically involve circuits. However, there are times when sensor cannot output critical variables at a higher frequency, or online. For example, in process engineering, process variables such as the concentration of product, are critical to controlling the whole process. However, we need to use methods such as liquid chromatography, which will take minutes to finish; or the process is long, and the inspection of a key process variable has a large delay. At the same time, some process variables (the pressure, the temperature) can be measured at a much higher frequency, and has correlation between these variables with those critical variables. This give rise to soft sensor: use data mining to approximate the process model, and infer the critical but hard to measure variables using accessible measurements.&lt;/p>
+&lt;p>One may ask: why don&amp;rsquo;t directly derive the model? For many chemical processes, we can&amp;rsquo;t, at least for now. As chemical processes are becoming more and more complicated, using first-principle is untractable in many cases. Instead of &amp;ldquo;deriving&amp;rdquo; models and check them using statistical criteria, some &amp;ldquo;universal&amp;rdquo; (by universal, I mean it can approximate a large family of functions) models that converge to a set of parameters arises &amp;ndash; Machine Learning. This is the topic of the blog.&lt;/p>
+&lt;p>**Note that in the article, we use AE and VAE to represent auto-encoder and variational auto-encoder respectively. **&lt;/p>
+&lt;h2 id="preliminaries-bayesian-inference-vae-and-why-using-them">Preliminaries: Bayesian Inference, VAE, and why using them&lt;/h2>
+&lt;h3 id="ae">AE&lt;/h3>
+&lt;p>Variational auto-encoders are based on Bayesian Inference, and originated from auto-encoder, a generative unsupervised model. The idea of auto-encoder is quite simple:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/ae.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>The key to auto-encoder is the bottle-neck in the middle. The dimension in the middle must be smaller than that of two sides, in hope of &amp;ldquo;squeezing&amp;rdquo; the characters from datasets. The design of auto-encoder is intriguing, because it tells us something about &amp;ldquo;generative&amp;rdquo;. Auto-encoder doesn&amp;rsquo;t have good performance, and the structure that brings are much wider use of it are its variants: Stacked Auto-encoder (SAE), Variational Auto-encoder (VAE).&lt;/p>
+&lt;h3 id="vae-and-bayesian-inference">VAE and Bayesian Inference&lt;/h3>
+&lt;p>VAE regards the latent variables generated by encoder as &amp;ldquo;distributions&amp;rdquo;, and then sample from them. The loss of the entire system is derived using Bayesian Inference.&lt;/p>
+&lt;p>Denote the dataset as $D$, the latent variables as $\Omega$. $D$ is generated by $\Omega$. The key idea in Bayesian Inference is that we can estimate how close we are to the truth even if we have no knowledge about the truth. Assume there is a real distribution of the latent variables $\Omega$, which is $p(\Omega|D)$; and we infer a distribution of $\Omega$ using $D$: $q(\Omega)$ (Actually it&amp;rsquo;s $q(\Omega|D)$, but we aren&amp;rsquo;t going to touch the conditional distribution, so we write in a compact form). Now we need to measure the &amp;ldquo;distance&amp;rdquo; between $p(\Omega|D)$ and $q(\Omega)$. A reasonable choice is Kullback–Leibler divergence (KL Divergence in short).
+$$
+D_{KL}(q(\Omega)||p(\Omega|D)) = E_{q(\Omega)}(log\frac{q(\Omega)}{p(\Omega|D)})\
+=\int q(\Omega)log\frac{q(\Omega)p(D)}{p(D|\Omega)p(\Omega)}d\Omega \qquad (bayesian\ rule)\
+=D_{KL}(q(\Omega)||p(\Omega)) - \int q(\Omega)log\ p(D|\Omega)d\Omega + log\ p(D)
+$$
+The last term is a constant. Omit it. Define Evidence Lower Bound (ELBO) :
+$$
+ELBO :=-D_{KL}(q(\Omega)||p(\Omega)) + \int q(\Omega)log\ p(D|\Omega)d\Omega
+$$
+By maximizing ELBO, we can minimize the KL Divergence between $q(\Omega)$ and $p(\Omega|D)$. The next question is how to estimate these terms. For simplicity, assume $\Omega$ admits a conditional gaussian distribution given $D$, then the first term can be transformed into a regularization term. You can find the detailed reasoning in appendix. As for the second term, it&amp;rsquo;s impossible to accurately calculate the integral here, but we can sample from the distribution of $q(\Omega)$, as we have access to the distribution because we built it! $p(D|\Omega)$ is more difficult to build, but if you still remember the structure of auto-encoder, we have built $p(\hat{D})$ using $\Omega$, thus if we assume the distribution of $\hat{D}$ admits a gaussian distribution, $p(D|\Omega)$ is estimated as well. Above all, we have estimated the distance between a distribution that we have no access to (the true distribution $p(\Omega|D)$) with something that we build ($q(\Omega)$). Very elegant, isn&amp;rsquo;t it?&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/VAE_classical.jpg" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h3 id="why-using-vae-in-process-industry">Why using VAE in process industry?&lt;/h3>
+&lt;p>The ability for a model to generate something is so attractive in vision and NLP studies, because it gives the public a sense that the model is &amp;ldquo;alive&amp;rdquo;. In fact, the variants of auto-encoder, like stack auto-encoder and variational auto-encoder, are most widely used for generation tasks for image generation and speech generation, rather than discriminative tasks. But we are going to use it for a discriminative task - regression, in process industry. This is, in my opinion, related to an important ability of VAE: it&amp;rsquo;s tolerance to noise.&lt;/p>
+&lt;p>Typically, there are three kinds of hard sensor data being widely used to build a soft sensor, they are: thermometer, pressure gauge, and flow meter. Those who have fine-tuned a chemical process PID controller should be familiar with some principles, one of which is to use only PI instead of PID when flow meter is included in the control cycle. The noise of flow meter is related to the magnitude of flow, the temperature, and they are widely distributed in a wide range of frequencies if you perform FFT to analyze it. Here is an example, Debutanizer column. We will work on datasets drawn from the process later.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/DC.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>These are two flow meters&amp;rsquo; sensor readings recorded and later used one dimension of input by our model. As mentioned before, they are noisy and the noise is relevant to many factors.&lt;/p>
+&lt;h2 id="unsupervised-categories-and-multi-mode-gm-vae">Unsupervised Categories and Multi-mode: GM-VAE&lt;/h2>
+&lt;p>Multi-mode character is common in process industry. Though different types of soft sensor modeling techniques have been applied for quality prediction, most of them are based on the assumption that process data are generated from a single operating region and follow a unimodal Gaussian distribution. For complex multiphase/multimode processes that are running at multiple operating conditions, the basic assumption of multivariate Gaussian distribution does not met because of the mean shifts or covariance changes.&lt;/p>
+&lt;p>By taking sufficient linear combinations of single multivariate Gaussian distributions, Gaussian Mixture Model can smoothly approximate any continuous density to arbitrary accuracy. To use Gaussian Mixture in VAE, we have to add an additional category encoder, so the model looks like:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://yuque.zju.edu.cn/images/yuque/0/2022/png/21858/1645724174929-02023169-d5c0-45c5-806e-d9b7acb2fda0.png" alt="image.png" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>The derivation of ELBO is similar. Denote the category as $c$, and labels as $y$. We have:
+$$
+ELBO = E_{q(\Omega|D, c)q(c|D)}(log\ p(D|\Omega))\+E_{q(\Omega|D, c)q(c|D)}(log\ p(y|\Omega))\
+-E_{q(c|D)}(D_{KL}(q(\Omega|D,c)||p(\Omega|c)))\
+-D_{KL}(q(c|D) || p(c))
+$$
+The details of the derivation are in the appendix. Assume the prior categorical distribution is a uniform distribution, and prior latent variable distribution is a zero norm Gaussian distribution, calculate the expectation above (tedious), we have:
+$$
+Loss = -ELBO=\frac{1}{N}||x-\hat{x}||^2 +\frac{1}{N}||y-\hat{y}||^2+\Sigma\ c_klog\frac{c_k}{c_k^o}+\frac{1}{2}\Sigma\ log\ \sigma^2 + 1 - \sigma^2-\mu^2
+$$
+The purpose of encoder is to generate latent variables for different categories. For example, when there are 5 categories, and the dimension of latent variables are 10, then encoder will output 5*10 latent variables. The selection network classifies the input and gives the probability of the category. After that, latent variables are sent to different decoders based on their categories. Finally the network &lt;strong>mixes&lt;/strong> the decoder output to reconstruct the piece of data and infer the label (At the same time, using a MLP).&lt;/p>
+&lt;p>Everything seems fine, but it is worth noticing how the network deals with the output of encoder and selection network. Conventionally, researchers &lt;strong>mix&lt;/strong> them by using a Softmax layer after the selection network and give the weighted sum of latent variables to the decoder. It is intuitive, and it works in some cases, so they didn&amp;rsquo;t notice, but it&amp;rsquo;s wrong, because it&amp;rsquo;s against the premise: the model admits Gaussian Mixture.&lt;/p>
+&lt;p>For a mixture model, we assume that the input of any instance belongs to exactly one category. The regression rule of different categories can be quite different, and we want the model to learn these different rules. In reality, the labels (in our case, the key process variables) don&amp;rsquo;t come from a mixture of different models; instead, they come from exactly one model. It makes no sense at all to take the weighted sum of decoder output, and by doing that, the different regression rules we hope to estimate converges to the &amp;ldquo;mean&amp;rdquo; of these rules, as none of them could have a big difference to the final outcome when their outputs are mixed. It is confusing, because if we focus on estimating the first two expectation terms, taking a weighted sum seems to be the right way of evaluating the expectation over a categorical distribution.&lt;/p>
+&lt;p>Now that it&amp;rsquo;s not correct, how can we estimate the value? Just like a common practice in VAE to sample the continuous distribution generated by encoder, sampling the categorical distribution is a proper choice, and when it comes to sampling, a technique must be used: reparameterization trick. In order to back-propagate, we have to make sure the derivative of the loss to every parameter in the network can be evaluated. Assume $x$ ~ $N(\mu, \sigma)$, we can sample it from a distribution that has the same norm and variance:
+$$
+x=\mu + \epsilon*\sigma\
+$$&lt;/p>
+&lt;center> $\epsilon$ ~ $uniform(0, 1)$ &lt;/center>
+&lt;p>So that the sampling process is differentiable.&lt;/p>
+&lt;p>To sample a categorical distribution, Gumbel Softmax is the tool for neural networks. It was proposed by &lt;a href="https://arxiv.org/pdf/1611.01144.pdf%20http://arxiv.org/abs/1611.01144.pdf" target="_blank" rel="noopener">Eric J, et.al.&lt;/a>, 2016. In short, Gumbel Softmax provides a method to draw a sample from a categorical distribution and still keeps model parameters differentiable.&lt;/p>
+&lt;p>Training the model with Gumbel Softmax is harder, because it frequently leads to gradient vanish problems. After tuning the cooling rate of Gumbel softmax and many other parameters with care, the model finally worked.&lt;/p>
+&lt;h2 id="case-study">Case Study&lt;/h2>
+&lt;p>Let&amp;rsquo;s invite our friend &amp;ndash; debutanizer column (DC).&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/DC.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Process Variables&lt;/th>
+&lt;th>Unit&lt;/th>
+&lt;th>Description&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>U1&lt;/td>
+&lt;td>$^{\circ}C$&lt;/td>
+&lt;td>Top temprature&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>U2&lt;/td>
+&lt;td>$kg * cm^{-2}$&lt;/td>
+&lt;td>Top pressure&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>U3&lt;/td>
+&lt;td>$m^3 * h^{-1}$&lt;/td>
+&lt;td>Reflux flowrate&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>U4&lt;/td>
+&lt;td>$m^3*h^{-1}$&lt;/td>
+&lt;td>Top distillate rate&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>U5&lt;/td>
+&lt;td>$^{\circ}C$&lt;/td>
+&lt;td>Temperature of 9^th^ tray&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>U6&lt;/td>
+&lt;td>$^{\circ}C$&lt;/td>
+&lt;td>Bottom temperature A&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>U7&lt;/td>
+&lt;td>$^{\circ}C$&lt;/td>
+&lt;td>Bottom temperature B&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>The figure above presents the flowchart of the debutanizer column. Debutanizer column is an important part of the de-sulfuring and naphtha splitter plant in the refinery. As the debutanizer column is required to maximizing the pentane (C5) content in the overheads distillate and minimize the butane (C4)
+content in the bottom flow simultaneously, to improve the performance of the quality control, it is
+necessary to carry out the real time prediction of the butane content at the bottom flow. However, the
+butane content is not directly on the bottom flow, but on the overheads of the sequential deisopentanizer
+column by the gas chromatograph results in a large measuring delay.&lt;/p>
+&lt;p>Take the variables listed above, and train the GM-VAE proposed before. Key parameters are listed below:&lt;/p>
+&lt;p>Expanded Training Data dimension: 13&lt;/p>
+&lt;p>Latent Variable Dimension: 6&lt;/p>
+&lt;p>Number of Components: 4 (of Gaussian Mixture)&lt;/p>
+&lt;p>Volume of dataset: 2400&lt;/p>
+&lt;p>Batch size: 4&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/GM_VAE.png" alt="GM VAE" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;center>GM-VAE: test set prediction (R2 = 0.997)
+&lt;/center>
+&lt;p>If we still use Softmax to mix different categories, the outcome is:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/GMVAE_non_Gumbel.png" alt="GMVAE_non_Gumbel" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;center>GM-VAE but without Gumbel Softmax: test set prediction (R2 = 0.948)
+&lt;p>In contrast with the VAE without Gaussian Mixture, the R^2^ improved, and &lt;strong>noise&lt;/strong> is mitigated.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="./Picture/VAE.png" alt="VAE" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;center>Vanilla VAE: test set performance (R2 = 0.92)
+&lt;p>We have also made a comparision between some other popular AE-based process monitor methods: Variable-Wise Weighted Stack Autoencoder, Stacked Target-related Autoencoder, Gated Stacked Target-related Autoencoder.&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>Model&lt;/th>
+&lt;th>VW-SAE&lt;/th>
+&lt;th>STAE&lt;/th>
+&lt;th>GSTAE&lt;/th>
+&lt;th>Multimode-VAE&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>RMSE&lt;/td>
+&lt;td>0.03571&lt;/td>
+&lt;td>0.0357&lt;/td>
+&lt;td>0.0299&lt;/td>
+&lt;td>0.00728&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>R2&lt;/td>
+&lt;td>0.9585&lt;/td>
+&lt;td>0.9518&lt;/td>
+&lt;td>0.9704&lt;/td>
+&lt;td>0.9985&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>&lt;a href="">code&lt;/a>&lt;/p>
+&lt;h2 id="conclusion-and-call-for-inference-of-gaussian-components">Conclusion and Call for inference of Gaussian components&lt;/h2>
+&lt;p>Gumbel softmax did make a difference (thanks to the carelessness of our predecessors). VAE suffers from strong noise in industrial datasets, and multi-mode feature in industrial processes is common. Adding the Gaussian mixture assumption and carefully build a generative mixture model make the prediction better and more practical to be deployed into factories.&lt;/p>
+&lt;p>But we are still wondering: how can we estimate the number of Gaussian components, or in other words, the number of modes in the process? It&amp;rsquo;s difficult in practice. I have been working on an automated inference on the number of Gaussian components, by means of &lt;strong>Dirichlet Processes&lt;/strong>. But the progress is not inspiring, as the model always failed to converge. I have made some attempts and here is the &lt;a href="">code&lt;/a>. I am very happy to get any advice!&lt;/p>
+&lt;h2 id="bibliography">Bibliography&lt;/h2>
+&lt;h4 id="gumbel-softmax">Gumbel Softmax&lt;/h4>
+&lt;p>Jang, E., Gu, S., &amp;amp; Poole, B. (2016). Categorical reparameterization with gumbel-softmax. &lt;em>arXiv preprint arXiv:1611.01144&lt;/em>.&lt;/p>
+&lt;h4 id="reviews">Reviews&lt;/h4>
+&lt;p>Kingma, D. P., &amp;amp; Welling, M. (2019). An introduction to variational autoencoders. &lt;em>Foundations and Trends® in Machine Learning&lt;/em>, &lt;em>12&lt;/em>(4), 307-392.&lt;/p>
+&lt;p>Zhiqiang Ge. (2017). Review on data-driven modeling and monitoring for plant-wide industrial processes,
+&lt;em>Chemometrics and Intelligent Laboratory Systems&lt;/em>, Volume 171&lt;/p>
+&lt;h4 id="gaussian-mixture-and-vae">Gaussian Mixture and VAE&lt;/h4>
+&lt;p>Shao, W., Ge, Z., Yao, L., &amp;amp; Song, Z. (2019). Bayesian nonlinear Gaussian mixture regression and its application to virtual sensing for multimode industrial processes. &lt;em>IEEE Transactions on Automation Science and Engineering&lt;/em>, &lt;em>17&lt;/em>(2), 871-885.&lt;/p>
+&lt;p>Dilokthanakul, N., Mediano, P. A., Garnelo, M., Lee, M. C., Salimbeni, H., Arulkumaran, K., &amp;amp; Shanahan, M. (2016). Deep unsupervised clustering with gaussian mixture variational autoencoders. arXiv preprint arXiv:1611.02648.&lt;/p>
+&lt;p>Yuan, X., Ge, Z., &amp;amp; Song, Z. (2014). Soft sensor model development in multiphase/multimode processes based on Gaussian mixture regression. &lt;em>Chemometrics and Intelligent Laboratory Systems&lt;/em>, &lt;em>138&lt;/em>, 97-109.&lt;/p>
+&lt;h4 id="benchmarks">Benchmarks&lt;/h4>
+&lt;p>Yuan, X., Huang, B., Wang, Y., Yang, C., &amp;amp; Gui, W. (2018). Deep learning-based feature representation and its application for soft sensor modeling with variable-wise weighted SAE. &lt;em>IEEE Transactions on Industrial Informatics&lt;/em>, &lt;em>14&lt;/em>(7), 3235-3243&lt;/p>
+&lt;p>Sun, Q., &amp;amp; Ge, Z. (2020). Gated stacked target-related autoencoder: A novel deep feature extraction and layerwise ensemble method for industrial soft sensor application. &lt;em>IEEE Transactions on Cybernetics&lt;/em>.&lt;/p>
+&lt;h4 id="dirichlet-process">Dirichlet Process&lt;/h4>
+&lt;p>Radford M. Neal, Markov Chain Sampling Methods for Dirichlet Process Mixture Models, &lt;em>Journal of Computational and Graphical Statistics&lt;/em>, 9:2, 249-265, 2000&lt;/p></description></item></channel></rss>
