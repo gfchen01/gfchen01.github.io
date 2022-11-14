@@ -1,6 +1,6 @@
 ---
 title: A Mapping & Planning Method for RoboCup Small Size League
-date: 2022-6-12
+date: '2022-06-12T00:00:00Z'
 math: true
 summary: A novel planning method based on visibility of obstacles on the field.
 

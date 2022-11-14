@@ -1,7 +1,7 @@
 ---
 title: Improving the Sampling in Gaussian Mixture Varitional Encoder - An Important but Easy to Ignore Step
 subtitle: The answer is - Gumbel-Softmax!
-date: 2022-1-23
+date: '2022-01-23T00:00:00Z'
 
 summary: The answer is - Gumbel-Softmax!
 math: true
