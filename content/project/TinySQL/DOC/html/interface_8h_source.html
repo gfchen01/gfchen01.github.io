@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tinySQL: include/API/interface.h Source File</title>
+<title>tinySQL: src/include/API/interface.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -62,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_d54b91c4f71b53b4f620ccbe60ed4e62.html">API</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_e0206721a8678449cc8c415ddf022c4c.html">API</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -81,33 +82,37 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;hsql/SQLParser.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classInterface.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInterface.html">Interface</a>{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classInterface.html">Interface</a>(std::istream &amp;is, std::ostream &amp;os):_is(is), _os(os){</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        executor = <span class="keyword">new</span> <a class="code" href="classExec__Engine.html">Exec_Engine</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    ~<a class="code" href="classInterface.html">Interface</a>(){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">delete</span> executor;</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> run();</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> showErrMsg(db_err_t &amp;dbErr);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> serialOutput(std::vector&lt;MemoryTuple&gt; &amp;tuples);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> serialOutput(std::vector&lt;MemoryTuple&gt; &amp;tuples, std::vector&lt;std::string&gt; &amp;attr_names);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classExec__Engine.html">Exec_Engine</a> *executor;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    std::istream &amp;_is;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::ostream &amp;_os;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> parseWhere(<a class="code" href="structhsql_1_1Expr.html">hsql::Expr</a> *Clause, std::vector&lt;Where&gt; &amp;where_vec);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> readFromFile(std::string &amp;query);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif //TINYSQL_TEST_INTERFACE_H</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classInterface.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classInterface.html">Interface</a>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classInterface.html#abbe0d695e226c3c2437452a8b7d44ee6">   24</a></span>&#160;    <a class="code" href="classInterface.html#abbe0d695e226c3c2437452a8b7d44ee6">Interface</a>(std::istream &amp;is, std::ostream &amp;os):_is(is), _os(os){</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        executor = <span class="keyword">new</span> <a class="code" href="classExec__Engine.html">Exec_Engine</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ~<a class="code" href="classInterface.html">Interface</a>(){</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">delete</span> executor;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a090a950300a463d91f8f361d3b333906">run</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a219fbb876ed057302e1118f536e03169">showErrMsg</a>(db_err_t &amp;dbErr);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a08d52dcdca3ba93afe8381cec93d1783">serialOutput</a>(std::vector&lt;MemoryTuple&gt; &amp;tuples);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classInterface.html#a08d52dcdca3ba93afe8381cec93d1783">serialOutput</a>(std::vector&lt;MemoryTuple&gt; &amp;tuples, std::vector&lt;std::string&gt; &amp;attr_names);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classExec__Engine.html">Exec_Engine</a> *executor;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    std::istream &amp;_is;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    std::ostream &amp;_os;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> parseWhere(hsql::Expr *Clause, std::vector&lt;Where&gt; &amp;where_vec);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> readFromFile(std::string &amp;query);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;};</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif //TINYSQL_TEST_INTERFACE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aexec__engine_8h_html"><div class="ttname"><a href="exec__engine_8h.html">exec_engine.h</a></div></div>
-<div class="ttc" id="astructhsql_1_1Expr_html"><div class="ttname"><a href="structhsql_1_1Expr.html">hsql::Expr</a></div><div class="ttdef"><b>Definition:</b> Expr.h:91</div></div>
-<div class="ttc" id="aclassInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdef"><b>Definition:</b> interface.h:12</div></div>
-<div class="ttc" id="aclassExec__Engine_html"><div class="ttname"><a href="classExec__Engine.html">Exec_Engine</a></div><div class="ttdef"><b>Definition:</b> exec_engine.h:19</div></div>
+<div class="ttc" id="aclassInterface_html_a219fbb876ed057302e1118f536e03169"><div class="ttname"><a href="classInterface.html#a219fbb876ed057302e1118f536e03169">Interface::showErrMsg</a></div><div class="ttdeci">void showErrMsg(db_err_t &amp;dbErr)</div><div class="ttdoc">Display the error message thrown.</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00059">interface.cpp:59</a></div></div>
+<div class="ttc" id="aclassInterface_html_a08d52dcdca3ba93afe8381cec93d1783"><div class="ttname"><a href="classInterface.html#a08d52dcdca3ba93afe8381cec93d1783">Interface::serialOutput</a></div><div class="ttdeci">void serialOutput(std::vector&lt; MemoryTuple &gt; &amp;tuples)</div><div class="ttdoc">Serialize the records to a standard output.</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00361">interface.cpp:361</a></div></div>
+<div class="ttc" id="aclassInterface_html_a090a950300a463d91f8f361d3b333906"><div class="ttname"><a href="classInterface.html#a090a950300a463d91f8f361d3b333906">Interface::run</a></div><div class="ttdeci">void run()</div><div class="ttdoc">Should be called after initialized.</div><div class="ttdef"><b>Definition:</b> <a href="interface_8cpp_source.html#l00128">interface.cpp:128</a></div></div>
+<div class="ttc" id="aclassInterface_html"><div class="ttname"><a href="classInterface.html">Interface</a></div><div class="ttdoc">The interface of the entire database.</div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00016">interface.h:16</a></div></div>
+<div class="ttc" id="aclassInterface_html_abbe0d695e226c3c2437452a8b7d44ee6"><div class="ttname"><a href="classInterface.html#abbe0d695e226c3c2437452a8b7d44ee6">Interface::Interface</a></div><div class="ttdeci">Interface(std::istream &amp;is, std::ostream &amp;os)</div><div class="ttdoc">Construct a new Interface object.</div><div class="ttdef"><b>Definition:</b> <a href="interface_8h_source.html#l00024">interface.h:24</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html"><div class="ttname"><a href="classExec__Engine.html">Exec_Engine</a></div><div class="ttdoc">Execute commands from the interface.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8h_source.html#l00023">exec_engine.h:23</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

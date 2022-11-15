@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tinySQL: include/index/bpTree.h File Reference</title>
+<title>tinySQL: src/include/index/bpTree.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -62,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_11cfc4c1cff4c5895d582e2213b399cb.html">index</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_bcc3459135e66e13368701053733ce35.html">index</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -82,9 +83,9 @@ $(function() {
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for bpTree.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="bpTree_8h__incl.png" border="0" usemap="#include_2index_2bpTree_8h" alt=""/></div>
-<map name="include_2index_2bpTree_8h" id="include_2index_2bpTree_8h">
-<area shape="rect" title="A Bplus tree designed for 2022 MiniSQL project." alt="" coords="47,5,201,32"/>
+<div class="center"><img src="bpTree_8h__incl.png" border="0" usemap="#src_2include_2index_2bpTree_8h" alt=""/></div>
+<map name="src_2include_2index_2bpTree_8h" id="src_2include_2index_2bpTree_8h">
+<area shape="rect" title="A Bplus tree designed for 2022 MiniSQL project." alt="" coords="37,5,211,32"/>
 <area shape="rect" title=" " alt="" coords="5,80,64,107"/>
 <area shape="rect" title=" " alt="" coords="88,80,160,107"/>
 <area shape="rect" title=" " alt="" coords="185,80,250,107"/>
@@ -98,6 +99,7 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structBp__node.html">Bp_node</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBp__tree.html">Bp_tree</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The B-plus-tree storage details on the disk.  <a href="classBp__tree.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -121,6 +123,8 @@ Macros</h2></td></tr>
 <p>Type declarations: There 3 types in a <a class="el" href="structBp__node.html">Bp_node</a>: key, value and ptr &lt;Key&gt; is the corresponding attribute value to build index on. </p>
 <p>only occurs in leaf nodes. They are aligned with key, and points to the record in a table. &lt;ptr&gt; Is the pointer to Bp_nodes. Users should never change them.</p>
 <p>For leaf nodes, there is only one element in ptr_field, which points to next leaf node. It's designed for range search. </p>
+
+<p class="definition">Definition in file <a class="el" href="bpTree_8h_source.html">bpTree.h</a>.</p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

@@ -1,0 +1,6 @@
+<map id="Exec_Engine::dropTable" name="Exec_Engine::dropTable">
+<area shape="rect" id="node1" title="Delete a Table." alt="" coords="5,31,168,57"/>
+<area shape="rect" id="node2" href="$classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5" title="Delete a table." alt="" coords="225,5,409,32"/>
+<area shape="rect" id="node4" href="$classRecordManager.html#abea7c126fbf98bc1dd944bbbade050ca" title="Drop a Table File object." alt="" coords="216,56,419,83"/>
+<area shape="rect" id="node3" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="467,5,651,32"/>
+</map>

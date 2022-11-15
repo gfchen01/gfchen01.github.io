@@ -1,0 +1,8 @@
+<map id="IndexManager::CreateIndex" name="IndexManager::CreateIndex">
+<area shape="rect" id="node1" title="Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio..." alt="" coords="5,81,188,108"/>
+<area shape="rect" id="node2" href="$classBufferManager.html#afe23ccf5b08c7cee3580ca70702d8aea" title="核心函数之一。内存和磁盘交互的接口。" alt="" coords="241,5,413,32"/>
+<area shape="rect" id="node3" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="246,56,409,83"/>
+<area shape="rect" id="node5" href="$structbpTree__Block.html#a405c6ad927da249a5aa9b152a074e3c8" title=" " alt="" coords="264,107,391,133"/>
+<area shape="rect" id="node6" href="$classBufferManager.html#adf643fa6054886bcea2e336d848d96ad" title="标记页是否被修改" alt="" coords="236,157,419,184"/>
+<area shape="rect" id="node4" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="467,56,640,83"/>
+</map>

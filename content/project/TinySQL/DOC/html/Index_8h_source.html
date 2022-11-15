@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tinySQL: include/index/Index.h Source File</title>
+<title>tinySQL: src/include/index/Index.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -62,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_11cfc4c1cff4c5895d582e2213b399cb.html">index</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_bcc3459135e66e13368701053733ce35.html">index</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -78,49 +79,48 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;share/err_type.h&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;catalog/catalog.h&quot;</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;index/bpTree_disk.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="buffer__manager_8h.html">buffer/buffer_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;buffer/buffer_manager.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classIndexManager.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIndexManager.html">IndexManager</a>{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classIndexManager.html">IndexManager</a>(<a class="code" href="classBufferManager.html">BufferManager</a>* bfm);</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#aba55a427abc523657f948c257735624c">CreateIndex</a>(<span class="keyword">const</span> std::string&amp; indexName);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#aebae1e4de5f62b657bd450eed6d6f490">DropIndex</a>(<span class="keyword">const</span> std::string&amp; indexName);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#a25c66979ecc9e341ffd88762c3fec237">UpdateId</a>(<span class="keyword">const</span> std::string &amp;indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, <span class="keyword">const</span> Index_t &amp;new_rec_ptr);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> UpdateKey(<span class="keyword">const</span> std::string &amp;indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;new_key);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017">DeleteId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key);</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">bool</span> CheckExistance(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, Index_t &amp;<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046">FindId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, Index_t &amp;result);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046">FindId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;lower_key, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;upper_key, std::vector&lt;Index_t&gt;&amp; result);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22">InsertId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;Key, <span class="keyword">const</span> Index_t &amp;rec_ptr);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    std::string _indexName;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <a class="code" href="classBufferManager.html">BufferManager</a>* _bfm;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="classBp__tree.html">Bp_tree&lt;Data, Index_t&gt;</a> _index_tree;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classIndexManager.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="classIndexManager.html">IndexManager</a>{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classIndexManager.html">IndexManager</a>(<a class="code" href="classBufferManager.html">BufferManager</a>* bfm);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#aba55a427abc523657f948c257735624c">CreateIndex</a>(<span class="keyword">const</span> std::string&amp; indexName);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#aebae1e4de5f62b657bd450eed6d6f490">DropIndex</a>(<span class="keyword">const</span> std::string&amp; indexName);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#a25c66979ecc9e341ffd88762c3fec237">UpdateId</a>(<span class="keyword">const</span> std::string &amp;indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, <span class="keyword">const</span> Index_t &amp;new_rec_ptr);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">void</span> UpdateKey(<span class="keyword">const</span> std::string &amp;indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;new_key);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017">DeleteId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span> CheckExistance(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, Index_t &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046">FindId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;key, Index_t &amp;result);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046">FindId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;lower_key, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;upper_key, std::vector&lt;Index_t&gt;&amp; result);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22">InsertId</a>(<span class="keyword">const</span> std::string&amp; indexName, <span class="keyword">const</span> <a class="code" href="structData.html">Data</a> &amp;Key, <span class="keyword">const</span> Index_t &amp;rec_ptr);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::string _indexName;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classBufferManager.html">BufferManager</a>* _bfm;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="classBp__tree.html">Bp_tree&lt;Data, Index_t&gt;</a> _index_tree;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassBufferManager_html"><div class="ttname"><a href="classBufferManager.html">BufferManager</a></div><div class="ttdoc">BufferManager类。对外提供操作缓冲区的接口。</div><div class="ttdef"><b>Definition:</b> buffer_manager.h:69</div></div>
-<div class="ttc" id="aclassIndexManager_html_a03d5483a408ccb1e1868994a98bd2046"><div class="ttname"><a href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046">IndexManager::FindId</a></div><div class="ttdeci">bool FindId(const std::string &amp;indexName, const Data &amp;key, Index_t &amp;result)</div><div class="ttdoc">Find the Index based on the key (cell)</div><div class="ttdef"><b>Definition:</b> index.cpp:69</div></div>
-<div class="ttc" id="aclassIndexManager_html"><div class="ttname"><a href="classIndexManager.html">IndexManager</a></div><div class="ttdef"><b>Definition:</b> Index.h:11</div></div>
-<div class="ttc" id="aclassIndexManager_html_a93441aa09d82b1bf9b510b888eb6f017"><div class="ttname"><a href="classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017">IndexManager::DeleteId</a></div><div class="ttdeci">void DeleteId(const std::string &amp;indexName, const Data &amp;key)</div><div class="ttdoc">Delete an has_index of a certain key.</div><div class="ttdef"><b>Definition:</b> index.cpp:85</div></div>
-<div class="ttc" id="aclassIndexManager_html_a7954df809c9aa07fa439014bf13f5b22"><div class="ttname"><a href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22">IndexManager::InsertId</a></div><div class="ttdeci">void InsertId(const std::string &amp;indexName, const Data &amp;Key, const Index_t &amp;rec_ptr)</div><div class="ttdoc">Insert a key into the has_index table The user should make sure that the file exists....</div><div class="ttdef"><b>Definition:</b> index.cpp:26</div></div>
-<div class="ttc" id="aclassIndexManager_html_aebae1e4de5f62b657bd450eed6d6f490"><div class="ttname"><a href="classIndexManager.html#aebae1e4de5f62b657bd450eed6d6f490">IndexManager::DropIndex</a></div><div class="ttdeci">void DropIndex(const std::string &amp;indexName)</div><div class="ttdoc">Drop an Index of an attr. User should make sure the table exists.</div><div class="ttdef"><b>Definition:</b> index.cpp:21</div></div>
-<div class="ttc" id="aclassIndexManager_html_a25c66979ecc9e341ffd88762c3fec237"><div class="ttname"><a href="classIndexManager.html#a25c66979ecc9e341ffd88762c3fec237">IndexManager::UpdateId</a></div><div class="ttdeci">void UpdateId(const std::string &amp;indexName, const Data &amp;key, const Index_t &amp;new_rec_ptr)</div><div class="ttdoc">Update the pointer of a record in the has_index file.</div><div class="ttdef"><b>Definition:</b> index.cpp:35</div></div>
+<div class="ttc" id="aclassBufferManager_html"><div class="ttname"><a href="classBufferManager.html">BufferManager</a></div><div class="ttdoc">Buffer manager is an abstraction of memory on computer for modules at higher level.</div><div class="ttdef"><b>Definition:</b> <a href="buffer__manager_8h_source.html#l00069">buffer_manager.h:69</a></div></div>
+<div class="ttc" id="aclassIndexManager_html_a03d5483a408ccb1e1868994a98bd2046"><div class="ttname"><a href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046">IndexManager::FindId</a></div><div class="ttdeci">bool FindId(const std::string &amp;indexName, const Data &amp;key, Index_t &amp;result)</div><div class="ttdoc">Find the Index based on the key (cell)</div><div class="ttdef"><b>Definition:</b> <a href="index_8cpp_source.html#l00069">index.cpp:69</a></div></div>
+<div class="ttc" id="aclassIndexManager_html"><div class="ttname"><a href="classIndexManager.html">IndexManager</a></div><div class="ttdoc">Manage index files.</div><div class="ttdef"><b>Definition:</b> <a href="Index_8h_source.html#l00015">Index.h:15</a></div></div>
+<div class="ttc" id="aclassIndexManager_html_a93441aa09d82b1bf9b510b888eb6f017"><div class="ttname"><a href="classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017">IndexManager::DeleteId</a></div><div class="ttdeci">void DeleteId(const std::string &amp;indexName, const Data &amp;key)</div><div class="ttdoc">Delete an has_index of a certain key.</div><div class="ttdef"><b>Definition:</b> <a href="index_8cpp_source.html#l00085">index.cpp:85</a></div></div>
+<div class="ttc" id="aclassIndexManager_html_a7954df809c9aa07fa439014bf13f5b22"><div class="ttname"><a href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22">IndexManager::InsertId</a></div><div class="ttdeci">void InsertId(const std::string &amp;indexName, const Data &amp;Key, const Index_t &amp;rec_ptr)</div><div class="ttdoc">Insert a key into the has_index table The user should make sure that the file exists....</div><div class="ttdef"><b>Definition:</b> <a href="index_8cpp_source.html#l00026">index.cpp:26</a></div></div>
+<div class="ttc" id="aclassIndexManager_html_aebae1e4de5f62b657bd450eed6d6f490"><div class="ttname"><a href="classIndexManager.html#aebae1e4de5f62b657bd450eed6d6f490">IndexManager::DropIndex</a></div><div class="ttdeci">void DropIndex(const std::string &amp;indexName)</div><div class="ttdoc">Drop an Index of an attr. User should make sure the table exists.</div><div class="ttdef"><b>Definition:</b> <a href="index_8cpp_source.html#l00021">index.cpp:21</a></div></div>
+<div class="ttc" id="aclassIndexManager_html_a25c66979ecc9e341ffd88762c3fec237"><div class="ttname"><a href="classIndexManager.html#a25c66979ecc9e341ffd88762c3fec237">IndexManager::UpdateId</a></div><div class="ttdeci">void UpdateId(const std::string &amp;indexName, const Data &amp;key, const Index_t &amp;new_rec_ptr)</div><div class="ttdoc">Update the pointer of a record in the has_index file.</div><div class="ttdef"><b>Definition:</b> <a href="index_8cpp_source.html#l00035">index.cpp:35</a></div></div>
 <div class="ttc" id="aclassBp__tree_html"><div class="ttname"><a href="classBp__tree.html">Bp_tree&lt; Data, Index_t &gt;</a></div></div>
-<div class="ttc" id="abuffer__manager_8h_html"><div class="ttname"><a href="buffer__manager_8h.html">buffer_manager.h</a></div><div class="ttdoc">本部分负责缓冲区的管理，包括缓冲区与磁盘的交互以及页面替换等。（具体参数待修改，接口应该不会改动）</div></div>
-<div class="ttc" id="aclassIndexManager_html_aba55a427abc523657f948c257735624c"><div class="ttname"><a href="classIndexManager.html#aba55a427abc523657f948c257735624c">IndexManager::CreateIndex</a></div><div class="ttdeci">void CreateIndex(const std::string &amp;indexName)</div><div class="ttdoc">Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio...</div><div class="ttdef"><b>Definition:</b> index.cpp:8</div></div>
-<div class="ttc" id="astructData_html"><div class="ttname"><a href="structData.html">Data</a></div><div class="ttdoc">Basic cell element in a tuples.</div><div class="ttdef"><b>Definition:</b> data_t.h:44</div></div>
+<div class="ttc" id="aclassIndexManager_html_aba55a427abc523657f948c257735624c"><div class="ttname"><a href="classIndexManager.html#aba55a427abc523657f948c257735624c">IndexManager::CreateIndex</a></div><div class="ttdeci">void CreateIndex(const std::string &amp;indexName)</div><div class="ttdoc">Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio...</div><div class="ttdef"><b>Definition:</b> <a href="index_8cpp_source.html#l00008">index.cpp:8</a></div></div>
+<div class="ttc" id="astructData_html"><div class="ttname"><a href="structData.html">Data</a></div><div class="ttdoc">Basic cell element in a tuples.</div><div class="ttdef"><b>Definition:</b> <a href="data__t_8h_source.html#l00044">data_t.h:44</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

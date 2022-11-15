@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +70,11 @@ $(function() {
 <div class="title">IndexManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manage index files.  
+ <a href="classIndexManager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="Index_8h_source.html">Index.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -103,7 +109,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
 <tr class="memdesc:a7954df809c9aa07fa439014bf13f5b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a key into the has_index table The user should make sure that the file exists. Or he should use TRY!  <a href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22">More...</a><br /></td></tr>
 <tr class="separator:a7954df809c9aa07fa439014bf13f5b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manage index files. </p>
+
+<p class="definition">Definition at line <a class="el" href="Index_8h_source.html#l00015">15</a> of file <a class="el" href="Index_8h_source.html">Index.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="aba55a427abc523657f948c257735624c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aba55a427abc523657f948c257735624c">&#9670;&nbsp;</a></span>CreateIndex()</h2>
 
@@ -133,6 +143,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="index_8cpp_source.html#l00008">8</a> of file <a class="el" href="index_8cpp_source.html">index.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_aba55a427abc523657f948c257735624c_cgraph.png" border="0" usemap="#classIndexManager_aba55a427abc523657f948c257735624c_cgraph" alt=""/></div>
+<map name="classIndexManager_aba55a427abc523657f948c257735624c_cgraph" id="classIndexManager_aba55a427abc523657f948c257735624c_cgraph">
+<area shape="rect" title="Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio..." alt="" coords="5,81,188,108"/>
+<area shape="rect" href="classBufferManager.html#afe23ccf5b08c7cee3580ca70702d8aea" title="核心函数之一。内存和磁盘交互的接口。" alt="" coords="241,5,413,32"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="246,56,409,83"/>
+<area shape="rect" href="structbpTree__Block.html#a405c6ad927da249a5aa9b152a074e3c8" title=" " alt="" coords="264,107,391,133"/>
+<area shape="rect" href="classBufferManager.html#adf643fa6054886bcea2e336d848d96ad" title="标记页是否被修改" alt="" coords="236,157,419,184"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="467,56,640,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_aba55a427abc523657f948c257735624c_icgraph.png" border="0" usemap="#classIndexManager_aba55a427abc523657f948c257735624c_icgraph" alt=""/></div>
+<map name="classIndexManager_aba55a427abc523657f948c257735624c_icgraph" id="classIndexManager_aba55a427abc523657f948c257735624c_icgraph">
+<area shape="rect" title="Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio..." alt="" coords="617,31,800,57"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="152,5,327,32"/>
+<area shape="rect" href="classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f" title="Create a Table object." alt="" coords="375,56,569,83"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,31,104,57"/>
+<area shape="rect" href="classExec__Engine.html#a262893ebe7a5a30985f3763baae28861" title="Create a Table." alt="" coords="152,56,327,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -177,6 +214,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="index_8cpp_source.html#l00085">85</a> of file <a class="el" href="index_8cpp_source.html">index.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_cgraph.png" border="0" usemap="#classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_cgraph" alt=""/></div>
+<map name="classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_cgraph" id="classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_cgraph">
+<area shape="rect" title="Delete an has_index of a certain key." alt="" coords="5,31,167,57"/>
+<area shape="rect" href="classBp__tree.html#abd7802283f6c30724b7b0b802ae25646" title="Basic deletion from the tree." alt="" coords="219,5,332,32"/>
+<area shape="rect" href="classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="215,56,336,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_icgraph.png" border="0" usemap="#classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_icgraph" alt=""/></div>
+<map name="classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_icgraph" id="classIndexManager_a93441aa09d82b1bf9b510b888eb6f017_icgraph">
+<area shape="rect" title="Delete an has_index of a certain key." alt="" coords="635,5,796,32"/>
+<area shape="rect" href="classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="384,5,587,32"/>
+<area shape="rect" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="152,5,336,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aebae1e4de5f62b657bd450eed6d6f490"></a>
@@ -209,6 +269,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="index_8cpp_source.html#l00021">21</a> of file <a class="el" href="index_8cpp_source.html">index.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_aebae1e4de5f62b657bd450eed6d6f490_icgraph.png" border="0" usemap="#classIndexManager_aebae1e4de5f62b657bd450eed6d6f490_icgraph" alt=""/></div>
+<map name="classIndexManager_aebae1e4de5f62b657bd450eed6d6f490_icgraph" id="classIndexManager_aebae1e4de5f62b657bd450eed6d6f490_icgraph">
+<area shape="rect" title="Drop an Index of an attr. User should make sure the table exists." alt="" coords="364,5,536,32"/>
+<area shape="rect" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb" title="Delete the index of a certain index on a table." alt="" coords="152,5,316,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -260,6 +332,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if the key actually exists in the tree. </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="index_8cpp_source.html#l00069">69</a> of file <a class="el" href="index_8cpp_source.html">index.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_a03d5483a408ccb1e1868994a98bd2046_cgraph.png" border="0" usemap="#classIndexManager_a03d5483a408ccb1e1868994a98bd2046_cgraph" alt=""/></div>
+<map name="classIndexManager_a03d5483a408ccb1e1868994a98bd2046_cgraph" id="classIndexManager_a03d5483a408ccb1e1868994a98bd2046_cgraph">
+<area shape="rect" title="Find the Index based on the key (cell)" alt="" coords="5,31,153,57"/>
+<area shape="rect" href="classBp__tree.html#a7a897972d1227366228842c3b40ea681" title="Find the values by key (normally, we may say &quot;pointers&quot; for &quot;values&quot;)" alt="" coords="201,5,333,32"/>
+<area shape="rect" href="classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="207,56,328,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -313,6 +397,18 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="index_8cpp_source.html#l00077">77</a> of file <a class="el" href="index_8cpp_source.html">index.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_aa574584870f2feaea678b8ee0ab4924a_cgraph.png" border="0" usemap="#classIndexManager_aa574584870f2feaea678b8ee0ab4924a_cgraph" alt=""/></div>
+<map name="classIndexManager_aa574584870f2feaea678b8ee0ab4924a_cgraph" id="classIndexManager_aa574584870f2feaea678b8ee0ab4924a_cgraph">
+<area shape="rect" title="Find the Indexes based on given key range. Return the indexes in between. If the key exists in the tr..." alt="" coords="5,31,153,57"/>
+<area shape="rect" href="classBp__tree.html#a43b7bbf645990355f51eb2ce4d1685ed" title="Find the value(pointer) based on the given lower and upper key." alt="" coords="201,5,340,32"/>
+<area shape="rect" href="classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="210,56,331,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a7954df809c9aa07fa439014bf13f5b22"></a>
@@ -364,6 +460,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="index_8cpp_source.html#l00026">26</a> of file <a class="el" href="index_8cpp_source.html">index.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_a7954df809c9aa07fa439014bf13f5b22_cgraph.png" border="0" usemap="#classIndexManager_a7954df809c9aa07fa439014bf13f5b22_cgraph" alt=""/></div>
+<map name="classIndexManager_a7954df809c9aa07fa439014bf13f5b22_cgraph" id="classIndexManager_a7954df809c9aa07fa439014bf13f5b22_cgraph">
+<area shape="rect" title="Insert a key into the has_index table The user should make sure that the file exists...." alt="" coords="5,31,161,57"/>
+<area shape="rect" href="classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="209,5,331,32"/>
+<area shape="rect" href="classBp__tree.html#a9d48d10fcc38d436fbaf287e74035ed2" title="Basic insertion to the tree." alt="" coords="216,56,324,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_a7954df809c9aa07fa439014bf13f5b22_icgraph.png" border="0" usemap="#classIndexManager_a7954df809c9aa07fa439014bf13f5b22_icgraph" alt=""/></div>
+<map name="classIndexManager_a7954df809c9aa07fa439014bf13f5b22_icgraph" id="classIndexManager_a7954df809c9aa07fa439014bf13f5b22_icgraph">
+<area shape="rect" title="Insert a key into the has_index table The user should make sure that the file exists...." alt="" coords="627,31,783,57"/>
+<area shape="rect" href="classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="383,5,577,32"/>
+<area shape="rect" href="classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="381,56,579,83"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="155,5,330,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,31,104,57"/>
+<area shape="rect" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="152,56,333,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a25c66979ecc9e341ffd88762c3fec237"></a>
@@ -414,11 +535,23 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>CheckExistance</b> (c
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="index_8cpp_source.html#l00035">35</a> of file <a class="el" href="index_8cpp_source.html">index.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classIndexManager_a25c66979ecc9e341ffd88762c3fec237_cgraph.png" border="0" usemap="#classIndexManager_a25c66979ecc9e341ffd88762c3fec237_cgraph" alt=""/></div>
+<map name="classIndexManager_a25c66979ecc9e341ffd88762c3fec237_cgraph" id="classIndexManager_a25c66979ecc9e341ffd88762c3fec237_cgraph">
+<area shape="rect" title="Update the pointer of a record in the has_index file." alt="" coords="5,31,171,57"/>
+<area shape="rect" href="classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="233,5,354,32"/>
+<area shape="rect" href="classBp__tree.html#a7877f96621588fde53a1c070d9ed65e7" title="Update a certain value." alt="" coords="219,56,368,83"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/index/<a class="el" href="Index_8h_source.html">Index.h</a></li>
-<li>index/index.cpp</li>
+<li>src/include/index/<a class="el" href="Index_8h_source.html">Index.h</a></li>
+<li>src/index/<a class="el" href="index_8cpp_source.html">index.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

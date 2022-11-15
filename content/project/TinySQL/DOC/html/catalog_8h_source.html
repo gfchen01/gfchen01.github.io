@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tinySQL: include/catalog/catalog.h Source File</title>
+<title>tinySQL: src/include/catalog/catalog.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -62,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_857c301e17c632330dd26df8fd35ff21.html">catalog</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_a8b1cd4a4819f17e891fed4be1bf613f.html">catalog</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -77,73 +78,73 @@ $(function() {
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;share/data_t.h&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;index/Index.h&quot;</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="buffer__manager_8h.html">buffer/buffer_manager.h</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;buffer/buffer_manager.h&quot;</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &lt;set&gt;</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define ALL_TABLE_PATH PATH::CATALOG_PATH+&quot;All_TableNames&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classCatalogManager.html">   26</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCatalogManager.html">CatalogManager</a>{</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classCatalogManager.html">CatalogManager</a>(<a class="code" href="classBufferManager.html">BufferManager</a> *bfm);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ~<a class="code" href="classCatalogManager.html">CatalogManager</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f">CreateTable</a>(<span class="keyword">const</span> std::string&amp; table_name, <a class="code" href="structAttribute.html">Attribute</a> &amp;attr);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70">UpdateIndex</a>(<span class="keyword">const</span> std::string&amp; table_name,<span class="keyword">const</span> std::string&amp; attr_name,<span class="keyword">const</span> std::string&amp; index_name);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5">DropTable</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357">DropIndex</a>(<span class="keyword">const</span> std::string&amp; table_name,<span class="keyword">const</span> std::string&amp; index_name);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848">existTable</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5">existAttribute</a>(<span class="keyword">const</span> std::string&amp; table_name, <span class="keyword">const</span> std::string&amp; attr_name);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="structAttribute.html">Attribute</a> <a class="code" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274">getAttribute</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="structIndex.html">Index</a> getIndex(<span class="keyword">const</span> std::string&amp; table_name);</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::string getIndexName(<span class="keyword">const</span> std::string&amp; table_name, <span class="keyword">const</span> std::string&amp; attr_name);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::string <a class="code" href="classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63">Index2Attr</a>(<span class="keyword">const</span> std::string&amp; table_name, <span class="keyword">const</span> std::string&amp; attr_name,<span class="keyword">const</span> std::string&amp; index_name);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a">ShowTable</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> ShowAllTable();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::string indexName2table(std::string &amp;index_name)<span class="keyword"> const</span>{</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="keyword">auto</span> iter = indexName2tableName.find(index_name);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span> (iter == indexName2tableName.end()) <span class="keywordflow">throw</span> DB_INDEX_NOT_FOUND;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">return</span> iter-&gt;second;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::map&lt;std::string, std::string&gt; indexName2tableName;</div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classCatalogManager.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCatalogManager.html">CatalogManager</a>{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classCatalogManager.html">CatalogManager</a>(<a class="code" href="classBufferManager.html">BufferManager</a> *bfm);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    ~<a class="code" href="classCatalogManager.html">CatalogManager</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f">CreateTable</a>(<span class="keyword">const</span> std::string&amp; table_name, <a class="code" href="structAttribute.html">Attribute</a> &amp;attr);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70">UpdateIndex</a>(<span class="keyword">const</span> std::string&amp; table_name,<span class="keyword">const</span> std::string&amp; attr_name,<span class="keyword">const</span> std::string&amp; index_name);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5">DropTable</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357">DropIndex</a>(<span class="keyword">const</span> std::string&amp; table_name,<span class="keyword">const</span> std::string&amp; index_name);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848">existTable</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5">existAttribute</a>(<span class="keyword">const</span> std::string&amp; table_name, <span class="keyword">const</span> std::string&amp; attr_name);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="structAttribute.html">Attribute</a> <a class="code" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274">getAttribute</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="structIndex.html">Index</a> <a class="code" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91">getIndex</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::string getIndexName(<span class="keyword">const</span> std::string&amp; table_name, <span class="keyword">const</span> std::string&amp; attr_name);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    std::string <a class="code" href="classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63">Index2Attr</a>(<span class="keyword">const</span> std::string&amp; table_name, <span class="keyword">const</span> std::string&amp; attr_name,<span class="keyword">const</span> std::string&amp; index_name);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a">ShowTable</a>(<span class="keyword">const</span> std::string&amp; table_name);</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">void</span> rewriteAttribute(<span class="keyword">const</span> std::string &amp;table_name, <span class="keyword">const</span> <a class="code" href="structAttribute.html">Attribute</a> &amp;attr, <span class="keyword">const</span> <a class="code" href="structIndex.html">Index</a> &amp;index);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> ShowAllTable();</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    std::string indexName2table(std::string &amp;index_name)<span class="keyword"> const</span>{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keyword">auto</span> iter = indexName2tableName.find(index_name);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span> (iter == indexName2tableName.end()) <span class="keywordflow">throw</span> DB_INDEX_NOT_FOUND;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keywordflow">return</span> iter-&gt;second;</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    }</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160; </div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <a class="code" href="classBufferManager.html">BufferManager</a> *_bfm;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    std::set&lt;std::string&gt; tableNames; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    std::map&lt;std::string, std::string&gt; indexName2tableName;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> rewriteAttribute(<span class="keyword">const</span> std::string &amp;table_name, <span class="keyword">const</span> <a class="code" href="structAttribute.html">Attribute</a> &amp;attr, <span class="keyword">const</span> <a class="code" href="structIndex.html">Index</a> &amp;index);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="classBufferManager.html">BufferManager</a> *_bfm;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    std::set&lt;std::string&gt; tableNames; </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;};</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160; </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassCatalogManager_html_a73626d75dcae1e28674144c2ce796848"><div class="ttname"><a href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848">CatalogManager::existTable</a></div><div class="ttdeci">bool existTable(const std::string &amp;table_name)</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:65</div></div>
-<div class="ttc" id="aclassCatalogManager_html"><div class="ttname"><a href="classCatalogManager.html">CatalogManager</a></div><div class="ttdef"><b>Definition:</b> catalog.h:26</div></div>
-<div class="ttc" id="aclassBufferManager_html"><div class="ttname"><a href="classBufferManager.html">BufferManager</a></div><div class="ttdoc">BufferManager类。对外提供操作缓冲区的接口。</div><div class="ttdef"><b>Definition:</b> buffer_manager.h:69</div></div>
-<div class="ttc" id="aclassCatalogManager_html_aa1fd9231d23fe6928911be5013f81c70"><div class="ttname"><a href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70">CatalogManager::UpdateIndex</a></div><div class="ttdeci">void UpdateIndex(const std::string &amp;table_name, const std::string &amp;attr_name, const std::string &amp;index_name)</div><div class="ttdoc">Update Index.</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:172</div></div>
-<div class="ttc" id="aclassCatalogManager_html_a27f28ef5dfd82fec1bdea6b6ace9f19f"><div class="ttname"><a href="classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f">CatalogManager::CreateTable</a></div><div class="ttdeci">void CreateTable(const std::string &amp;table_name, Attribute &amp;attr)</div><div class="ttdoc">Create a Table object.</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:113</div></div>
-<div class="ttc" id="aclassCatalogManager_html_a047427d8231c1eb2407149d52526507a"><div class="ttname"><a href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a">CatalogManager::ShowTable</a></div><div class="ttdeci">void ShowTable(const std::string &amp;table_name)</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:372</div></div>
-<div class="ttc" id="aclassCatalogManager_html_a3b3cf97230b26efe6efed8cf9b4d0a63"><div class="ttname"><a href="classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63">CatalogManager::Index2Attr</a></div><div class="ttdeci">std::string Index2Attr(const std::string &amp;table_name, const std::string &amp;attr_name, const std::string &amp;index_name)</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:353</div></div>
-<div class="ttc" id="aclassCatalogManager_html_a61045484ac1872d8bff41c844b511357"><div class="ttname"><a href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357">CatalogManager::DropIndex</a></div><div class="ttdeci">void DropIndex(const std::string &amp;table_name, const std::string &amp;index_name)</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:213</div></div>
-<div class="ttc" id="abuffer__manager_8h_html"><div class="ttname"><a href="buffer__manager_8h.html">buffer_manager.h</a></div><div class="ttdoc">本部分负责缓冲区的管理，包括缓冲区与磁盘的交互以及页面替换等。（具体参数待修改，接口应该不会改动）</div></div>
-<div class="ttc" id="aclassCatalogManager_html_aa7eb90141838e3fcb32f5185447692f5"><div class="ttname"><a href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5">CatalogManager::existAttribute</a></div><div class="ttdeci">bool existAttribute(const std::string &amp;table_name, const std::string &amp;attr_name)</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:70</div></div>
-<div class="ttc" id="astructAttribute_html"><div class="ttname"><a href="structAttribute.html">Attribute</a></div><div class="ttdoc">The attributes for a schema.</div><div class="ttdef"><b>Definition:</b> data_t.h:172</div></div>
-<div class="ttc" id="aclassCatalogManager_html_a03554dcff042d0fe1c508335d24c6274"><div class="ttname"><a href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274">CatalogManager::getAttribute</a></div><div class="ttdeci">Attribute getAttribute(const std::string &amp;table_name)</div><div class="ttdoc">Get the Attribute object.</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:285</div></div>
-<div class="ttc" id="aclassCatalogManager_html_a34e39f55d633543737ba2f897390f3d5"><div class="ttname"><a href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5">CatalogManager::DropTable</a></div><div class="ttdeci">void DropTable(const std::string &amp;table_name)</div><div class="ttdef"><b>Definition:</b> Catalog_Manager.cpp:164</div></div>
-<div class="ttc" id="astructIndex_html"><div class="ttname"><a href="structIndex.html">Index</a></div><div class="ttdoc">Index desciption for a table.</div><div class="ttdef"><b>Definition:</b> data_t.h:185</div></div>
+<div class="ttc" id="aclassCatalogManager_html_a73626d75dcae1e28674144c2ce796848"><div class="ttname"><a href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848">CatalogManager::existTable</a></div><div class="ttdeci">bool existTable(const std::string &amp;table_name)</div><div class="ttdoc">Judge if the table exists.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00065">Catalog_Manager.cpp:65</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_ae215e1b5e55cc0796fa94ba912b6ef91"><div class="ttname"><a href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91">CatalogManager::getIndex</a></div><div class="ttdeci">Index getIndex(const std::string &amp;table_name)</div><div class="ttdoc">Get the Index object from table name.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00240">Catalog_Manager.cpp:240</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html"><div class="ttname"><a href="classCatalogManager.html">CatalogManager</a></div><div class="ttdoc">Manage all the table names, attritbutes, and index existence.</div><div class="ttdef"><b>Definition:</b> <a href="catalog_8h_source.html#l00030">catalog.h:30</a></div></div>
+<div class="ttc" id="aclassBufferManager_html"><div class="ttname"><a href="classBufferManager.html">BufferManager</a></div><div class="ttdoc">Buffer manager is an abstraction of memory on computer for modules at higher level.</div><div class="ttdef"><b>Definition:</b> <a href="buffer__manager_8h_source.html#l00069">buffer_manager.h:69</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_aa1fd9231d23fe6928911be5013f81c70"><div class="ttname"><a href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70">CatalogManager::UpdateIndex</a></div><div class="ttdeci">void UpdateIndex(const std::string &amp;table_name, const std::string &amp;attr_name, const std::string &amp;index_name)</div><div class="ttdoc">Update Index.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00172">Catalog_Manager.cpp:172</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_a27f28ef5dfd82fec1bdea6b6ace9f19f"><div class="ttname"><a href="classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f">CatalogManager::CreateTable</a></div><div class="ttdeci">void CreateTable(const std::string &amp;table_name, Attribute &amp;attr)</div><div class="ttdoc">Create a Table object.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00113">Catalog_Manager.cpp:113</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_a047427d8231c1eb2407149d52526507a"><div class="ttname"><a href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a">CatalogManager::ShowTable</a></div><div class="ttdeci">void ShowTable(const std::string &amp;table_name)</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00372">Catalog_Manager.cpp:372</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_a3b3cf97230b26efe6efed8cf9b4d0a63"><div class="ttname"><a href="classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63">CatalogManager::Index2Attr</a></div><div class="ttdeci">std::string Index2Attr(const std::string &amp;table_name, const std::string &amp;attr_name, const std::string &amp;index_name)</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00353">Catalog_Manager.cpp:353</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_a61045484ac1872d8bff41c844b511357"><div class="ttname"><a href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357">CatalogManager::DropIndex</a></div><div class="ttdeci">void DropIndex(const std::string &amp;table_name, const std::string &amp;index_name)</div><div class="ttdoc">Delete an index file.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00213">Catalog_Manager.cpp:213</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_aa7eb90141838e3fcb32f5185447692f5"><div class="ttname"><a href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5">CatalogManager::existAttribute</a></div><div class="ttdeci">bool existAttribute(const std::string &amp;table_name, const std::string &amp;attr_name)</div><div class="ttdoc">Judge if an attribute in of a table exists.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00070">Catalog_Manager.cpp:70</a></div></div>
+<div class="ttc" id="astructAttribute_html"><div class="ttname"><a href="structAttribute.html">Attribute</a></div><div class="ttdoc">The attributes for a schema.</div><div class="ttdef"><b>Definition:</b> <a href="data__t_8h_source.html#l00172">data_t.h:172</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_a03554dcff042d0fe1c508335d24c6274"><div class="ttname"><a href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274">CatalogManager::getAttribute</a></div><div class="ttdeci">Attribute getAttribute(const std::string &amp;table_name)</div><div class="ttdoc">Get the Attribute from table name.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00285">Catalog_Manager.cpp:285</a></div></div>
+<div class="ttc" id="aclassCatalogManager_html_a34e39f55d633543737ba2f897390f3d5"><div class="ttname"><a href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5">CatalogManager::DropTable</a></div><div class="ttdeci">void DropTable(const std::string &amp;table_name)</div><div class="ttdoc">Delete a table.</div><div class="ttdef"><b>Definition:</b> <a href="Catalog__Manager_8cpp_source.html#l00164">Catalog_Manager.cpp:164</a></div></div>
+<div class="ttc" id="astructIndex_html"><div class="ttname"><a href="structIndex.html">Index</a></div><div class="ttdoc">Index desciption for a table.</div><div class="ttdef"><b>Definition:</b> <a href="data__t_8h_source.html#l00185">data_t.h:185</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

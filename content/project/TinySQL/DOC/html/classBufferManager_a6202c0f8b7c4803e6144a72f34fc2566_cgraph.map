@@ -1,0 +1,5 @@
+<map id="BufferManager::getBlockNum" name="BufferManager::getBlockNum">
+<area shape="rect" id="node1" title="获取文件块数" alt="" coords="5,5,199,32"/>
+<area shape="rect" id="node2" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="247,5,409,32"/>
+<area shape="rect" id="node3" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="457,5,631,32"/>
+</map>

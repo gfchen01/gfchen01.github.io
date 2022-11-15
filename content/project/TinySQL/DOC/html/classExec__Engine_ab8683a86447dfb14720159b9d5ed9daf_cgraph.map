@@ -1,0 +1,16 @@
+<map id="Exec_Engine::insertRecord" name="Exec_Engine::insertRecord">
+<area shape="rect" id="node1" title="Insert a piece of record." alt="" coords="5,218,187,245"/>
+<area shape="rect" id="node2" href="$classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="235,218,432,245"/>
+<area shape="rect" id="node3" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="943,15,1127,42"/>
+<area shape="rect" id="node4" href="$classBufferManager.html#afe23ccf5b08c7cee3580ca70702d8aea" title="核心函数之一。内存和磁盘交互的接口。" alt="" coords="490,117,662,143"/>
+<area shape="rect" id="node5" href="$classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="480,167,672,194"/>
+<area shape="rect" id="node7" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="953,117,1116,143"/>
+<area shape="rect" id="node11" href="$classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22" title="Insert a key into the has_index table The user should make sure that the file exists...." alt="" coords="498,319,654,346"/>
+<area shape="rect" id="node14" href="$classBufferManager.html#adf643fa6054886bcea2e336d848d96ad" title="标记页是否被修改" alt="" coords="485,370,667,397"/>
+<area shape="rect" id="node6" href="$classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="720,66,895,93"/>
+<area shape="rect" id="node9" href="$classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="727,167,888,194"/>
+<area shape="rect" id="node10" href="$classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="720,218,895,245"/>
+<area shape="rect" id="node8" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="1175,117,1348,143"/>
+<area shape="rect" id="node12" href="$classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="747,319,868,346"/>
+<area shape="rect" id="node13" href="$classBp__tree.html#a9d48d10fcc38d436fbaf287e74035ed2" title="Basic insertion to the tree." alt="" coords="753,370,861,397"/>
+</map>

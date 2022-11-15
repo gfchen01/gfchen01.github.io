@@ -1,0 +1,5 @@
+<map id="IndexManager::FindId" name="IndexManager::FindId">
+<area shape="rect" id="node1" title="Find the Indexes based on given key range. Return the indexes in between. If the key exists in the tr..." alt="" coords="5,31,153,57"/>
+<area shape="rect" id="node2" href="$classBp__tree.html#a43b7bbf645990355f51eb2ce4d1685ed" title="Find the value(pointer) based on the given lower and upper key." alt="" coords="201,5,340,32"/>
+<area shape="rect" id="node3" href="$classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="210,56,331,83"/>
+</map>

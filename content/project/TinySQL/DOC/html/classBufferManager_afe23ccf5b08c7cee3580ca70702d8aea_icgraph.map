@@ -1,0 +1,11 @@
+<map id="BufferManager::flushPage" name="BufferManager::flushPage">
+<area shape="rect" id="node1" title="核心函数之一。内存和磁盘交互的接口。" alt="" coords="872,81,1044,108"/>
+<area shape="rect" id="node2" href="$classIndexManager.html#aba55a427abc523657f948c257735624c" title="Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio..." alt="" coords="629,5,812,32"/>
+<area shape="rect" id="node5" href="$classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f" title="Create a Table object." alt="" coords="375,56,569,83"/>
+<area shape="rect" id="node7" href="$classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="622,107,819,133"/>
+<area shape="rect" id="node9" href="$classBufferManager.html#a3d7b202dce720e902dffef83e361e1d2" title="Destroy the Buffer Manager:: Buffer Manager object." alt="" coords="617,157,824,184"/>
+<area shape="rect" id="node3" href="$classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="152,5,327,32"/>
+<area shape="rect" id="node4" href="$classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,56,104,83"/>
+<area shape="rect" id="node6" href="$classExec__Engine.html#a262893ebe7a5a30985f3763baae28861" title="Create a Table." alt="" coords="152,56,327,83"/>
+<area shape="rect" id="node8" href="$classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="381,107,563,133"/>
+</map>

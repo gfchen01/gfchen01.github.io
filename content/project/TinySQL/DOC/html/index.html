@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tinySQL: Main Page</title>
+<title>tinySQL: TinySQL - A Simple Database Management System</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -61,11 +62,137 @@ $(function() {
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">tinySQL Documentation</div>  </div>
+<div class="title">TinySQL - A Simple Database Management System </div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p>TinySQL is a simple but fast database management system. TinySQL is self-contained and doesn't require external libraries except standard libraries. TinySQL must be compiled using C++17, GCC 8.0+, CMake 3.0+.</p>
+<p>We used some source files of the project: <a href="https://github.com/hyrise/sql-parser">hsql</a> as our SQL Parser. We deeply appreciate their work!</p>
+<h1>Some important facts</h1>
+<ol type="1">
+<li>All the files are store in the same directory of the executable <code>tinySQL</code>, under the folder <code>DB_DATAFILES</code>. The file structure:</li>
+</ol>
+<div class="fragment"><div class="line">DB_DATAFILES</div>
+<div class="line">|    |</div>
+<div class="line">    INDEX</div>
+<div class="line">        ...(Index files, <span class="keywordtype">binary</span>)</div>
+<div class="line">|    |</div>
+<div class="line">    RECORDS</div>
+<div class="line">        ...(<span class="keyword">Table</span> files, <span class="keywordtype">binary</span>)</div>
+<div class="line">|    |</div>
+<div class="line">    SCHEMAS</div>
+<div class="line">        ...(Schemas <span class="keyword">of</span> <span class="keyword">each</span> <span class="keyword">table</span>, <span class="keywordtype">binary</span>)</div>
+</div><!-- fragment --><ol type="1">
+<li>The database creates an index using B-plus tree on the primary key. Other indeces can be added manually by user.</li>
+<li>You can exit <code>tinySQL</code> by input an EOF (ctrl-D on linux), <b>ctrl-c(terminate) easily causes loss of data</b>.</li>
+</ol>
+<h1>Supported Queries</h1>
+<p>TinySQL supports the following standard SQL queries:</p><ol type="1">
+<li>CREATE TABLE , CREATE INDEX</li>
+<li>DROP TABLE, DROP INDEX</li>
+<li>INSERT</li>
+<li>SELECT (don't support sub-queries, support logical operands like <code>AND</code>)</li>
+<li>DELETE (don't support sub-queries, support logical operands like <code>AND</code>)</li>
+</ol>
+<p>and the following non-standard SQL queries:</p><ol type="1">
+<li><code>SHOW TABLES;</code> : Display all the tables stored.</li>
+<li><code>INPUT FILE;</code> : Input a text file containing SQL queries. Has to be in uppercase.</li>
+</ol>
+<p>supported data types: char (&lt;=20 characters) varchar (&lt;=20 characters) int decimal float</p>
+<p>Examples: </p><h2>Create Table and Insert Value</h2>
+<div class="fragment"><div class="line"><span class="keyword">create</span> <span class="keyword">table</span> student(</div>
+<div class="line">    name <span class="keywordtype">varchar</span>(<span class="stringliteral">10</span>),</div>
+<div class="line">    id <span class="keywordtype">char</span>(<span class="stringliteral">5</span>),</div>
+<div class="line">    age <span class="keywordtype">int</span>,</div>
+<div class="line">    score <span class="keywordtype">float</span>,</div>
+<div class="line">    <span class="keyword">primary</span> key(id)</div>
+<div class="line">);</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">insert</span> <span class="keyword">into</span> student </div>
+<div class="line"><span class="keyword">values</span>(<span class="stringliteral">&#39;John&#39;</span>, <span class="stringliteral">&#39;35124&#39;</span>, <span class="stringliteral">21</span>, <span class="stringliteral">89</span>.<span class="stringliteral">3</span>);</div>
+</div><!-- fragment --><p>Output:</p>
+<div class="fragment"><div class="line">Success.</div>
+<div class="line">Executed 1 queries in 1.356 ms.</div>
+<div class="line">Success.</div>
+<div class="line">Executed 1 queries in 0.459 ms</div>
+</div><!-- fragment --><h2>Drop Table</h2>
+<div class="fragment"><div class="line"><span class="keyword">drop</span> <span class="keyword">table</span> student;</div>
+</div><!-- fragment --><p>Output:</p>
+<div class="fragment"><div class="line">Success.</div>
+<div class="line">Executed 1 queries in 0.155 ms.</div>
+</div><!-- fragment --><h2>Read File</h2>
+<div class="fragment"><div class="line">READ FILE;</div>
+<div class="line">q2.txt </div>
+</div><!-- fragment --><p><code>q2.txt</code> is an example query file, 10000 queries, create a customer table. Check the details by <code>show tables</code>. Output:</p>
+<div class="fragment"><div class="line">Success.</div>
+<div class="line">... # (9999 lines, some lines contains an error message, for conflict primary key tests.)</div>
+<div class="line">File query successfully executed!</div>
+<div class="line">Executed 10000 queries in 256.496 ms.</div>
+</div><!-- fragment --><h2>Select</h2>
+<div class="fragment"><div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> Customers</div>
+<div class="line"><span class="keyword">where</span> salary &lt;= <span class="stringliteral">1</span>.<span class="stringliteral">3</span>;</div>
+</div><!-- fragment --><p>Output: (based on the file input above)</p>
+<div class="fragment"><div class="line">|          id     |        name     |    postcode     |      salary</div>
+<div class="line">------------------</div>
+<div class="line"> </div>
+<div class="line">|       00568     |  Portsmouth     |     SL8 2JK     |      1.0056</div>
+<div class="line">|       01338     |  Springdale     |     LE1 6GU     |      1.1784</div>
+<div class="line">|       06205     |     Garland     |     TN3 7LL     |      1.0694</div>
+<div class="line">|       09299     |   Bethlehem     |     MK2 2RN     |       1.118</div>
+<div class="line">|       11007     | Bakersfield     |    CV15 2YO     |      1.2394</div>
+<div class="line">|       12276     |       Miami     |     HP9 4BM     |      1.2697</div>
+<div class="line">|       16750     | Chula Vista     |     TN2 1KP     |      1.0895</div>
+<div class="line">|       16908     |       Fargo     |     OX0 3ZJ     |      1.2746</div>
+<div class="line">|       17649     |  Santa Cruz     |    DE49 6ZS     |      1.2227</div>
+<div class="line">|       17842     |  Greenville     |    TN73 0SS     |      1.1374</div>
+<div class="line">|       23311     |  Fort Wayne     |    SL85 1WK     |      1.0926</div>
+<div class="line">|       26353     |     Hampton     |    SA43 1DM     |        1.03</div>
+<div class="line">|       27788     |      Pomona     |    UB39 7XH     |        1.23</div>
+<div class="line">|       30493     |    Bellevue     |    SO89 4TM     |      1.1235</div>
+<div class="line">|       31982     |     Jackson     |    DG03 7AW     |      1.0659</div>
+<div class="line">|       32078     |   Rochester     |    HA20 1NH     |      1.2737</div>
+<div class="line">|       37785     |      Howell     |    DD52 1HD     |      1.0336</div>
+<div class="line">|       41331     |Thousand Oaks     |     NP2 7GA     |       1.227</div>
+<div class="line">|       42609     |     McAllen     |    ME90 3AX     |      1.2684</div>
+<div class="line">|       47502     |   Champaign     |     KY8 7IN     |      1.0419</div>
+<div class="line">|       49408     |Santa Clarita     |     EN2 5XL     |      1.1861</div>
+<div class="line">|       57187     |Cedar Rapids     |    RG64 7HU     |      1.1383</div>
+<div class="line">|       60497     |Gulfport-Biloxi     |    SW82 3SK     |      1.2579</div>
+<div class="line">|       63880     |  Evansville     |     NN0 3PT     |      1.1445</div>
+<div class="line">|       66805     |    Palmdale     |     WA5 6MU     |      1.2375</div>
+<div class="line">|       73228     |   Lafayette     |    TQ71 3HP     |      1.1327</div>
+<div class="line">|       73272     |Moreno Valley     |     WD0 9UX     |      1.0408</div>
+<div class="line">|       78404     |Grand Prairie     |     TF5 9UF     |      1.0863</div>
+<div class="line">|       82160     |     Hampton     |    UB80 6AC     |      1.1697</div>
+<div class="line">|       84923     |   Henderson     |    YO52 7HI     |      1.0305</div>
+<div class="line">|       86753     |  Washington     |     HG9 4TP     |      1.0345</div>
+<div class="line">Output 31 records.</div>
+<div class="line"> </div>
+<div class="line">Success.</div>
+<div class="line">Executed 1 queries in 11.707 ms.</div>
+</div><!-- fragment --><h2>Delete</h2>
+<div class="fragment"><div class="line"><span class="keyword">delete</span> <span class="keyword">from</span> Customers</div>
+<div class="line"><span class="keyword">where</span> salary &lt;= <span class="stringliteral">1</span>.<span class="stringliteral">2</span>;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">select</span> * <span class="keyword">from</span> Customers</div>
+<div class="line"><span class="keyword">where</span> salary &lt;= <span class="stringliteral">1</span>.<span class="stringliteral">3</span>;</div>
+</div><!-- fragment --><p>Output of <code>select</code>: (based on the file input above, salaries between 1.2 and 1.3 are gone.)</p>
+<div class="fragment"><div class="line">|          id     |        name     |    postcode     |      salary</div>
+<div class="line">------------------</div>
+<div class="line"> </div>
+<div class="line">|       12276     |       Miami     |     HP9 4BM     |      1.2697</div>
+<div class="line">|       27788     |      Pomona     |    UB39 7XH     |        1.23</div>
+<div class="line">|       41331     |Thousand Oaks     |     NP2 7GA     |       1.227</div>
+<div class="line">|       60497     |Gulfport-Biloxi     |    SW82 3SK     |      1.2579</div>
+<div class="line">Output 4 records.</div>
+<div class="line">Success.</div>
+<div class="line">Executed 1 queries in 5.8 ms.</div>
+</div><!-- fragment --><h2>Create <a class="el" href="structIndex.html" title="Index desciption for a table.">Index</a></h2>
+<div class="fragment"><div class="line"><span class="keyword">create</span> index customer_name <span class="keyword">on</span> Customers(name);</div>
+<div class="line"><span class="keyword">drop</span> index customer_name;</div>
+</div><!-- fragment --><p>Thanks for reading! If you use our code or SQL_PARSER, please reference the github repository in your project. </p>
+</div></div><!-- PageDoc -->
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

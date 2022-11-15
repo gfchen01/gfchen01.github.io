@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['name_80',['name',['../structAttribute.html#a6f08381a7a9e9b44deb769d16bd497c7',1,'Attribute']]],
-  ['nodeinsert_81',['NodeInsert',['../parser_8h.html#aed737bcfa4c8e00630c5aa738cee8a97a8ed6bcbcac3baf0f6557aabbd616c3c3',1,'parser.h']]],
-  ['nodequit_82',['NodeQuit',['../parser_8h.html#aed737bcfa4c8e00630c5aa738cee8a97a0d0796a3d95c2b7adab02463b3748d58',1,'parser.h']]],
-  ['num_83',['num',['../structAttribute.html#af8eb5c4ec274fde1f5a875d05dd955e6',1,'Attribute']]],
-  ['number_84',['number',['../structIndex.html#a4fc6c953de28664ae1dedf94edddbda5',1,'Index']]]
+  ['page_61',['Page',['../classPage.html',1,'Page'],['../classPage.html#a9a7cc22d5459498ce638c54ae966c79b',1,'Page::Page()']]],
+  ['pin_5fcount_5f_62',['pin_count_',['../classPage.html#ad04c503ea09d1c3501be0458c674ff6f',1,'Page']]],
+  ['pinpage_63',['pinPage',['../classBufferManager.html#aa039482f43211532700b49026bf4fdc1',1,'BufferManager']]],
+  ['primary_5fkey_64',['primary_Key',['../structAttribute.html#a854556d2355194080baed593e88a4321',1,'Attribute']]]
 ];

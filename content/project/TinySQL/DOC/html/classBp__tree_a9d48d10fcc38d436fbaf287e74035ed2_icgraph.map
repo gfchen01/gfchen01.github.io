@@ -1,0 +1,9 @@
+<map id="Bp_tree::Insert" name="Bp_tree::Insert">
+<area shape="rect" id="node1" title="Basic insertion to the tree." alt="" coords="831,31,939,57"/>
+<area shape="rect" id="node2" href="$classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22" title="Insert a key into the has_index table The user should make sure that the file exists...." alt="" coords="627,31,783,57"/>
+<area shape="rect" id="node3" href="$classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="383,5,577,32"/>
+<area shape="rect" id="node6" href="$classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="381,56,579,83"/>
+<area shape="rect" id="node4" href="$classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="155,5,330,32"/>
+<area shape="rect" id="node5" href="$classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,31,104,57"/>
+<area shape="rect" id="node7" href="$classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="152,56,333,83"/>
+</map>

@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -69,17 +70,17 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classExec__Engine.html">Exec_Engine</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>createIndex</b>(std::string &amp;table_name, std::string &amp;index_name, std::string &amp;attr_name) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>createTable</b>(std::string &amp;table_name, Attribute &amp;attr) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>deleteRecord</b>(std::string &amp;table_name, std::vector&lt; Where &gt; &amp;data) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>dropIndex</b>(std::string &amp;index_name) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>dropTable</b>(std::string &amp;table_name) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989">createIndex</a>(std::string &amp;table_name, std::string &amp;index_name, std::string &amp;attr_name)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classExec__Engine.html#a262893ebe7a5a30985f3763baae28861">createTable</a>(std::string &amp;table_name, Attribute &amp;attr)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019">deleteRecord</a>(std::string &amp;table_name, std::vector&lt; Where &gt; &amp;data)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb">dropIndex</a>(std::string &amp;index_name)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExec__Engine.html#ac1130534a94c8e9ce524732a7d3b5a86">dropTable</a>(std::string &amp;table_name)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0"><td class="entry"><b>Exec_Engine</b>() (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getTableAttributes</b>(const std::string &amp;table_name) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>insertRecord</b>(std::string &amp;table_name, MemoryTuple &amp;row) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>selectRecord</b>(std::string &amp;table_name, std::vector&lt; std::string &gt; &amp;attr_names, std::vector&lt; Where &gt; &amp;wheres, std::vector&lt; MemoryTuple &gt; &amp;result) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>showTables</b>() (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>updateRecord</b>(std::string &amp;table_name, std::vector&lt; Where &gt; &amp;data) (defined in <a class="el" href="classExec__Engine.html">Exec_Engine</a>)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992">getTableAttributes</a>(const std::string &amp;table_name)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf">insertRecord</a>(std::string &amp;table_name, MemoryTuple &amp;row)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExec__Engine.html#a5c8b8ef3c0d4c4c6b2b11903d76f9c97">selectRecord</a>(std::string &amp;table_name, std::vector&lt; std::string &gt; &amp;attr_names, std::vector&lt; Where &gt; &amp;wheres, std::vector&lt; MemoryTuple &gt; &amp;result)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classExec__Engine.html#a764f5bc399c7c0ef1a3b46f3251b9d46">showTables</a>()</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classExec__Engine.html#a974581f0a9c203f76e24148649cc6f05">updateRecord</a>(std::string &amp;table_name, std::vector&lt; Where &gt; &amp;data)</td><td class="entry"><a class="el" href="classExec__Engine.html">Exec_Engine</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

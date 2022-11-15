@@ -1,4 +1,4 @@
 <map id="bpTree_Internal" name="bpTree_Internal">
-<area shape="rect" id="node1" title=" " alt="" coords="5,80,117,107"/>
-<area shape="rect" id="node2" href="$structbpTree__Block.html" title=" " alt="" coords="10,5,113,32"/>
+<area shape="rect" id="node1" title="The storage detail of an internal node of b&#45;plus tree." alt="" coords="5,80,117,107"/>
+<area shape="rect" id="node2" href="$structbpTree__Block.html" title="The storage detail of the header of each page in index files." alt="" coords="10,5,113,32"/>
 </map>

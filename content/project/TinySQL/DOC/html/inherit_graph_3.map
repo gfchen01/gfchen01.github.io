@@ -1,5 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structbpTree__Block.html" title=" " alt="" coords="5,31,108,57"/>
-<area shape="rect" id="node2" href="$structbpTree__Internal.html" title=" " alt="" coords="156,5,268,32"/>
-<area shape="rect" id="node3" href="$structbpTree__Leaf.html" title=" " alt="" coords="165,56,259,83"/>
+<area shape="rect" id="node1" href="$structbpTree__Block.html" title="The storage detail of the header of each page in index files." alt="" coords="5,31,108,57"/>
+<area shape="rect" id="node2" href="$structbpTree__Internal.html" title="The storage detail of an internal node of b&#45;plus tree." alt="" coords="156,5,268,32"/>
+<area shape="rect" id="node3" href="$structbpTree__Leaf.html" title="The storage detail of a leaf node of b&#45;plus tree." alt="" coords="165,56,259,83"/>
 </map>

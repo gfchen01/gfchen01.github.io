@@ -1,0 +1,12 @@
+<map id="BufferManager::modifyPage" name="BufferManager::modifyPage">
+<area shape="rect" id="node1" title="标记页是否被修改" alt="" coords="877,81,1060,108"/>
+<area shape="rect" id="node2" href="$classIndexManager.html#aba55a427abc523657f948c257735624c" title="Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio..." alt="" coords="637,5,819,32"/>
+<area shape="rect" id="node5" href="$classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f" title="Create a Table object." alt="" coords="384,56,579,83"/>
+<area shape="rect" id="node7" href="$classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="627,107,829,133"/>
+<area shape="rect" id="node9" href="$classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="629,157,827,184"/>
+<area shape="rect" id="node3" href="$classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="157,5,331,32"/>
+<area shape="rect" id="node4" href="$classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,81,104,108"/>
+<area shape="rect" id="node6" href="$classExec__Engine.html#a262893ebe7a5a30985f3763baae28861" title="Create a Table." alt="" coords="157,56,331,83"/>
+<area shape="rect" id="node8" href="$classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="152,107,336,133"/>
+<area shape="rect" id="node10" href="$classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="391,157,572,184"/>
+</map>
