@@ -1,0 +1,13 @@
+<map id="RecordManager::CreateIndex" name="RecordManager::CreateIndex">
+<area shape="rect" id="node1" title="Create a Index on an attribute that has already exists." alt="" coords="5,189,199,216"/>
+<area shape="rect" id="node2" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="709,12,893,38"/>
+<area shape="rect" id="node3" href="$classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="247,138,439,165"/>
+<area shape="rect" id="node5" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="720,113,883,140"/>
+<area shape="rect" id="node9" href="$classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22" title="Insert a key into the has_index table The user should make sure that the file exists...." alt="" coords="265,316,421,342"/>
+<area shape="rect" id="node4" href="$classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="487,62,661,89"/>
+<area shape="rect" id="node7" href="$classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="493,164,655,190"/>
+<area shape="rect" id="node8" href="$classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="487,214,661,241"/>
+<area shape="rect" id="node6" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="941,113,1115,140"/>
+<area shape="rect" id="node10" href="$classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="513,316,635,342"/>
+<area shape="rect" id="node11" href="$classBp__tree.html#a9d48d10fcc38d436fbaf287e74035ed2" title="Basic insertion to the tree." alt="" coords="520,366,628,393"/>
+</map>

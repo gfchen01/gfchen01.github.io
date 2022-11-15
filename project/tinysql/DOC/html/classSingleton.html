@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -70,6 +71,11 @@ $(function() {
 <div class="title">Singleton&lt; SingletonClass &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>For factory mode design machanism, avoid repeated space allocation.  
+ <a href="classSingleton.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="singleton_8h_source.html">singleton.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -86,8 +92,21 @@ Static Public Member Functions</h2></td></tr>
 static SingletonClass *&#160;</td><td class="memItemRight" valign="bottom"><b>instance</b> ()</td></tr>
 <tr class="separator:a72eac13cfe894b200602e3f4db18e315"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/share/<a class="el" href="singleton_8h_source.html">singleton.h</a></li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class SingletonClass&gt;<br />
+class Singleton&lt; SingletonClass &gt;</h3>
+
+<p>For factory mode design machanism, avoid repeated space allocation. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">SingletonClass</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="singleton_8h_source.html#l00014">14</a> of file <a class="el" href="singleton_8h_source.html">singleton.h</a>.</p>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
+<li>src/include/share/<a class="el" href="singleton_8h_source.html">singleton.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

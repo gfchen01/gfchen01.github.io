@@ -1,0 +1,12 @@
+<map id="Exec_Engine::dropIndex" name="Exec_Engine::dropIndex">
+<area shape="rect" id="node1" title="Delete the index of a certain index on a table." alt="" coords="5,81,169,108"/>
+<area shape="rect" id="node2" href="$classIndexManager.html#aebae1e4de5f62b657bd450eed6d6f490" title="Drop an Index of an attr. User should make sure the table exists." alt="" coords="224,56,396,83"/>
+<area shape="rect" id="node3" href="$classCatalogManager.html#a61045484ac1872d8bff41c844b511357" title="Delete an index file." alt="" coords="217,107,403,133"/>
+<area shape="rect" id="node4" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="913,5,1097,32"/>
+<area shape="rect" id="node5" href="$classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="451,107,643,133"/>
+<area shape="rect" id="node6" href="$classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="691,208,865,235"/>
+<area shape="rect" id="node7" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="924,183,1087,209"/>
+<area shape="rect" id="node9" href="$classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="697,56,859,83"/>
+<area shape="rect" id="node10" href="$classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="691,107,865,133"/>
+<area shape="rect" id="node8" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="1145,183,1319,209"/>
+</map>

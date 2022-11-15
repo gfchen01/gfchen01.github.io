@@ -1,0 +1,4 @@
+<map id="CatalogManager::DropTable" name="CatalogManager::DropTable">
+<area shape="rect" id="node1" title="Delete a table." alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="237,5,421,32"/>
+</map>

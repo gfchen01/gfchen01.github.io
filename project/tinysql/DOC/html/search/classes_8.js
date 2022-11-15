@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['joindefinition_158',['JoinDefinition',['../structhsql_1_1JoinDefinition.html',1,'hsql']]]
+  ['singleton_102',['Singleton',['../classSingleton.html',1,'']]]
 ];

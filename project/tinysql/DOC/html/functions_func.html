@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -72,12 +73,18 @@ $(function() {
 
 
 <h3><a id="index_c"></a>- c -</h3><ul>
+<li>createIndex()
+: <a class="el" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989">Exec_Engine</a>
+</li>
 <li>CreateIndex()
 : <a class="el" href="classIndexManager.html#aba55a427abc523657f948c257735624c">IndexManager</a>
 , <a class="el" href="classRecordManager.html#ac45284e707fc934325b006e9f87ce502">RecordManager</a>
 </li>
 <li>CreateTable()
 : <a class="el" href="classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f">CatalogManager</a>
+</li>
+<li>createTable()
+: <a class="el" href="classExec__Engine.html#a262893ebe7a5a30985f3763baae28861">Exec_Engine</a>
 </li>
 <li>CreateTableFile()
 : <a class="el" href="classRecordManager.html#ae40c1e8913bcaf22737dc76e7a8fdb01">RecordManager</a>
@@ -92,15 +99,26 @@ $(function() {
 <li>DeleteId()
 : <a class="el" href="classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017">IndexManager</a>
 </li>
+<li>deleteRecord()
+: <a class="el" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019">Exec_Engine</a>
+</li>
 <li>DeleteRecord()
 : <a class="el" href="classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3">RecordManager</a>
 </li>
 <li>DropIndex()
 : <a class="el" href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357">CatalogManager</a>
-, <a class="el" href="classIndexManager.html#aebae1e4de5f62b657bd450eed6d6f490">IndexManager</a>
+</li>
+<li>dropIndex()
+: <a class="el" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb">Exec_Engine</a>
+</li>
+<li>DropIndex()
+: <a class="el" href="classIndexManager.html#aebae1e4de5f62b657bd450eed6d6f490">IndexManager</a>
 </li>
 <li>DropTable()
 : <a class="el" href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5">CatalogManager</a>
+</li>
+<li>dropTable()
+: <a class="el" href="classExec__Engine.html#ac1130534a94c8e9ce524732a7d3b5a86">Exec_Engine</a>
 </li>
 <li>DropTableFile()
 : <a class="el" href="classRecordManager.html#abea7c126fbf98bc1dd944bbbade050ca">RecordManager</a>
@@ -141,11 +159,17 @@ $(function() {
 <li>getBlockNum()
 : <a class="el" href="classBufferManager.html#a6202c0f8b7c4803e6144a72f34fc2566">BufferManager</a>
 </li>
+<li>getIndex()
+: <a class="el" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91">CatalogManager</a>
+</li>
 <li>getPage()
 : <a class="el" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810">BufferManager</a>
 </li>
 <li>getPageId()
 : <a class="el" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080">BufferManager</a>
+</li>
+<li>getTableAttributes()
+: <a class="el" href="classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992">Exec_Engine</a>
 </li>
 </ul>
 
@@ -171,8 +195,14 @@ $(function() {
 <li>InsertId()
 : <a class="el" href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22">IndexManager</a>
 </li>
+<li>insertRecord()
+: <a class="el" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf">Exec_Engine</a>
+</li>
 <li>InsertRecord()
 : <a class="el" href="classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190">RecordManager</a>
+</li>
+<li>Interface()
+: <a class="el" href="classInterface.html#abbe0d695e226c3c2437452a8b7d44ee6">Interface</a>
 </li>
 <li>internal_biSearch()
 : <a class="el" href="structbpTree__Internal.html#a7d6e98586428d1ebffa7dd29d8ef4cb8">bpTree_Internal</a>
@@ -204,12 +234,31 @@ $(function() {
 </ul>
 
 
+<h3><a id="index_r"></a>- r -</h3><ul>
+<li>run()
+: <a class="el" href="classInterface.html#a090a950300a463d91f8f361d3b333906">Interface</a>
+</li>
+</ul>
+
+
 <h3><a id="index_s"></a>- s -</h3><ul>
+<li>selectRecord()
+: <a class="el" href="classExec__Engine.html#a5c8b8ef3c0d4c4c6b2b11903d76f9c97">Exec_Engine</a>
+</li>
 <li>SelectRecord()
-: <a class="el" href="classRecordManager.html#a2f1b381eb128f37486f86ed51cbe5102">RecordManager</a>
+: <a class="el" href="classRecordManager.html#a90e45d1c86ecebd7eb528c3fd674af43">RecordManager</a>
+</li>
+<li>serialOutput()
+: <a class="el" href="classInterface.html#a08d52dcdca3ba93afe8381cec93d1783">Interface</a>
+</li>
+<li>showErrMsg()
+: <a class="el" href="classInterface.html#a219fbb876ed057302e1118f536e03169">Interface</a>
 </li>
 <li>ShowTable()
 : <a class="el" href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a">CatalogManager</a>
+</li>
+<li>showTables()
+: <a class="el" href="classExec__Engine.html#a764f5bc399c7c0ef1a3b46f3251b9d46">Exec_Engine</a>
 </li>
 </ul>
 
@@ -226,6 +275,9 @@ $(function() {
 </li>
 <li>UpdateKey()
 : <a class="el" href="classBp__tree.html#a099311823e84fac04497185c8d8fffdf">Bp_tree</a>
+</li>
+<li>updateRecord()
+: <a class="el" href="classExec__Engine.html#a974581f0a9c203f76e24148649cc6f05">Exec_Engine</a>
 </li>
 <li>UpdateValue()
 : <a class="el" href="classBp__tree.html#a7877f96621588fde53a1c070d9ed65e7">Bp_tree</a>

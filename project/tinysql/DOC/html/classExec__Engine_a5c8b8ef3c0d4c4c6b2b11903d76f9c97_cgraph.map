@@ -1,0 +1,7 @@
+<map id="Exec_Engine::selectRecord" name="Exec_Engine::selectRecord">
+<area shape="rect" id="node1" title="Select records by conditions." alt="" coords="5,31,189,57"/>
+<area shape="rect" id="node2" href="$classRecordManager.html#a2f1b381eb128f37486f86ed51cbe5102" title="返回整张表" alt="" coords="237,31,439,57"/>
+<area shape="rect" id="node3" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="487,5,671,32"/>
+<area shape="rect" id="node4" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="497,56,660,83"/>
+<area shape="rect" id="node5" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="719,56,892,83"/>
+</map>

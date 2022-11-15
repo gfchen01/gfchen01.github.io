@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['unpinpage_228',['unpinPage',['../classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559',1,'BufferManager']]],
-  ['updateid_229',['UpdateId',['../classIndexManager.html#a25c66979ecc9e341ffd88762c3fec237',1,'IndexManager']]],
-  ['updateindex_230',['UpdateIndex',['../classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70',1,'CatalogManager']]],
-  ['updatekey_231',['UpdateKey',['../classBp__tree.html#a099311823e84fac04497185c8d8fffdf',1,'Bp_tree']]],
-  ['updatevalue_232',['UpdateValue',['../classBp__tree.html#a7877f96621588fde53a1c070d9ed65e7',1,'Bp_tree']]]
+  ['selectrecord_143',['SelectRecord',['../classRecordManager.html#a2f1b381eb128f37486f86ed51cbe5102',1,'RecordManager::SelectRecord(std::string table_name)'],['../classRecordManager.html#a90e45d1c86ecebd7eb528c3fd674af43',1,'RecordManager::SelectRecord(std::string table_path, std::vector&lt; Where &gt; where)'],['../classExec__Engine.html#a5c8b8ef3c0d4c4c6b2b11903d76f9c97',1,'Exec_Engine::selectRecord()']]],
+  ['serialoutput_144',['serialOutput',['../classInterface.html#a08d52dcdca3ba93afe8381cec93d1783',1,'Interface::serialOutput(std::vector&lt; MemoryTuple &gt; &amp;tuples)'],['../classInterface.html#a86c29c70ddf215a7d97168348e71eadb',1,'Interface::serialOutput(std::vector&lt; MemoryTuple &gt; &amp;tuples, std::vector&lt; std::string &gt; &amp;attr_names)']]],
+  ['showerrmsg_145',['showErrMsg',['../classInterface.html#a219fbb876ed057302e1118f536e03169',1,'Interface']]],
+  ['showtable_146',['ShowTable',['../classCatalogManager.html#a047427d8231c1eb2407149d52526507a',1,'CatalogManager']]],
+  ['showtables_147',['showTables',['../classExec__Engine.html#a764f5bc399c7c0ef1a3b46f3251b9d46',1,'Exec_Engine']]]
 ];

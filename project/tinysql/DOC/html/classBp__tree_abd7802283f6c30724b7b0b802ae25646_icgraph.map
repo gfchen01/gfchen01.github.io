@@ -1,0 +1,7 @@
+<map id="Bp_tree::Delete" name="Bp_tree::Delete">
+<area shape="rect" id="node1" title="Basic deletion from the tree." alt="" coords="844,5,957,32"/>
+<area shape="rect" id="node2" href="$classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017" title="Delete an has_index of a certain key." alt="" coords="635,5,796,32"/>
+<area shape="rect" id="node3" href="$classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="384,5,587,32"/>
+<area shape="rect" id="node4" href="$classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="152,5,336,32"/>
+<area shape="rect" id="node5" href="$classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>

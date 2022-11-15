@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>tinySQL: include/API/exec_engine.h Source File</title>
+<title>tinySQL: src/include/API/exec_engine.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -62,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_d54b91c4f71b53b4f620ccbe60ed4e62.html">API</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_b0856f6b0d80ccb263b2f415c91f9e17.html">include</a></li><li class="navelem"><a class="el" href="dir_e0206721a8678449cc8c415ddf022c4c.html">API</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,48 +80,58 @@ $(function() {
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;catalog/catalog.h&quot;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="record__manager_8h.html">record/record_manager.h</a>&quot;</span></div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classExec__Engine.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classExec__Engine.html">Exec_Engine</a>{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classExec__Engine.html">Exec_Engine</a>():index_manager(&amp;bfm), catalog_manager(&amp;bfm) ,record_manager(&amp;bfm, &amp;catalog_manager, &amp;index_manager){};</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> createTable(std::string &amp;table_name, <a class="code" href="structAttribute.html">Attribute</a> &amp;attr);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">void</span> dropTable(std::string &amp;table_name);</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classExec__Engine.html">   23</a></span>&#160;<span class="keyword">class </span><a class="code" href="classExec__Engine.html">Exec_Engine</a>{</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classExec__Engine.html">Exec_Engine</a>():index_manager(&amp;bfm), catalog_manager(&amp;bfm) ,record_manager(&amp;bfm, &amp;catalog_manager, &amp;index_manager){};</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> selectRecord(std::string &amp;table_name, std::vector&lt;std::string&gt;&amp; attr_names, std::vector&lt;Where&gt;&amp; wheres, std::vector&lt;MemoryTuple&gt;&amp; result); <span class="comment">//recordManager</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> insertRecord(std::string &amp;table_name, MemoryTuple &amp;row);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> createIndex(std::string &amp;table_name, std::string &amp;index_name, std::string &amp;attr_name); <span class="comment">//index_manager</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> dropIndex(std::string &amp;index_name);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> deleteRecord(std::string &amp;table_name, std::vector&lt;Where&gt;&amp; data);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> updateRecord(std::string &amp;table_name, std::vector&lt;Where&gt;&amp; data);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="structAttribute.html">Attribute</a> getTableAttributes(<span class="keyword">const</span> std::string &amp;table_name);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> showTables(){</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        catalog_manager.ShowAllTable();</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classBufferManager.html">BufferManager</a> bfm;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classRecordManager.html">RecordManager</a> record_manager;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classCatalogManager.html">CatalogManager</a> catalog_manager;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classIndexManager.html">IndexManager</a> index_manager;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#a262893ebe7a5a30985f3763baae28861">createTable</a>(std::string &amp;table_name, <a class="code" href="structAttribute.html">Attribute</a> &amp;attr);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#ac1130534a94c8e9ce524732a7d3b5a86">dropTable</a>(std::string &amp;table_name);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#a5c8b8ef3c0d4c4c6b2b11903d76f9c97">selectRecord</a>(std::string &amp;table_name, std::vector&lt;std::string&gt;&amp; attr_names, std::vector&lt;Where&gt;&amp; wheres, std::vector&lt;MemoryTuple&gt;&amp; result); <span class="comment">//recordManager</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf">insertRecord</a>(std::string &amp;table_name, MemoryTuple &amp;row);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989">createIndex</a>(std::string &amp;table_name, std::string &amp;index_name, std::string &amp;attr_name); <span class="comment">//index_manager</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb">dropIndex</a>(std::string &amp;index_name);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019">deleteRecord</a>(std::string &amp;table_name, std::vector&lt;Where&gt;&amp; data);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#a974581f0a9c203f76e24148649cc6f05">updateRecord</a>(std::string &amp;table_name, std::vector&lt;Where&gt;&amp; data);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="structAttribute.html">Attribute</a> <a class="code" href="classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992">getTableAttributes</a>(<span class="keyword">const</span> std::string &amp;table_name);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classExec__Engine.html#a764f5bc399c7c0ef1a3b46f3251b9d46">  104</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classExec__Engine.html#a764f5bc399c7c0ef1a3b46f3251b9d46">showTables</a>(){</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        catalog_manager.ShowAllTable();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <a class="code" href="classBufferManager.html">BufferManager</a> bfm;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <a class="code" href="classRecordManager.html">RecordManager</a> record_manager;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <a class="code" href="classCatalogManager.html">CatalogManager</a> catalog_manager;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="classIndexManager.html">IndexManager</a> index_manager;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="arecord__manager_8h_html"><div class="ttname"><a href="record__manager_8h.html">record_manager.h</a></div></div>
-<div class="ttc" id="aclassCatalogManager_html"><div class="ttname"><a href="classCatalogManager.html">CatalogManager</a></div><div class="ttdef"><b>Definition:</b> catalog.h:26</div></div>
-<div class="ttc" id="aclassBufferManager_html"><div class="ttname"><a href="classBufferManager.html">BufferManager</a></div><div class="ttdoc">BufferManager类。对外提供操作缓冲区的接口。</div><div class="ttdef"><b>Definition:</b> buffer_manager.h:69</div></div>
-<div class="ttc" id="aclassIndexManager_html"><div class="ttname"><a href="classIndexManager.html">IndexManager</a></div><div class="ttdef"><b>Definition:</b> Index.h:11</div></div>
-<div class="ttc" id="aclassRecordManager_html"><div class="ttname"><a href="classRecordManager.html">RecordManager</a></div><div class="ttdoc">RecordManager类</div><div class="ttdef"><b>Definition:</b> record_manager.h:66</div></div>
-<div class="ttc" id="aclassExec__Engine_html"><div class="ttname"><a href="classExec__Engine.html">Exec_Engine</a></div><div class="ttdef"><b>Definition:</b> exec_engine.h:19</div></div>
-<div class="ttc" id="astructAttribute_html"><div class="ttname"><a href="structAttribute.html">Attribute</a></div><div class="ttdoc">The attributes for a schema.</div><div class="ttdef"><b>Definition:</b> data_t.h:172</div></div>
+<div class="ttc" id="aclassCatalogManager_html"><div class="ttname"><a href="classCatalogManager.html">CatalogManager</a></div><div class="ttdoc">Manage all the table names, attritbutes, and index existence.</div><div class="ttdef"><b>Definition:</b> <a href="catalog_8h_source.html#l00030">catalog.h:30</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_a974581f0a9c203f76e24148649cc6f05"><div class="ttname"><a href="classExec__Engine.html#a974581f0a9c203f76e24148649cc6f05">Exec_Engine::updateRecord</a></div><div class="ttdeci">void updateRecord(std::string &amp;table_name, std::vector&lt; Where &gt; &amp;data)</div><div class="ttdoc">Update a record based on conditions.</div></div>
+<div class="ttc" id="aclassExec__Engine_html_aee9e21cbe0a49436d564464f443c4019"><div class="ttname"><a href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019">Exec_Engine::deleteRecord</a></div><div class="ttdeci">void deleteRecord(std::string &amp;table_name, std::vector&lt; Where &gt; &amp;data)</div><div class="ttdoc">Delete records by conditions.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00027">exec_engine.cpp:27</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_a764f5bc399c7c0ef1a3b46f3251b9d46"><div class="ttname"><a href="classExec__Engine.html#a764f5bc399c7c0ef1a3b46f3251b9d46">Exec_Engine::showTables</a></div><div class="ttdeci">void showTables()</div><div class="ttdoc">display the information of all the tables</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8h_source.html#l00104">exec_engine.h:104</a></div></div>
+<div class="ttc" id="aclassBufferManager_html"><div class="ttname"><a href="classBufferManager.html">BufferManager</a></div><div class="ttdoc">Buffer manager is an abstraction of memory on computer for modules at higher level.</div><div class="ttdef"><b>Definition:</b> <a href="buffer__manager_8h_source.html#l00069">buffer_manager.h:69</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_a262893ebe7a5a30985f3763baae28861"><div class="ttname"><a href="classExec__Engine.html#a262893ebe7a5a30985f3763baae28861">Exec_Engine::createTable</a></div><div class="ttdeci">void createTable(std::string &amp;table_name, Attribute &amp;attr)</div><div class="ttdoc">Create a Table.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00004">exec_engine.cpp:4</a></div></div>
+<div class="ttc" id="aclassIndexManager_html"><div class="ttname"><a href="classIndexManager.html">IndexManager</a></div><div class="ttdoc">Manage index files.</div><div class="ttdef"><b>Definition:</b> <a href="Index_8h_source.html#l00015">Index.h:15</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_a5c8b8ef3c0d4c4c6b2b11903d76f9c97"><div class="ttname"><a href="classExec__Engine.html#a5c8b8ef3c0d4c4c6b2b11903d76f9c97">Exec_Engine::selectRecord</a></div><div class="ttdeci">void selectRecord(std::string &amp;table_name, std::vector&lt; std::string &gt; &amp;attr_names, std::vector&lt; Where &gt; &amp;wheres, std::vector&lt; MemoryTuple &gt; &amp;result)</div><div class="ttdoc">Select records by conditions.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00031">exec_engine.cpp:31</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_a57e985c0e2f83783dbbcb76545395992"><div class="ttname"><a href="classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992">Exec_Engine::getTableAttributes</a></div><div class="ttdeci">Attribute getTableAttributes(const std::string &amp;table_name)</div><div class="ttdoc">Get the Table Attributes.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00051">exec_engine.cpp:51</a></div></div>
+<div class="ttc" id="aclassRecordManager_html"><div class="ttname"><a href="classRecordManager.html">RecordManager</a></div><div class="ttdoc">The class manages the table's data.</div><div class="ttdef"><b>Definition:</b> <a href="record__manager_8h_source.html#l00063">record_manager.h:63</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_a9974743768882459f8fbfd833bc98989"><div class="ttname"><a href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989">Exec_Engine::createIndex</a></div><div class="ttdeci">void createIndex(std::string &amp;table_name, std::string &amp;index_name, std::string &amp;attr_name)</div><div class="ttdoc">Create Index on a table's attribute.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00014">exec_engine.cpp:14</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_ac1130534a94c8e9ce524732a7d3b5a86"><div class="ttname"><a href="classExec__Engine.html#ac1130534a94c8e9ce524732a7d3b5a86">Exec_Engine::dropTable</a></div><div class="ttdeci">void dropTable(std::string &amp;table_name)</div><div class="ttdoc">Delete a Table.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00009">exec_engine.cpp:9</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html"><div class="ttname"><a href="classExec__Engine.html">Exec_Engine</a></div><div class="ttdoc">Execute commands from the interface.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8h_source.html#l00023">exec_engine.h:23</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_a80dcf846a1cc1dc21a738576dee18ccb"><div class="ttname"><a href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb">Exec_Engine::dropIndex</a></div><div class="ttdeci">void dropIndex(std::string &amp;index_name)</div><div class="ttdoc">Delete the index of a certain index on a table.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00020">exec_engine.cpp:20</a></div></div>
+<div class="ttc" id="astructAttribute_html"><div class="ttname"><a href="structAttribute.html">Attribute</a></div><div class="ttdoc">The attributes for a schema.</div><div class="ttdef"><b>Definition:</b> <a href="data__t_8h_source.html#l00172">data_t.h:172</a></div></div>
+<div class="ttc" id="aclassExec__Engine_html_ab8683a86447dfb14720159b9d5ed9daf"><div class="ttname"><a href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf">Exec_Engine::insertRecord</a></div><div class="ttdeci">void insertRecord(std::string &amp;table_name, MemoryTuple &amp;row)</div><div class="ttdoc">Insert a piece of record.</div><div class="ttdef"><b>Definition:</b> <a href="exec__engine_8cpp_source.html#l00055">exec_engine.cpp:55</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +70,11 @@ $(function() {
 <div class="title">Bp_tree Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The B-plus-tree storage details on the disk.  
+ <a href="classBp__tree.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bpTree__disk_8h_source.html">bpTree_disk.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -101,7 +107,11 @@ const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ge
 <tr class="memdesc:a7877f96621588fde53a1c070d9ed65e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update a certain value.  <a href="classBp__tree.html#a7877f96621588fde53a1c070d9ed65e7">More...</a><br /></td></tr>
 <tr class="separator:a7877f96621588fde53a1c070d9ed65e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The B-plus-tree storage details on the disk. </p>
+
+<p class="definition">Definition at line <a class="el" href="bpTree__disk_8h_source.html#l00026">26</a> of file <a class="el" href="bpTree__disk_8h_source.html">bpTree_disk.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="abd7802283f6c30724b7b0b802ae25646"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abd7802283f6c30724b7b0b802ae25646">&#9670;&nbsp;</a></span>Delete() <span class="overload">[1/2]</span></h2>
 
@@ -129,6 +139,18 @@ const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>ge
 <dl class="section return"><dt>Returns</dt><dd>true Deletion success. </dd>
 <dd>
 false Insertion success. </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBp__tree_abd7802283f6c30724b7b0b802ae25646_icgraph.png" border="0" usemap="#classBp__tree_abd7802283f6c30724b7b0b802ae25646_icgraph" alt=""/></div>
+<map name="classBp__tree_abd7802283f6c30724b7b0b802ae25646_icgraph" id="classBp__tree_abd7802283f6c30724b7b0b802ae25646_icgraph">
+<area shape="rect" title="Basic deletion from the tree." alt="" coords="844,5,957,32"/>
+<area shape="rect" href="classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017" title="Delete an has_index of a certain key." alt="" coords="635,5,796,32"/>
+<area shape="rect" href="classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="384,5,587,32"/>
+<area shape="rect" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="152,5,336,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -212,6 +234,15 @@ false Insertion success. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true Search success </dd>
 <dd>
 false Search failure </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBp__tree_a43b7bbf645990355f51eb2ce4d1685ed_icgraph.png" border="0" usemap="#classBp__tree_a43b7bbf645990355f51eb2ce4d1685ed_icgraph" alt=""/></div>
+<map name="classBp__tree_a43b7bbf645990355f51eb2ce4d1685ed_icgraph" id="classBp__tree_a43b7bbf645990355f51eb2ce4d1685ed_icgraph">
+<area shape="rect" title="Find the value(pointer) based on the given lower and upper key." alt="" coords="201,5,340,32"/>
+<area shape="rect" href="classIndexManager.html#aa574584870f2feaea678b8ee0ab4924a" title="Find the Indexes based on given key range. Return the indexes in between. If the key exists in the tr..." alt="" coords="5,5,153,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -252,6 +283,15 @@ false Search failure </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true Search success </dd>
 <dd>
 false </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBp__tree_a7a897972d1227366228842c3b40ea681_icgraph.png" border="0" usemap="#classBp__tree_a7a897972d1227366228842c3b40ea681_icgraph" alt=""/></div>
+<map name="classBp__tree_a7a897972d1227366228842c3b40ea681_icgraph" id="classBp__tree_a7a897972d1227366228842c3b40ea681_icgraph">
+<area shape="rect" title="Find the values by key (normally, we may say &quot;pointers&quot; for &quot;values&quot;)" alt="" coords="201,5,333,32"/>
+<area shape="rect" href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046" title="Find the Index based on the key (cell)" alt="" coords="5,5,153,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -276,6 +316,25 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBp__tree_adab2d3f8a4e9403048a950ecef133d65_icgraph.png" border="0" usemap="#classBp__tree_adab2d3f8a4e9403048a950ecef133d65_icgraph" alt=""/></div>
+<map name="classBp__tree_adab2d3f8a4e9403048a950ecef133d65_icgraph" id="classBp__tree_adab2d3f8a4e9403048a950ecef133d65_icgraph">
+<area shape="rect" title=" " alt="" coords="848,81,969,108"/>
+<area shape="rect" href="classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017" title="Delete an has_index of a certain key." alt="" coords="637,5,798,32"/>
+<area shape="rect" href="classIndexManager.html#a03d5483a408ccb1e1868994a98bd2046" title="Find the Index based on the key (cell)" alt="" coords="643,56,791,83"/>
+<area shape="rect" href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22" title="Insert a key into the has_index table The user should make sure that the file exists...." alt="" coords="639,107,795,133"/>
+<area shape="rect" href="classIndexManager.html#a25c66979ecc9e341ffd88762c3fec237" title="Update the pointer of a record in the has_index file." alt="" coords="635,157,800,184"/>
+<area shape="rect" href="classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="384,5,587,32"/>
+<area shape="rect" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="152,5,336,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,56,104,83"/>
+<area shape="rect" href="classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="389,56,582,83"/>
+<area shape="rect" href="classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="387,107,584,133"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="157,56,331,83"/>
+<area shape="rect" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="153,107,335,133"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -316,6 +375,20 @@ false </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true Insertion success </dd>
 <dd>
 false Insertion fail </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBp__tree_a9d48d10fcc38d436fbaf287e74035ed2_icgraph.png" border="0" usemap="#classBp__tree_a9d48d10fcc38d436fbaf287e74035ed2_icgraph" alt=""/></div>
+<map name="classBp__tree_a9d48d10fcc38d436fbaf287e74035ed2_icgraph" id="classBp__tree_a9d48d10fcc38d436fbaf287e74035ed2_icgraph">
+<area shape="rect" title="Basic insertion to the tree." alt="" coords="831,31,939,57"/>
+<area shape="rect" href="classIndexManager.html#a7954df809c9aa07fa439014bf13f5b22" title="Insert a key into the has_index table The user should make sure that the file exists...." alt="" coords="627,31,783,57"/>
+<area shape="rect" href="classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="383,5,577,32"/>
+<area shape="rect" href="classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="381,56,579,83"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="155,5,330,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,31,104,57"/>
+<area shape="rect" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="152,56,333,83"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -392,11 +465,20 @@ false Insertion fail </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBp__tree_a7877f96621588fde53a1c070d9ed65e7_icgraph.png" border="0" usemap="#classBp__tree_a7877f96621588fde53a1c070d9ed65e7_icgraph" alt=""/></div>
+<map name="classBp__tree_a7877f96621588fde53a1c070d9ed65e7_icgraph" id="classBp__tree_a7877f96621588fde53a1c070d9ed65e7_icgraph">
+<area shape="rect" title="Update a certain value." alt="" coords="219,5,368,32"/>
+<area shape="rect" href="classIndexManager.html#a25c66979ecc9e341ffd88762c3fec237" title="Update the pointer of a record in the has_index file." alt="" coords="5,5,171,32"/>
+</map>
+</div>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/index/<a class="el" href="bpTree__disk_8h_source.html">bpTree_disk.h</a></li>
+<li>src/include/index/<a class="el" href="bpTree__disk_8h_source.html">bpTree_disk.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

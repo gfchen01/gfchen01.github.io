@@ -1,5 +1,5 @@
 <map id="bpTree_Block" name="bpTree_Block">
-<area shape="rect" id="node1" title=" " alt="" coords="74,5,177,32"/>
-<area shape="rect" id="node2" href="$structbpTree__Internal.html" title=" " alt="" coords="5,80,117,107"/>
-<area shape="rect" id="node3" href="$structbpTree__Leaf.html" title=" " alt="" coords="142,80,237,107"/>
+<area shape="rect" id="node1" title="The storage detail of the header of each page in index files." alt="" coords="74,5,177,32"/>
+<area shape="rect" id="node2" href="$structbpTree__Internal.html" title="The storage detail of an internal node of b&#45;plus tree." alt="" coords="5,80,117,107"/>
+<area shape="rect" id="node3" href="$structbpTree__Leaf.html" title="The storage detail of a leaf node of b&#45;plus tree." alt="" coords="142,80,237,107"/>
 </map>

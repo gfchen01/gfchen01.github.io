@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -72,7 +73,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Page类。磁盘文件中的每一块对应内存中的一个页（page)  
+<p>The storage details of each page in the memory.  
  <a href="classPage.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>&gt;</code></p>
@@ -80,7 +81,7 @@ $(function() {
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a7cc22d5459498ce638c54ae966c79b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPage.html#a9a7cc22d5459498ce638c54ae966c79b">Page</a> ()</td></tr>
-<tr class="memdesc:a9a7cc22d5459498ce638c54ae966c79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPage.html" title="Page类。磁盘文件中的每一块对应内存中的一个页（page)">Page</a>:: <a class="el" href="classPage.html" title="Page类。磁盘文件中的每一块对应内存中的一个页（page)">Page</a> object.  <a href="classPage.html#a9a7cc22d5459498ce638c54ae966c79b">More...</a><br /></td></tr>
+<tr class="memdesc:a9a7cc22d5459498ce638c54ae966c79b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classPage.html" title="The storage details of each page in the memory.">Page</a>:: <a class="el" href="classPage.html" title="The storage details of each page in the memory.">Page</a> object.  <a href="classPage.html#a9a7cc22d5459498ce638c54ae966c79b">More...</a><br /></td></tr>
 <tr class="separator:a9a7cc22d5459498ce638c54ae966c79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9350cf427a1af44f1fd7273140bad0b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPage.html#a9350cf427a1af44f1fd7273140bad0b1">initialize</a> ()</td></tr>
 <tr class="memdesc:a9350cf427a1af44f1fd7273140bad0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化  <a href="classPage.html#a9350cf427a1af44f1fd7273140bad0b1">More...</a><br /></td></tr>
@@ -153,7 +154,9 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
 <tr class="separator:aea68fe90bddca6b2ad77c1fedf482415"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Page类。磁盘文件中的每一块对应内存中的一个页（page) </p>
+<div class="textblock"><p>The storage details of each page in the memory. </p>
+
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8h_source.html#l00030">30</a> of file <a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9a7cc22d5459498ce638c54ae966c79b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9a7cc22d5459498ce638c54ae966c79b">&#9670;&nbsp;</a></span>Page()</h2>
@@ -170,7 +173,18 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
       </table>
 </div><div class="memdoc">
 
-<p>Construct a new <a class="el" href="classPage.html" title="Page类。磁盘文件中的每一块对应内存中的一个页（page)">Page</a>:: <a class="el" href="classPage.html" title="Page类。磁盘文件中的每一块对应内存中的一个页（page)">Page</a> object. </p>
+<p>Construct a new <a class="el" href="classPage.html" title="The storage details of each page in the memory.">Page</a>:: <a class="el" href="classPage.html" title="The storage details of each page in the memory.">Page</a> object. </p>
+
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8cpp_source.html#l00019">19</a> of file <a class="el" href="buffer__manager_8cpp_source.html">buffer_manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPage_a9a7cc22d5459498ce638c54ae966c79b_cgraph.png" border="0" usemap="#classPage_a9a7cc22d5459498ce638c54ae966c79b_cgraph" alt=""/></div>
+<map name="classPage_a9a7cc22d5459498ce638c54ae966c79b_cgraph" id="classPage_a9a7cc22d5459498ce638c54ae966c79b_cgraph">
+<area shape="rect" title="Construct a new Page:: Page object." alt="" coords="5,5,96,32"/>
+<area shape="rect" href="classPage.html#a9350cf427a1af44f1fd7273140bad0b1" title="初始化" alt="" coords="144,5,251,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -192,6 +206,17 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
 
 <p>初始化 </p>
 
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8cpp_source.html#l00026">26</a> of file <a class="el" href="buffer__manager_8cpp_source.html">buffer_manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classPage_a9350cf427a1af44f1fd7273140bad0b1_icgraph.png" border="0" usemap="#classPage_a9350cf427a1af44f1fd7273140bad0b1_icgraph" alt=""/></div>
+<map name="classPage_a9350cf427a1af44f1fd7273140bad0b1_icgraph" id="classPage_a9350cf427a1af44f1fd7273140bad0b1_icgraph">
+<area shape="rect" title="初始化" alt="" coords="144,5,251,32"/>
+<area shape="rect" href="classPage.html#a9a7cc22d5459498ce638c54ae966c79b" title="Construct a new Page:: Page object." alt="" coords="5,5,96,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -208,6 +233,8 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
 </div><div class="memdoc">
 <p>avaliable标示页是否可以被使用(即将磁盘块load进该页) </p>
 
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8h_source.html#l00053">53</a> of file <a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>.</p>
+
 </div>
 </div>
 <a id="a9405c3aa186dc896cf654c3607f5ac8b"></a>
@@ -222,6 +249,8 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
       </table>
 </div><div class="memdoc">
 <p>页在所在文件中的块号(磁盘中通常叫块) </p>
+
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8h_source.html#l00050">50</a> of file <a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>.</p>
 
 </div>
 </div>
@@ -238,6 +267,8 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
 </div><div class="memdoc">
 <p>每一页都是一个大小为PAGESIZE字节的数组 </p>
 
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8h_source.html#l00048">48</a> of file <a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>.</p>
+
 </div>
 </div>
 <a id="a4944434fca752b6a27f065fa82f1f268"></a>
@@ -252,6 +283,8 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
       </table>
 </div><div class="memdoc">
 <p>dirty记录页是否被修改 </p>
+
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8h_source.html#l00052">52</a> of file <a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>.</p>
 
 </div>
 </div>
@@ -268,6 +301,8 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
 </div><div class="memdoc">
 <p>页所对应的文件名 </p>
 
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8h_source.html#l00049">49</a> of file <a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>.</p>
+
 </div>
 </div>
 <a id="ad04c503ea09d1c3501be0458c674ff6f"></a>
@@ -283,11 +318,13 @@ long long&#160;</td><td class="memItemRight" valign="bottom"><b>last_access_time
 </div><div class="memdoc">
 <p>记录被钉住的次数。被钉住的意思就是不可以被替换 </p>
 
+<p class="definition">Definition at line <a class="el" href="buffer__manager_8h_source.html#l00051">51</a> of file <a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/buffer/<a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a></li>
-<li>buffer/<a class="el" href="buffer__manager_8cpp.html">buffer_manager.cpp</a></li>
+<li>src/include/buffer/<a class="el" href="buffer__manager_8h_source.html">buffer_manager.h</a></li>
+<li>src/buffer/<a class="el" href="buffer__manager_8cpp_source.html">buffer_manager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

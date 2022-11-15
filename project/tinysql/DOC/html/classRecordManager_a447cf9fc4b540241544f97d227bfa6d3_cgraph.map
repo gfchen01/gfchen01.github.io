@@ -1,0 +1,14 @@
+<map id="RecordManager::DeleteRecord" name="RecordManager::DeleteRecord">
+<area shape="rect" id="node1" title="删除对应表中所有记录（不删除表文件）" alt="" coords="5,348,208,375"/>
+<area shape="rect" id="node2" href="$classIndexManager.html#a93441aa09d82b1bf9b510b888eb6f017" title="Delete an has_index of a certain key." alt="" coords="271,56,433,83"/>
+<area shape="rect" id="node5" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="719,157,903,184"/>
+<area shape="rect" id="node6" href="$classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="256,284,448,311"/>
+<area shape="rect" id="node8" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="729,335,892,361"/>
+<area shape="rect" id="node9" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="951,399,1124,425"/>
+<area shape="rect" id="node12" href="$classBufferManager.html#adf643fa6054886bcea2e336d848d96ad" title="标记页是否被修改" alt="" coords="261,512,443,539"/>
+<area shape="rect" id="node3" href="$classBp__tree.html#abd7802283f6c30724b7b0b802ae25646" title="Basic deletion from the tree." alt="" coords="527,5,640,32"/>
+<area shape="rect" id="node4" href="$classBp__tree.html#adab2d3f8a4e9403048a950ecef133d65" title=" " alt="" coords="523,56,644,83"/>
+<area shape="rect" id="node7" href="$classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="496,208,671,235"/>
+<area shape="rect" id="node10" href="$classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="503,309,664,336"/>
+<area shape="rect" id="node11" href="$classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="496,360,671,387"/>
+</map>

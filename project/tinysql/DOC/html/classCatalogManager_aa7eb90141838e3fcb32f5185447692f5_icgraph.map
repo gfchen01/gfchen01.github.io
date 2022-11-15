@@ -1,0 +1,6 @@
+<map id="CatalogManager::existAttribute" name="CatalogManager::existAttribute">
+<area shape="rect" id="node1" title="Judge if an attribute in of a table exists." alt="" coords="621,5,824,32"/>
+<area shape="rect" id="node2" href="$classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70" title="Update Index." alt="" coords="375,5,573,32"/>
+<area shape="rect" id="node3" href="$classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="152,5,327,32"/>
+<area shape="rect" id="node4" href="$classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>

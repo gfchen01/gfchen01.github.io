@@ -1,0 +1,19 @@
+<map id="CatalogManager::getIndex" name="CatalogManager::getIndex">
+<area shape="rect" id="node1" title="Get the Index object from table name." alt="" coords="1149,287,1324,313"/>
+<area shape="rect" id="node2" href="$classCatalogManager.html#a61045484ac1872d8bff41c844b511357" title="Delete an index file." alt="" coords="667,8,853,35"/>
+<area shape="rect" id="node5" href="$classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="909,287,1101,313"/>
+<area shape="rect" id="node11" href="$classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70" title="Update Index." alt="" coords="412,211,611,237"/>
+<area shape="rect" id="node13" href="$classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63" title=" " alt="" coords="667,464,853,491"/>
+<area shape="rect" id="node17" href="$classCatalogManager.html#a047427d8231c1eb2407149d52526507a" title=" " alt="" coords="665,515,855,541"/>
+<area shape="rect" id="node3" href="$classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb" title="Delete the index of a certain index on a table." alt="" coords="176,135,340,161"/>
+<area shape="rect" id="node4" href="$classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,312,104,339"/>
+<area shape="rect" id="node6" href="$classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="415,135,608,161"/>
+<area shape="rect" id="node8" href="$classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="659,312,861,339"/>
+<area shape="rect" id="node10" href="$classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5" title="Judge if an attribute in of a table exists." alt="" coords="659,261,861,288"/>
+<area shape="rect" id="node12" href="$classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992" title="Get the Table Attributes." alt="" coords="152,363,364,389"/>
+<area shape="rect" id="node14" href="$classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="661,413,859,440"/>
+<area shape="rect" id="node16" href="$classRecordManager.html#a90e45d1c86ecebd7eb528c3fd674af43" title="返回包含所有目标属性满足Where条件的记录的表" alt="" coords="659,160,861,187"/>
+<area shape="rect" id="node7" href="$classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="171,211,345,237"/>
+<area shape="rect" id="node9" href="$classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="166,312,350,339"/>
+<area shape="rect" id="node15" href="$classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="421,413,602,440"/>
+</map>

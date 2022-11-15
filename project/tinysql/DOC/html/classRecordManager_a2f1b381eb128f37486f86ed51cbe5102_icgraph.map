@@ -1,0 +1,5 @@
+<map id="RecordManager::SelectRecord" name="RecordManager::SelectRecord">
+<area shape="rect" id="node1" title="返回整张表" alt="" coords="384,5,585,32"/>
+<area shape="rect" id="node2" href="$classExec__Engine.html#a5c8b8ef3c0d4c4c6b2b11903d76f9c97" title="Select records by conditions." alt="" coords="152,5,336,32"/>
+<area shape="rect" id="node3" href="$classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>

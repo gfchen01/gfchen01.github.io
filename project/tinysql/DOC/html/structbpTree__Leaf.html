@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -70,13 +71,18 @@ $(function() {
 <div class="title">bpTree_Leaf Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The storage detail of a leaf node of b-plus tree.  
+ <a href="structbpTree__Leaf.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="bpTree__block_8h_source.html">bpTree_block.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for bpTree_Leaf:</div>
 <div class="dyncontent">
 <div class="center"><img src="structbpTree__Leaf__inherit__graph.png" border="0" usemap="#bpTree__Leaf_inherit__map" alt="Inheritance graph"/></div>
 <map name="bpTree__Leaf_inherit__map" id="bpTree__Leaf_inherit__map">
-<area shape="rect" title=" " alt="" coords="9,80,104,107"/>
-<area shape="rect" href="structbpTree__Block.html" title=" " alt="" coords="5,5,108,32"/>
+<area shape="rect" title="The storage detail of a leaf node of b&#45;plus tree." alt="" coords="9,80,104,107"/>
+<area shape="rect" href="structbpTree__Block.html" title="The storage detail of the header of each page in index files." alt="" coords="5,5,108,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -84,8 +90,8 @@ Collaboration diagram for bpTree_Leaf:</div>
 <div class="dyncontent">
 <div class="center"><img src="structbpTree__Leaf__coll__graph.png" border="0" usemap="#bpTree__Leaf_coll__map" alt="Collaboration graph"/></div>
 <map name="bpTree__Leaf_coll__map" id="bpTree__Leaf_coll__map">
-<area shape="rect" title=" " alt="" coords="9,80,104,107"/>
-<area shape="rect" href="structbpTree__Block.html" title=" " alt="" coords="5,5,108,32"/>
+<area shape="rect" title="The storage detail of a leaf node of b&#45;plus tree." alt="" coords="9,80,104,107"/>
+<area shape="rect" href="structbpTree__Block.html" title="The storage detail of the header of each page in index files." alt="" coords="5,5,108,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -128,7 +134,11 @@ db_size_t&#160;</td><td class="memItemRight" valign="bottom"><b>_max_size</b></t
 blockId_t&#160;</td><td class="memItemRight" valign="bottom"><b>_next_block_id</b></td></tr>
 <tr class="separator:a1f0f6787256bd602a92727273f6c5236 inherit pub_attribs_structbpTree__Block"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The storage detail of a leaf node of b-plus tree. </p>
+
+<p class="definition">Definition at line <a class="el" href="bpTree__block_8h_source.html#l00070">70</a> of file <a class="el" href="bpTree__block_8h_source.html">bpTree_block.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a35bef9cf25ac979a0d51a5f9ab68ca06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a35bef9cf25ac979a0d51a5f9ab68ca06">&#9670;&nbsp;</a></span>init()</h2>
 
@@ -177,6 +187,17 @@ blockId_t&#160;</td><td class="memItemRight" valign="bottom"><b>_next_block_id</
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="bpTree__block_8h_source.html#l00077">77</a> of file <a class="el" href="bpTree__block_8h_source.html">bpTree_block.h</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="structbpTree__Leaf_a35bef9cf25ac979a0d51a5f9ab68ca06_cgraph.png" border="0" usemap="#structbpTree__Leaf_a35bef9cf25ac979a0d51a5f9ab68ca06_cgraph" alt=""/></div>
+<map name="structbpTree__Leaf_a35bef9cf25ac979a0d51a5f9ab68ca06_cgraph" id="structbpTree__Leaf_a35bef9cf25ac979a0d51a5f9ab68ca06_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,124,32"/>
+<area shape="rect" href="structbpTree__Block.html#a405c6ad927da249a5aa9b152a074e3c8" title=" " alt="" coords="172,5,299,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a50683ef9747cc025312f169c61eb208d"></a>
@@ -211,10 +232,12 @@ blockId_t&#160;</td><td class="memItemRight" valign="bottom"><b>_next_block_id</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="bpTree__block_8h_source.html#l00092">92</a> of file <a class="el" href="bpTree__block_8h_source.html">bpTree_block.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/index/<a class="el" href="bpTree__block_8h_source.html">bpTree_block.h</a></li>
+<li>src/include/index/<a class="el" href="bpTree__block_8h_source.html">bpTree_block.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

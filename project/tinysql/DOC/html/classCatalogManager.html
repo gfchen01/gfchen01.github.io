@@ -22,8 +22,9 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">tinySQL
+   &#160;<span id="projectnumber">0.1</span>
    </div>
-   <div id="projectbrief">Made for ZJU::DBMS course final project, and for fun</div>
+   <div id="projectbrief">A self-contained database management system</div>
   </td>
  </tr>
  </tbody>
@@ -69,6 +70,11 @@ $(function() {
 <div class="title">CatalogManager Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manage all the table names, attritbutes, and index existence.  
+ <a href="classCatalogManager.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="catalog_8h_source.html">catalog.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -82,18 +88,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aa1fd9231d23fe6928911be5013f81c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update <a class="el" href="structIndex.html" title="Index desciption for a table.">Index</a>.  <a href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70">More...</a><br /></td></tr>
 <tr class="separator:aa1fd9231d23fe6928911be5013f81c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34e39f55d633543737ba2f897390f3d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5">DropTable</a> (const std::string &amp;table_name)</td></tr>
+<tr class="memdesc:a34e39f55d633543737ba2f897390f3d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete a table.  <a href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5">More...</a><br /></td></tr>
 <tr class="separator:a34e39f55d633543737ba2f897390f3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61045484ac1872d8bff41c844b511357"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357">DropIndex</a> (const std::string &amp;table_name, const std::string &amp;index_name)</td></tr>
+<tr class="memdesc:a61045484ac1872d8bff41c844b511357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete an index file.  <a href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357">More...</a><br /></td></tr>
 <tr class="separator:a61045484ac1872d8bff41c844b511357"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73626d75dcae1e28674144c2ce796848"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848">existTable</a> (const std::string &amp;table_name)</td></tr>
+<tr class="memdesc:a73626d75dcae1e28674144c2ce796848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Judge if the table exists.  <a href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848">More...</a><br /></td></tr>
 <tr class="separator:a73626d75dcae1e28674144c2ce796848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7eb90141838e3fcb32f5185447692f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5">existAttribute</a> (const std::string &amp;table_name, const std::string &amp;attr_name)</td></tr>
+<tr class="memdesc:aa7eb90141838e3fcb32f5185447692f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Judge if an attribute in of a table exists.  <a href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5">More...</a><br /></td></tr>
 <tr class="separator:aa7eb90141838e3fcb32f5185447692f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03554dcff042d0fe1c508335d24c6274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structAttribute.html">Attribute</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274">getAttribute</a> (const std::string &amp;table_name)</td></tr>
-<tr class="memdesc:a03554dcff042d0fe1c508335d24c6274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="structAttribute.html" title="The attributes for a schema.">Attribute</a> object.  <a href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274">More...</a><br /></td></tr>
+<tr class="memdesc:a03554dcff042d0fe1c508335d24c6274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="structAttribute.html" title="The attributes for a schema.">Attribute</a> from table name.  <a href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274">More...</a><br /></td></tr>
 <tr class="separator:a03554dcff042d0fe1c508335d24c6274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae215e1b5e55cc0796fa94ba912b6ef91"><td class="memItemLeft" align="right" valign="top"><a id="ae215e1b5e55cc0796fa94ba912b6ef91"></a>
-<a class="el" href="structIndex.html">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><b>getIndex</b> (const std::string &amp;table_name)</td></tr>
+<tr class="memitem:ae215e1b5e55cc0796fa94ba912b6ef91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structIndex.html">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91">getIndex</a> (const std::string &amp;table_name)</td></tr>
+<tr class="memdesc:ae215e1b5e55cc0796fa94ba912b6ef91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the <a class="el" href="structIndex.html" title="Index desciption for a table.">Index</a> object from table name.  <a href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91">More...</a><br /></td></tr>
 <tr class="separator:ae215e1b5e55cc0796fa94ba912b6ef91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb96823b72c7d0bb20b33951fd8e727c"><td class="memItemLeft" align="right" valign="top"><a id="adb96823b72c7d0bb20b33951fd8e727c"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>getIndexName</b> (const std::string &amp;table_name, const std::string &amp;attr_name)</td></tr>
@@ -109,7 +119,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>ShowAllTable</b> ()</
 std::string&#160;</td><td class="memItemRight" valign="bottom"><b>indexName2table</b> (std::string &amp;index_name) const</td></tr>
 <tr class="separator:a8633259221919201260501af28be7a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Manage all the table names, attritbutes, and index existence. </p>
+
+<p class="definition">Definition at line <a class="el" href="catalog_8h_source.html#l00030">30</a> of file <a class="el" href="catalog_8h_source.html">catalog.h</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a27f28ef5dfd82fec1bdea6b6ace9f19f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a27f28ef5dfd82fec1bdea6b6ace9f19f">&#9670;&nbsp;</a></span>CreateTable()</h2>
 
@@ -147,6 +161,33 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>indexName2tabl
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00113">113</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_cgraph.png" border="0" usemap="#classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_cgraph" alt=""/></div>
+<map name="classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_cgraph" id="classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_cgraph">
+<area shape="rect" title="Create a Table object." alt="" coords="5,107,200,133"/>
+<area shape="rect" href="classIndexManager.html#aba55a427abc523657f948c257735624c" title="Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio..." alt="" coords="249,107,431,133"/>
+<area shape="rect" href="classBufferManager.html#afe23ccf5b08c7cee3580ca70702d8aea" title="核心函数之一。内存和磁盘交互的接口。" alt="" coords="485,5,657,32"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="490,56,653,83"/>
+<area shape="rect" href="classBufferManager.html#adf643fa6054886bcea2e336d848d96ad" title="标记页是否被修改" alt="" coords="480,157,663,184"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="248,208,432,235"/>
+<area shape="rect" href="structbpTree__Block.html#a405c6ad927da249a5aa9b152a074e3c8" title=" " alt="" coords="508,107,635,133"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="711,56,884,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_icgraph.png" border="0" usemap="#classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_icgraph" alt=""/></div>
+<map name="classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_icgraph" id="classCatalogManager_a27f28ef5dfd82fec1bdea6b6ace9f19f_icgraph">
+<area shape="rect" title="Create a Table object." alt="" coords="375,5,569,32"/>
+<area shape="rect" href="classExec__Engine.html#a262893ebe7a5a30985f3763baae28861" title="Create a Table." alt="" coords="152,5,327,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a61045484ac1872d8bff41c844b511357"></a>
@@ -174,6 +215,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>indexName2tabl
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Delete an index file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">table_name</td><td>通过table_name查找該表 </td></tr>
@@ -181,6 +224,33 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>indexName2tabl
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00213">213</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a61045484ac1872d8bff41c844b511357_cgraph.png" border="0" usemap="#classCatalogManager_a61045484ac1872d8bff41c844b511357_cgraph" alt=""/></div>
+<map name="classCatalogManager_a61045484ac1872d8bff41c844b511357_cgraph" id="classCatalogManager_a61045484ac1872d8bff41c844b511357_cgraph">
+<area shape="rect" title="Delete an index file." alt="" coords="5,107,191,133"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="701,5,885,32"/>
+<area shape="rect" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="239,107,431,133"/>
+<area shape="rect" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="479,208,653,235"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="712,183,875,209"/>
+<area shape="rect" href="classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="485,56,647,83"/>
+<area shape="rect" href="classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="479,107,653,133"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="933,183,1107,209"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a61045484ac1872d8bff41c844b511357_icgraph.png" border="0" usemap="#classCatalogManager_a61045484ac1872d8bff41c844b511357_icgraph" alt=""/></div>
+<map name="classCatalogManager_a61045484ac1872d8bff41c844b511357_icgraph" id="classCatalogManager_a61045484ac1872d8bff41c844b511357_icgraph">
+<area shape="rect" title="Delete an index file." alt="" coords="364,5,549,32"/>
+<area shape="rect" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb" title="Delete the index of a certain index on a table." alt="" coords="152,5,316,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -199,12 +269,35 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>indexName2tabl
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Delete a table. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">table_name</td><td>通过表的名字來刪除表格 </td></tr>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00164">164</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a34e39f55d633543737ba2f897390f3d5_cgraph.png" border="0" usemap="#classCatalogManager_a34e39f55d633543737ba2f897390f3d5_cgraph" alt=""/></div>
+<map name="classCatalogManager_a34e39f55d633543737ba2f897390f3d5_cgraph" id="classCatalogManager_a34e39f55d633543737ba2f897390f3d5_cgraph">
+<area shape="rect" title="Delete a table." alt="" coords="5,5,189,32"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="237,5,421,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a34e39f55d633543737ba2f897390f3d5_icgraph.png" border="0" usemap="#classCatalogManager_a34e39f55d633543737ba2f897390f3d5_icgraph" alt=""/></div>
+<map name="classCatalogManager_a34e39f55d633543737ba2f897390f3d5_icgraph" id="classCatalogManager_a34e39f55d633543737ba2f897390f3d5_icgraph">
+<area shape="rect" title="Delete a table." alt="" coords="363,5,547,32"/>
+<area shape="rect" href="classExec__Engine.html#ac1130534a94c8e9ce524732a7d3b5a86" title="Delete a Table." alt="" coords="152,5,315,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -233,15 +326,46 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><b>indexName2tabl
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Judge if an attribute in of a table exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">table_name</td><td>通过表的名字來判斷表內的屬性是否存在 </td></tr>
+    <tr><td class="paramname">table_name</td><td>Name of table </td></tr>
+    <tr><td class="paramname">attr_name</td><td>The attribute name </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dl class="section return"><dt>Returns</dt><dd>true attribute exists </dd>
 <dd>
-false </dd></dl>
+false attribute doesn't exist </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00070">70</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_cgraph.png" border="0" usemap="#classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_cgraph" alt=""/></div>
+<map name="classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_cgraph" id="classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_cgraph">
+<area shape="rect" title="Judge if an attribute in of a table exists." alt="" coords="5,84,208,110"/>
+<area shape="rect" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="256,84,448,110"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="719,8,903,34"/>
+<area shape="rect" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="496,33,671,60"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="729,58,892,85"/>
+<area shape="rect" href="classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="503,134,664,161"/>
+<area shape="rect" href="classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="496,185,671,212"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="951,58,1124,85"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_icgraph.png" border="0" usemap="#classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_icgraph" alt=""/></div>
+<map name="classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_icgraph" id="classCatalogManager_aa7eb90141838e3fcb32f5185447692f5_icgraph">
+<area shape="rect" title="Judge if an attribute in of a table exists." alt="" coords="621,5,824,32"/>
+<area shape="rect" href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70" title="Update Index." alt="" coords="375,5,573,32"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="152,5,327,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -260,15 +384,50 @@ false </dd></dl>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Judge if the table exists. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">table_name</td><td>通过表的名字來判斷表是否存在 </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dl class="section return"><dt>Returns</dt><dd>true table exists </dd>
 <dd>
-false </dd></dl>
+false table doesn't exist </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00065">65</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a73626d75dcae1e28674144c2ce796848_icgraph.png" border="0" usemap="#classCatalogManager_a73626d75dcae1e28674144c2ce796848_icgraph" alt=""/></div>
+<map name="classCatalogManager_a73626d75dcae1e28674144c2ce796848_icgraph" id="classCatalogManager_a73626d75dcae1e28674144c2ce796848_icgraph">
+<area shape="rect" title="Judge if the table exists." alt="" coords="1399,335,1583,361"/>
+<area shape="rect" href="classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="663,107,857,133"/>
+<area shape="rect" href="classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f" title="Create a Table object." alt="" coords="1153,5,1347,32"/>
+<area shape="rect" href="classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="659,512,861,539"/>
+<area shape="rect" href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357" title="Delete an index file." alt="" coords="667,563,853,589"/>
+<area shape="rect" href="classCatalogManager.html#a34e39f55d633543737ba2f897390f3d5" title="Delete a table." alt="" coords="1158,56,1342,83"/>
+<area shape="rect" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="909,360,1101,387"/>
+<area shape="rect" href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70" title="Update Index." alt="" coords="412,284,611,311"/>
+<area shape="rect" href="classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63" title=" " alt="" coords="667,208,853,235"/>
+<area shape="rect" href="classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="661,664,859,691"/>
+<area shape="rect" href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a" title=" " alt="" coords="665,613,855,640"/>
+<area shape="rect" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="1163,360,1337,387"/>
+<area shape="rect" href="classRecordManager.html#a2f1b381eb128f37486f86ed51cbe5102" title="返回整张表" alt="" coords="1149,715,1351,741"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="171,284,345,311"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,487,104,513"/>
+<area shape="rect" href="classExec__Engine.html#a262893ebe7a5a30985f3763baae28861" title="Create a Table." alt="" coords="171,51,345,77"/>
+<area shape="rect" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="419,512,603,539"/>
+<area shape="rect" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb" title="Delete the index of a certain index on a table." alt="" coords="429,563,593,589"/>
+<area shape="rect" href="classExec__Engine.html#ac1130534a94c8e9ce524732a7d3b5a86" title="Delete a Table." alt="" coords="177,145,339,172"/>
+<area shape="rect" href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5" title="Judge if an attribute in of a table exists." alt="" coords="659,309,861,336"/>
+<area shape="rect" href="classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992" title="Get the Table Attributes." alt="" coords="152,461,364,488"/>
+<area shape="rect" href="classRecordManager.html#a90e45d1c86ecebd7eb528c3fd674af43" title="返回包含所有目标属性满足Where条件的记录的表" alt="" coords="659,411,861,437"/>
+<area shape="rect" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="421,639,602,665"/>
+<area shape="rect" href="classExec__Engine.html#a5c8b8ef3c0d4c4c6b2b11903d76f9c97" title="Select records by conditions." alt="" coords="913,715,1097,741"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -288,7 +447,7 @@ false </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Get the <a class="el" href="structAttribute.html" title="The attributes for a schema.">Attribute</a> object. </p>
+<p>Get the <a class="el" href="structAttribute.html" title="The attributes for a schema.">Attribute</a> from table name. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">table_name</td><td>通过表的名字來獲取屬性 </td></tr>
@@ -296,6 +455,109 @@ false </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="structAttribute.html" title="The attributes for a schema.">Attribute</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00285">285</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a03554dcff042d0fe1c508335d24c6274_cgraph.png" border="0" usemap="#classCatalogManager_a03554dcff042d0fe1c508335d24c6274_cgraph" alt=""/></div>
+<map name="classCatalogManager_a03554dcff042d0fe1c508335d24c6274_cgraph" id="classCatalogManager_a03554dcff042d0fe1c508335d24c6274_cgraph">
+<area shape="rect" title="Get the Attribute from table name." alt="" coords="5,84,197,110"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="468,8,652,34"/>
+<area shape="rect" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="245,33,420,60"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="479,58,641,85"/>
+<area shape="rect" href="classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="252,134,413,161"/>
+<area shape="rect" href="classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="245,185,420,212"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="700,58,873,85"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a03554dcff042d0fe1c508335d24c6274_icgraph.png" border="0" usemap="#classCatalogManager_a03554dcff042d0fe1c508335d24c6274_icgraph" alt=""/></div>
+<map name="classCatalogManager_a03554dcff042d0fe1c508335d24c6274_icgraph" id="classCatalogManager_a03554dcff042d0fe1c508335d24c6274_icgraph">
+<area shape="rect" title="Get the Attribute from table name." alt="" coords="909,233,1101,260"/>
+<area shape="rect" href="classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="415,157,608,184"/>
+<area shape="rect" href="classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="659,5,861,32"/>
+<area shape="rect" href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357" title="Delete an index file." alt="" coords="667,208,853,235"/>
+<area shape="rect" href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5" title="Judge if an attribute in of a table exists." alt="" coords="659,56,861,83"/>
+<area shape="rect" href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70" title="Update Index." alt="" coords="412,107,611,133"/>
+<area shape="rect" href="classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992" title="Get the Table Attributes." alt="" coords="152,259,364,285"/>
+<area shape="rect" href="classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63" title=" " alt="" coords="667,309,853,336"/>
+<area shape="rect" href="classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="661,360,859,387"/>
+<area shape="rect" href="classRecordManager.html#a90e45d1c86ecebd7eb528c3fd674af43" title="返回包含所有目标属性满足Where条件的记录的表" alt="" coords="659,411,861,437"/>
+<area shape="rect" href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a" title=" " alt="" coords="665,461,855,488"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="171,157,345,184"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,208,104,235"/>
+<area shape="rect" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="166,81,350,108"/>
+<area shape="rect" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb" title="Delete the index of a certain index on a table." alt="" coords="176,208,340,235"/>
+<area shape="rect" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="421,335,602,361"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae215e1b5e55cc0796fa94ba912b6ef91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae215e1b5e55cc0796fa94ba912b6ef91">&#9670;&nbsp;</a></span>getIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structIndex.html">Index</a> CatalogManager::getIndex </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>table_name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the <a class="el" href="structIndex.html" title="Index desciption for a table.">Index</a> object from table name. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table_name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structIndex.html" title="Index desciption for a table.">Index</a> </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00240">240</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_cgraph.png" border="0" usemap="#classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_cgraph" alt=""/></div>
+<map name="classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_cgraph" id="classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_cgraph">
+<area shape="rect" title="Get the Index object from table name." alt="" coords="5,31,180,57"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="228,5,412,32"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="239,56,401,83"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="460,56,633,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_icgraph.png" border="0" usemap="#classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_icgraph" alt=""/></div>
+<map name="classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_icgraph" id="classCatalogManager_ae215e1b5e55cc0796fa94ba912b6ef91_icgraph">
+<area shape="rect" title="Get the Index object from table name." alt="" coords="1149,287,1324,313"/>
+<area shape="rect" href="classCatalogManager.html#a61045484ac1872d8bff41c844b511357" title="Delete an index file." alt="" coords="667,8,853,35"/>
+<area shape="rect" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="909,287,1101,313"/>
+<area shape="rect" href="classCatalogManager.html#aa1fd9231d23fe6928911be5013f81c70" title="Update Index." alt="" coords="412,211,611,237"/>
+<area shape="rect" href="classCatalogManager.html#a3b3cf97230b26efe6efed8cf9b4d0a63" title=" " alt="" coords="667,464,853,491"/>
+<area shape="rect" href="classCatalogManager.html#a047427d8231c1eb2407149d52526507a" title=" " alt="" coords="665,515,855,541"/>
+<area shape="rect" href="classExec__Engine.html#a80dcf846a1cc1dc21a738576dee18ccb" title="Delete the index of a certain index on a table." alt="" coords="176,135,340,161"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,312,104,339"/>
+<area shape="rect" href="classRecordManager.html#ac45284e707fc934325b006e9f87ce502" title="Create a Index on an attribute that has already exists." alt="" coords="415,135,608,161"/>
+<area shape="rect" href="classRecordManager.html#a447cf9fc4b540241544f97d227bfa6d3" title="删除对应表中所有记录（不删除表文件）" alt="" coords="659,312,861,339"/>
+<area shape="rect" href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5" title="Judge if an attribute in of a table exists." alt="" coords="659,261,861,288"/>
+<area shape="rect" href="classExec__Engine.html#a57e985c0e2f83783dbbcb76545395992" title="Get the Table Attributes." alt="" coords="152,363,364,389"/>
+<area shape="rect" href="classRecordManager.html#a79f5a8757b2b0c19d565ab28c5728190" title="向对应表中插入一条记录" alt="" coords="661,413,859,440"/>
+<area shape="rect" href="classRecordManager.html#a90e45d1c86ecebd7eb528c3fd674af43" title="返回包含所有目标属性满足Where条件的记录的表" alt="" coords="659,160,861,187"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="171,211,345,237"/>
+<area shape="rect" href="classExec__Engine.html#aee9e21cbe0a49436d564464f443c4019" title="Delete records by conditions." alt="" coords="166,312,350,339"/>
+<area shape="rect" href="classExec__Engine.html#ab8683a86447dfb14720159b9d5ed9daf" title="Insert a piece of record." alt="" coords="421,413,602,440"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -340,6 +602,23 @@ false </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string </dd></dl>
 
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00353">353</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a3b3cf97230b26efe6efed8cf9b4d0a63_cgraph.png" border="0" usemap="#classCatalogManager_a3b3cf97230b26efe6efed8cf9b4d0a63_cgraph" alt=""/></div>
+<map name="classCatalogManager_a3b3cf97230b26efe6efed8cf9b4d0a63_cgraph" id="classCatalogManager_a3b3cf97230b26efe6efed8cf9b4d0a63_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,191,133"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="701,5,885,32"/>
+<area shape="rect" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="239,107,431,133"/>
+<area shape="rect" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="479,208,653,235"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="712,183,875,209"/>
+<area shape="rect" href="classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="485,56,647,83"/>
+<area shape="rect" href="classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="479,107,653,133"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="933,183,1107,209"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a047427d8231c1eb2407149d52526507a"></a>
@@ -363,6 +642,23 @@ false </dd></dl>
   </table>
   </dd>
 </dl>
+
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00372">372</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_a047427d8231c1eb2407149d52526507a_cgraph.png" border="0" usemap="#classCatalogManager_a047427d8231c1eb2407149d52526507a_cgraph" alt=""/></div>
+<map name="classCatalogManager_a047427d8231c1eb2407149d52526507a_cgraph" id="classCatalogManager_a047427d8231c1eb2407149d52526507a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,195,133"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="705,5,889,32"/>
+<area shape="rect" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="243,107,435,133"/>
+<area shape="rect" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="483,208,657,235"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="716,183,879,209"/>
+<area shape="rect" href="classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="489,56,651,83"/>
+<area shape="rect" href="classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="483,107,657,133"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="937,183,1111,209"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -408,11 +704,39 @@ false </dd></dl>
   </dd>
 </dl>
 
+<p class="definition">Definition at line <a class="el" href="Catalog__Manager_8cpp_source.html#l00172">172</a> of file <a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_cgraph.png" border="0" usemap="#classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_cgraph" alt=""/></div>
+<map name="classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_cgraph" id="classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_cgraph">
+<area shape="rect" title="Update Index." alt="" coords="5,107,204,133"/>
+<area shape="rect" href="classCatalogManager.html#aa7eb90141838e3fcb32f5185447692f5" title="Judge if an attribute in of a table exists." alt="" coords="252,81,455,108"/>
+<area shape="rect" href="classCatalogManager.html#a03554dcff042d0fe1c508335d24c6274" title="Get the Attribute from table name." alt="" coords="503,107,695,133"/>
+<area shape="rect" href="classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="965,5,1149,32"/>
+<area shape="rect" href="classCatalogManager.html#ae215e1b5e55cc0796fa94ba912b6ef91" title="Get the Index object from table name." alt="" coords="743,208,917,235"/>
+<area shape="rect" href="classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="976,183,1139,209"/>
+<area shape="rect" href="classBufferManager.html#aa039482f43211532700b49026bf4fdc1" title="钉住一页" alt="" coords="749,107,911,133"/>
+<area shape="rect" href="classBufferManager.html#a84ee5259b4e6ea1b170803d4b72cb559" title="解钉一次" alt="" coords="743,56,917,83"/>
+<area shape="rect" href="classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="1197,183,1371,209"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_icgraph.png" border="0" usemap="#classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_icgraph" alt=""/></div>
+<map name="classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_icgraph" id="classCatalogManager_aa1fd9231d23fe6928911be5013f81c70_icgraph">
+<area shape="rect" title="Update Index." alt="" coords="375,5,573,32"/>
+<area shape="rect" href="classExec__Engine.html#a9974743768882459f8fbfd833bc98989" title="Create Index on a table&#39;s attribute." alt="" coords="152,5,327,32"/>
+<area shape="rect" href="classInterface.html#a090a950300a463d91f8f361d3b333906" title="Should be called after initialized." alt="" coords="5,5,104,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>include/catalog/<a class="el" href="catalog_8h_source.html">catalog.h</a></li>
-<li>catalog/Catalog_Manager.cpp</li>
+<li>src/include/catalog/<a class="el" href="catalog_8h_source.html">catalog.h</a></li>
+<li>src/catalog/<a class="el" href="Catalog__Manager_8cpp_source.html">Catalog_Manager.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

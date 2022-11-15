@@ -1,0 +1,12 @@
+<map id="Exec_Engine::createTable" name="Exec_Engine::createTable">
+<area shape="rect" id="node1" title="Create a Table." alt="" coords="5,132,180,159"/>
+<area shape="rect" id="node2" href="$classCatalogManager.html#a27f28ef5dfd82fec1bdea6b6ace9f19f" title="Create a Table object." alt="" coords="237,107,432,133"/>
+<area shape="rect" id="node10" href="$classRecordManager.html#ae40c1e8913bcaf22737dc76e7a8fdb01" title="Create a Table File object." alt="" coords="228,157,441,184"/>
+<area shape="rect" id="node3" href="$classIndexManager.html#aba55a427abc523657f948c257735624c" title="Create an Index of an attr. Actually creates an has_index file with a head block. File name conventio..." alt="" coords="490,107,673,133"/>
+<area shape="rect" id="node4" href="$classBufferManager.html#afe23ccf5b08c7cee3580ca70702d8aea" title="核心函数之一。内存和磁盘交互的接口。" alt="" coords="727,5,899,32"/>
+<area shape="rect" id="node5" href="$classBufferManager.html#a5f3eabac08b8c4c598b5917a3a932810" title="获取一页" alt="" coords="731,56,894,83"/>
+<area shape="rect" id="node8" href="$classBufferManager.html#adf643fa6054886bcea2e336d848d96ad" title="标记页是否被修改" alt="" coords="721,157,904,184"/>
+<area shape="rect" id="node9" href="$classCatalogManager.html#a73626d75dcae1e28674144c2ce796848" title="Judge if the table exists." alt="" coords="489,208,673,235"/>
+<area shape="rect" id="node7" href="$structbpTree__Block.html#a405c6ad927da249a5aa9b152a074e3c8" title=" " alt="" coords="749,107,876,133"/>
+<area shape="rect" id="node6" href="$classBufferManager.html#a6eafa6c4b67dd0e9af3aa6ebfcf22080" title="简单遍历获取页号" alt="" coords="952,56,1125,83"/>
+</map>
