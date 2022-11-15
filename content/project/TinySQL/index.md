@@ -14,8 +14,8 @@ links:
   - name: Documentation
     url: 'project/tinysql/DOC/html/index.html'
   
-  - name: Tech Report(Chinese)
-    url: 'project/tinysql/TinySQL_Techinal_Report'
+  # - name: Tech Report(Chinese)
+  #   url: 'project/tinysql/TinySQL_Techinal_Report'
 
 url_code: 'https://github.com/gfchen01/tinySQL'
 url_pdf:
