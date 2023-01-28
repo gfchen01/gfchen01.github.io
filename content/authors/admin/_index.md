@@ -24,6 +24,7 @@ bio: My research interests include multi-robot systems, robot perception. I am a
 interests:
   - Multi-robot systems & Swarms
   - Distributed Planning & Perception
+  - Optimization
 
 # Education to show in About widget
 education:
@@ -70,6 +71,6 @@ email: ''
 highlight_name: true
 ---
 
-Guofei Chen is a bechalor student at Control Science and Engineering Department, Zhejiang University. His research interests include multi-robot systems (Swarms) and robot perception and planning problems. He also has a strong interest in statistical inference and combinatorial mathematics.
+Guofei Chen is a bechalor student at Control Science and Engineering Department, Zhejiang University. His research interests include multi-robot systems (Swarms), robot perception and planning problems. He also has a strong interest in statistical inference and optimization.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
