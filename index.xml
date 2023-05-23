@@ -9,7 +9,7 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Multi-robot system relative localization with range measurements (Not available)</title><link>https://gfchen01.github.io/post/multi_uwb/</link><pubDate>Thu, 10 Nov 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/post/multi_uwb/</guid><description>&lt;p>Sorry to lead you here, but this is part of our bigger work &lt;code>global relative localization via convex relaxation&lt;/code>, which is still on-going at the moment and may be submitted, thus we cannot open source the algorithm&amp;hellip; The picture is a kind of hardware setting while we were doing experiments. Any other technical report on the site is available, please check them out!&lt;/p></description></item><item><title>Rethinking the Parameter Learning of the Nonliear Dynamical Probabilistic Latent Variable Model</title><link>https://gfchen01.github.io/publication/oc_ndplvm/</link><pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/oc_ndplvm/</guid><description>&lt;!--
+&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Rethinking the Parameter Learning of the Nonliear Dynamical Probabilistic Latent Variable Model</title><link>https://gfchen01.github.io/publication/oc_ndplvm/</link><pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/oc_ndplvm/</guid><description>&lt;!--
 &lt;div class="alert alert-note">
 &lt;div>
 Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -439,21 +439,7 @@ column by the gas chromatograph results in a large measuring delay.&lt;/p>
 &lt;p>Yuan, X., Huang, B., Wang, Y., Yang, C., &amp;amp; Gui, W. (2018). Deep learning-based feature representation and its application for soft sensor modeling with variable-wise weighted SAE. &lt;em>IEEE Transactions on Industrial Informatics&lt;/em>, &lt;em>14&lt;/em>(7), 3235-3243&lt;/p>
 &lt;p>Sun, Q., &amp;amp; Ge, Z. (2020). Gated stacked target-related autoencoder: A novel deep feature extraction and layerwise ensemble method for industrial soft sensor application. &lt;em>IEEE Transactions on Cybernetics&lt;/em>.&lt;/p>
 &lt;h4 id="dirichlet-process">Dirichlet Process&lt;/h4>
-&lt;p>Radford M. Neal, Markov Chain Sampling Methods for Dirichlet Process Mixture Models, &lt;em>Journal of Computational and Graphical Statistics&lt;/em>, 9:2, 249-265, 2000&lt;/p></description></item><item><title>Probabilistic Generative Model with Long-Term Memory and its Application in Chemical Process Modeling</title><link>https://gfchen01.github.io/publication/conference-paper/</link><pubDate>Fri, 01 Oct 2021 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/conference-paper/</guid><description>&lt;!--
-&lt;div class="alert alert-note">
-&lt;div>
-Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-&lt;/div>
-&lt;/div>
--->
-&lt;!--
-&lt;div class="alert alert-note">
-&lt;div>
-Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
-&lt;/div>
-&lt;/div>
--->
-&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --></description></item><item><title>Slides</title><link>https://gfchen01.github.io/slides/example/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/slides/example/</guid><description>&lt;h1 id="create-slides-in-markdown-with-wowchemy">Create slides in Markdown with Wowchemy&lt;/h1>
+&lt;p>Radford M. Neal, Markov Chain Sampling Methods for Dirichlet Process Mixture Models, &lt;em>Journal of Computational and Graphical Statistics&lt;/em>, 9:2, 249-265, 2000&lt;/p></description></item><item><title>Slides</title><link>https://gfchen01.github.io/slides/example/</link><pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/slides/example/</guid><description>&lt;h1 id="create-slides-in-markdown-with-wowchemy">Create slides in Markdown with Wowchemy&lt;/h1>
 &lt;p>&lt;a href="https://wowchemy.com/" target="_blank" rel="noopener">Wowchemy&lt;/a> | &lt;a href="https://wowchemy.com/docs/content/slides/" target="_blank" rel="noopener">Documentation&lt;/a>&lt;/p>
 &lt;hr>
 &lt;h2 id="features">Features&lt;/h2>
