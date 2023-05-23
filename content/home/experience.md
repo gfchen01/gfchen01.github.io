@@ -22,17 +22,6 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Research Assistant
-    company: FAST-FAR Lab - ZJU
-    company_url: 'http://zju-fast.com/fei-gao/'
-    company_logo: 
-    location: Huzhou, Zhejiang
-    date_start: '2021-03-15'
-    date_end:
-    description: |2-
-      * Robot Perception with Range Measurements
-      * Swarm Perception and Motion Planning
-  
   - title: Group Leader
     company: ZJUNlict - ZJU RoboCup Team
     company_url: 'https://ssl.robocup.org/wp-content/uploads/2020/03/2020_ETDP_ZJUNlict.pdf'
@@ -45,11 +34,11 @@ experience:
         
         * Maintainence
           * Kick Module
-          * Denfense Module
+          * Decision Module
         * Path Planning and Motion Control
   
   - title: Research Assistant
-    company: Prof. [Zhiqiang Ge](https://scholar.google.com/citations?user=g_EMkuMAAAAJ) Group, State Key Laboratory of Industrial Control
+    company: State Key Laboratory of Industrial Control
     company_url: 'https://person.zju.edu.cn/en/gezhiqiang#0'
     company_logo:
     location: Hangzhou, Zhejiang

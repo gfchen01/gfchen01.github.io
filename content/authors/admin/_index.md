@@ -16,13 +16,17 @@ superuser: true
 organizations:
   - name: Zhejiang University
     url: https://www.zju.edu.cn/english/
+  - name: (Incoming) Carnegie Mellon University
+    url: https://www.cmu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include multi-robot systems, robot perception. I am also widely interested in learning and combinatorial mathematics.
+bio: My research interests include trustworthy autonomy and statistical inference. I am also widely interested in learning and combinatorial mathematics.
+
+# bio: My research interests include control amd multi-robot systems. I am also widely interested in learning and combinatorial mathematics.
 
 # Interests to show in About widget
 interests:
-  - Multi-robot systems & Swarms
+  - Control & Planning
   - Distributed Planning & Perception
   - Optimization
 
@@ -30,7 +34,7 @@ interests:
 education:
   courses:
     - course: BE in Automation
-      institution: Zhejiang University
+      institution: Zhejiang University, Advisor - Prof. Fei Gao
       year: 2023
 
 # Social/Academic Networking
@@ -71,6 +75,6 @@ email: ''
 highlight_name: true
 ---
 
-Guofei Chen is a bechalor student at Control Science and Engineering Department, Zhejiang University. His research interests include multi-robot systems (Swarms), robot perception and planning problems. He also has a strong interest in statistical inference and optimization.
+Guofei Chen is a bechalor student at Zhejiang University. His research interests include robot control and perception problems. He also has a strong interest in statistical inference and optimization.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
