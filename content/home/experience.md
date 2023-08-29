@@ -49,6 +49,17 @@ experience:
       * Data driven soft sensor
       * Probablistic Generative Model, Variational Autoencoder
 
+  - title: Research Assistant
+    company: Field Autonoums Systems and compuTing Lab (FAST)
+    company_url: 'https://zju-fast.com'
+    company_logo:
+    location: Hangzhou, Zhejiang
+    date_start: '2022-07-15'
+    date_end: '2023-08-01'
+    description: |2-
+
+      * Relative localization problem in aerial swarm
+
 
 design:
   columns: '2'
