@@ -33,9 +33,9 @@ feature:
     icon_pack: custom
     name: C++
   - description:
-    icon: pytorch
+    icon: unity
     icon_pack: custom
-    name: PyTorch
+    name: Unity
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"

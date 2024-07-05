@@ -22,32 +22,16 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Group Leader
-    company: ZJUNlict - ZJU RoboCup Team
-    company_url: 'https://ssl.robocup.org/wp-content/uploads/2020/03/2020_ETDP_ZJUNlict.pdf'
-    company_logo:
-    location: Hangzhou, Zhejiang
-    date_start: '2020-06-01'
-    date_end: '2022-11-15'
-    description: |2-
-        Responsibilities include:
-        
-        * Maintainence
-          * Kick Module
-          * Decision Module
-        * Path Planning and Motion Control
-  
   - title: Research Assistant
-    company: State Key Laboratory of Industrial Control
-    company_url: 'https://person.zju.edu.cn/en/gezhiqiang#0'
+    company: Ji's lab, CMU RI
+    company_url: 'https://frc.ri.cmu.edu/~zhangji/'
     company_logo:
-    location: Hangzhou, Zhejiang
-    date_start: '2021-04-01'
-    date_end: '2022-06-10'
+    location: Pittsburgh, Pennslyvania
+    date_start: '2023-09-15'
+    date_end: '2025-12-31'
     description: |2-
-
-      * Data driven soft sensor
-      * Probablistic Generative Model, Variational Autoencoder
+      * Interactive Navigation
+      * Autonomous Development Environment: Go2, Diablo
 
   - title: Research Assistant
     company: Field Autonoums Systems and compuTing Lab (FAST)
@@ -58,7 +42,31 @@ experience:
     date_end: '2023-08-01'
     description: |2-
 
-      * Relative localization problem in aerial swarm
+      * Certifiable perception
+      * Relative localization in aerial swarm
+
+  - title: Member
+    company: ZJUNlict - ZJU RoboCup Team
+    company_url: 'https://ssl.robocup.org/wp-content/uploads/2020/03/2020_ETDP_ZJUNlict.pdf'
+    company_logo:
+    location: Hangzhou, Zhejiang
+    date_start: '2020-06-01'
+    date_end: '2022-11-15'
+    description: |2-
+
+        * Path Planning and Motion Control
+        * Code maintainence
+  
+  - title: Research Assistant
+    company: State Key Laboratory of Industrial Control
+    company_logo:
+    location: Hangzhou, Zhejiang
+    date_start: '2021-04-01'
+    date_end: '2022-06-10'
+    description: |2-
+
+      * Probablistic Generative Model, Variational Autoencoder
+      * Data driven soft sensor
 
 
 design:

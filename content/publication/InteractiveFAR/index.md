@@ -1,23 +1,23 @@
 ---
-title: 'Rethinking the Parameter Learning of the Nonliear Dynamical Probabilistic Latent Variable Model'
+title: 'Interactive-FAR: Interactive, Fast and Adaptable Routing for Navigation Among Movable Obstacles in Complex Unknown Environments'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - Zhichao Chen
-  - Hao Wang
   - admin
-  - Le Yao
-  - Zhiqiang Ge
-  - Zhihuan Song
+  - Botao He
+  - Wenshan Wang
+  - Ji Zhang
+  - Cornelia Fermuller
+  - Yiannis Aloimonos
 
 # Author notes (optional)
-# author_notes:
-#   - 'Equal contribution'
-#   - 'Equal contribution'
+author_notes:
+  - 'Equal contribution'
+  - 'Equal contribution'
 
-date: '2022-11-01T00:00:00Z'
+date: '2024-03-01T00:00:00Z'
 doi: ''
 
 # # Schedule page publish date (NOT publication's date).
@@ -27,16 +27,16 @@ doi: ''
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ['2']
+publication_types: ['1']
 
 # Publication name and optional abbreviated publication name.
-publication: SUBMITTED to IEEE Transactions on Automation Science and Engineering
-publication_short: SUBMITTED to T-ASE
+publication: IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2024)
+publication_short: IROS 2024
 
-abstract: Nonlinear dynamical probabilistic latent variable model (NDPLVM) and its variants have been widely applied in industrial sequential data modeling cases like anomaly detection & diagnosis and inferential sensor. However, previous works mainly concentrate on model architecture design, which may hinder their application for the ignorance of the following issues -- (1), parameter learning algorithm principle; (2), inference network input variable; (3), moment expressions for nonlinear neural network structure. To address these issues, we propose a principled model named optimal control-NDPLVM (OC-NDPLVM), derive its parameter learning algorithm, and simplify its moment expressions in this paper. Specifically, we first propose the OC-NDPLVM and its parameter learning objective from stochastic differential theory principally. On this basis, we address issue 1) by converting the parameter learning problem into an optimization problem and deriving the parameter learning procedure based on the alternating direction method of multipliers framework. Meanwhile, we address issue 2) in the optimal control subproblem in the optimization procedure based on issue 1). After that, we address issue 3) by conducting the mean and variance expressions simplification to make the model computation tractable. Finally, we conduct two industrial inferential sensor downstream tasks to demonstrate the effectiveness of OC-NDPLVM.
+abstract: This paper introduces a real-time algorithm for navigating complex unknown environments cluttered with movable obstacles. Our algorithm achieves fast, adaptable routing by actively attempting to manipulate obstacles during path planning and adjusting the global plan from sensor feedback. The main contributions include an improved dynamic Directed Visibility Graph (DV-graph) for rapid global path searching, a real-time interaction planning method that adapts online from new sensory perceptions, and a comprehensive framework designed for interactive navigation in complex unknown or partially known environments. Our algorithm is capable of replanning the global path in several milliseconds. It can also attempt to move obstacles, update their affordances, and adapt strategies accordingly. Extensive experiments validate that our algorithm reduces the travel time by 33%, achieves up to 49% higher path efficiency, and runs faster than traditional methods by orders of magnitude in complex environments. It has been demonstrated to be the most efficient solution in terms of speed and efficiency for interactive navigation in environments of such complexity. We also open-source our code in the docker demo to facilitate future research.
 
-# # Summary. An optional shortened abstract.
-# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+# Summary. An optional shortened abstract.
+summary: A efficient navigation system that takes manipulating movable object into account in complex unknown environments.
 
 tags: []
 
@@ -48,14 +48,14 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_code: ''
+url_pdf: 'https://arxiv.org/abs/2404.07447'
+url_code: 'https://github.com/Bottle101/Interactive-FAR'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 url_poster: ''
 url_project: ''
 url_slides: ''
 url_source: ''
-url_video: ''
+url_video: 'https://youtu.be/5FNN5Us8-2o?si=hHZcYXIRq_JeeBYL'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

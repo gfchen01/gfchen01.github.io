@@ -14,20 +14,18 @@ superuser: true
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Zhejiang University
-    url: https://www.zju.edu.cn/english/
-  - name: (Incoming) Carnegie Mellon University
-    url: https://www.cmu.edu/
+  - name: Carnegie Mellon University
+    url: https://www.ri.cmu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include trustworthy autonomy and statistical inference. I am also widely interested in learning and combinatorial mathematics.
+bio: Interested in the science and engineering of making reliable, trustworthy, and scalable navigation systems for mobile robots/manipulators in the real-world. Part-time auto mechanic.
 
 # bio: My research interests include control amd multi-robot systems. I am also widely interested in learning and combinatorial mathematics.
 
 # Interests to show in About widget
 interests:
   - Control & Planning
-  - Distributed Planning & Perception
+  - Navigation & System Engineering
   - Optimization
 
 # Education to show in About widget
@@ -36,6 +34,9 @@ education:
     - course: BE in Automation
       institution: Zhejiang University, Advisor - Prof. Fei Gao
       year: 2023
+    - course: MS in Robotics
+      institution: Carnegie Mellon University, Advisor - Prof. Ji Zhang
+      year: 2025 (expected)
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -44,7 +45,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: 'gfchen01@163.com'
+    link: 'guofei@cmu.edu'
   # - icon: twitter
   #   icon_pack: fab
   #   link: https://twitter.com/GeorgeCushen
