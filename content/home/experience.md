@@ -30,8 +30,9 @@ experience:
     date_start: '2023-09-15'
     date_end: '2025-12-31'
     description: |2-
-      * Interactive Navigation
-      * Autonomous Development Environment: Go2, Diablo
+      * Autonomous Navigation
+      * Localization and Mapping
+      * Navigation System Development: Unitree Go2, Diablo
 
   - title: Research Assistant
     company: Field Autonoums Systems and compuTing Lab (FAST)
@@ -43,7 +44,7 @@ experience:
     description: |2-
 
       * Certifiable perception
-      * Relative localization in aerial swarm
+      * Localization in aerial swarm, Sensor Network
 
   - title: Member
     company: ZJUNlict - ZJU RoboCup Team
