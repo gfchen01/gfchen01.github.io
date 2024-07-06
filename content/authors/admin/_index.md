@@ -76,6 +76,6 @@ email: ''
 highlight_name: true
 ---
 
-Guofei Chen is pursuing the Master's of Robotics at Carnegie Mellon University. His research interests is simple: make robots useful and work in real-world.
+Guofei Chen is pursuing the Master's of Robotics at Carnegie Mellon University. He is interested in making mobile robots useful in real-world.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
