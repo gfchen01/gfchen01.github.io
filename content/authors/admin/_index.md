@@ -76,6 +76,6 @@ email: ''
 highlight_name: true
 ---
 
-Guofei Chen is a bechalor student at Zhejiang University. His research interests include robot control and perception problems. He also has a strong interest in statistical inference and optimization.
+Guofei Chen is pursuing the Master's of Robotics at Carnegie Mellon University. His research interests is simple: make robots useful and work in real-world.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
