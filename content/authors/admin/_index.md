@@ -24,8 +24,8 @@ bio: Interested in the science and engineering of making reliable, trustworthy, 
 
 # Interests to show in About widget
 interests:
-  - Control & Planning
-  - Navigation & System Engineering
+  - Planning
+  - Localization & Navigation & System Engineering
   - Optimization
 
 # Education to show in About widget
