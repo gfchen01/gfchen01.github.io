@@ -1,5 +1,5 @@
 ---
-title: 'Rethinking the Parameter Learning of the Nonliear Dynamical Probabilistic Latent Variable Model'
+title: 'Analyzing and Improving Supervised Nonlinear Dynamical Probabilistic Latent Variable Model for Inferential Sensors'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -30,11 +30,10 @@ doi: ''
 publication_types: ['2']
 
 # Publication name and optional abbreviated publication name.
-publication: SUBMITTED to IEEE Transactions on Automation Science and Engineering
-publication_short: SUBMITTED to T-ASE
+publication: IEEE Transactions on Industrial Informatics
+publication_short: T-II
 
-abstract: Nonlinear dynamical probabilistic latent variable model (NDPLVM) and its variants have been widely applied in industrial sequential data modeling cases like anomaly detection & diagnosis and inferential sensor. However, previous works mainly concentrate on model architecture design, which may hinder their application for the ignorance of the following issues -- (1), parameter learning algorithm principle; (2), inference network input variable; (3), moment expressions for nonlinear neural network structure. To address these issues, we propose a principled model named optimal control-NDPLVM (OC-NDPLVM), derive its parameter learning algorithm, and simplify its moment expressions in this paper. Specifically, we first propose the OC-NDPLVM and its parameter learning objective from stochastic differential theory principally. On this basis, we address issue 1) by converting the parameter learning problem into an optimization problem and deriving the parameter learning procedure based on the alternating direction method of multipliers framework. Meanwhile, we address issue 2) in the optimal control subproblem in the optimization procedure based on issue 1). After that, we address issue 3) by conducting the mean and variance expressions simplification to make the model computation tractable. Finally, we conduct two industrial inferential sensor downstream tasks to demonstrate the effectiveness of OC-NDPLVM.
-
+abstract: Nonlinear Dynamical Probabilistic Latent Variable Model (NDPLVM) and its variants, essential in industrial inferential sensors, face challenges in latent space inference and deep learning (DL) backend implementation. The first issue arises from the assumption that covariates directly infer the latent variable, potentially leading to inaccuracies. The second issue involves the discrepancy between the probabilistic distribution function form of NDPLVMs and data sample-based operation of DL backends. Addressing these,this study introduces the Optimal Control-NDPLVM(OC-NDPLVM), a model designed to enhance performance by analyzing NDPLVMs learning and tackling these issues. For the first problem, NDPLVMs’ learning is reinterpreted as an optimization problem, solved by alternating direction method of multipliers, and selecting the inference network’s input via studying optimal solution’s structure. To address the second issue, OC-NDPLVM adapts mean and covariance equations for compatibility with DL backends. This model’s effectiveness is validated through experiments on two inferential sensor datasets.
 # # Summary. An optional shortened abstract.
 # summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
