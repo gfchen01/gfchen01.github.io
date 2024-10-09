@@ -18,25 +18,22 @@ organizations:
     url: https://www.ri.cmu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Interested in the science and engineering of making reliable, trustworthy, and scalable navigation systems for mobile robots/manipulators in the real-world. Part-time auto mechanic.
-
-# bio: My research interests include control amd multi-robot systems. I am also widely interested in learning and combinatorial mathematics.
+bio: Interested in the science and engineering of making trustworthy and agile robotic systems for mobile manipulations in the real-world.
 
 # Interests to show in About widget
 interests:
-  - Planning
-  - Localization & Navigation & System Engineering
+  - Planning & SLAM for Navigation
   - Optimization
 
 # Education to show in About widget
 education:
   courses:
-    - course: BE in Automation
-      institution: Zhejiang University, Advisor - Prof. Fei Gao
-      year: 2023
     - course: MS in Robotics
       institution: Carnegie Mellon University, Advisor - Prof. Ji Zhang
       year: 2025 (expected)
+    - course: BE in Automation
+      institution: Zhejiang University, Advisor - Prof. Fei Gao
+      year: 2023
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons

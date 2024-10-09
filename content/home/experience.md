@@ -56,19 +56,7 @@ experience:
     description: |2-
 
         * Path Planning and Motion Control
-        * Code maintainence
-  
-  - title: Research Assistant
-    company: State Key Laboratory of Industrial Control
-    company_logo:
-    location: Hangzhou, Zhejiang
-    date_start: '2021-04-01'
-    date_end: '2022-06-10'
-    description: |2-
-
-      * Probablistic Generative Model, Variational Autoencoder
-      * Data driven soft sensor
-
+        * Multi-robot Systems
 
 design:
   columns: '2'
