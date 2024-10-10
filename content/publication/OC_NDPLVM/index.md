@@ -8,6 +8,7 @@ authors:
   - Zhichao Chen
   - Hao Wang
   - admin
+  - Yiran Ma
   - Le Yao
   - Zhiqiang Ge
   - Zhihuan Song

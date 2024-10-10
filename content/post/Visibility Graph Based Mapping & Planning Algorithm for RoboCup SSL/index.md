@@ -16,7 +16,7 @@ summary: A novel planning algorithm based on visibility of obstacles on the fiel
 1. Robot design: a robot must fit inside a 0.18 meters wide and 0.15 meters high cylinder at any point in time. A dribbling device is permitted under certain restrictions. A vision pattern is a needed for robot identification.
 2. Perception: both teams share the same vision information provided by SSL, which contains the robots' id and pose. (Extra devices are allowed, e.g., IMU) and referee instructions are sent by a software called referee box.
 
-I am a member of ZJUNlict, the 2nd best team in the history in [hall of fame](https://ssl.robocup.org/hall-of-fame/), and probably the best team in recent 5 years. You may find this video of the race helpful, and you can find our team description paper [here](https://ssl.robocup.org/wp-content/uploads/2019/03/2019_ETDP_ZJUNlict.pdf), which can give you an overview of our hardware design and competition philosophy.
+I am a member of ZJUNlict, the 2nd best team in the history in [hall of fame](https://ssl.robocup.org/hall-of-fame/), and the best team in recent 5 years. You may find this video of the race helpful, and you can find our team description paper [here](https://ssl.robocup.org/wp-content/uploads/2019/03/2019_ETDP_ZJUNlict.pdf), which can give you an overview of our hardware design and competition philosophy.
 
 <!-- <iframe src="//player.bilibili.com/player.html?aid=375588815&bvid=BV1so4y1m7U5&cid=339262048&page=1&high_quality=1&danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe> -->
 
@@ -24,7 +24,7 @@ I am a member of ZJUNlict, the 2nd best team in the history in [hall of fame](ht
 
 <!-- <video src="https://www.bilibili.com/video/BV18p4y1r7Vm"> -->
 
-In this blog I will talk about path planning in SSL and propose a mapping & planning method to address the problem better. Of course, path planning is not the main challenge in the environment. But in my opinion, there are two drawbacks of current algorithm: RRT\*. First, the sampling process in RRT* is inefficient in a very sparse environment in SSL matches, as there are only limited kind and number of obstacles on the field. Second, RRT* is asymptotically optimal, which is harmful to decision in some circumstances. Take a look at the figure below. 
+In this blog I will talk about path planning in SSL and propose a mapping & planning method to address the problem. There are two drawbacks of our current algorithm: RRT\*. First, the sampling process in RRT* is inefficient in a very sparse environment in SSL matches, as there are only limited kind and number of obstacles on the field. Second, RRT* is asymptotically optimal, which is harmful to decision in some circumstances. Take a look at the figure below. 
 
 <center>
 	<img src="./Picture/D_star.gif" width="100%"/>

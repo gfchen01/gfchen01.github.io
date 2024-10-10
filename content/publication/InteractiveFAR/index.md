@@ -36,7 +36,7 @@ publication_short: IROS 2024
 abstract: This paper introduces a real-time algorithm for navigating complex unknown environments cluttered with movable obstacles. Our algorithm achieves fast, adaptable routing by actively attempting to manipulate obstacles during path planning and adjusting the global plan from sensor feedback. The main contributions include an improved dynamic Directed Visibility Graph (DV-graph) for rapid global path searching, a real-time interaction planning method that adapts online from new sensory perceptions, and a comprehensive framework designed for interactive navigation in complex unknown or partially known environments. Our algorithm is capable of replanning the global path in several milliseconds. It can also attempt to move obstacles, update their affordances, and adapt strategies accordingly. Extensive experiments validate that our algorithm reduces the travel time by 33%, achieves up to 49% higher path efficiency, and runs faster than traditional methods by orders of magnitude in complex environments. It has been demonstrated to be the most efficient solution in terms of speed and efficiency for interactive navigation in environments of such complexity. We also open-source our code in the docker demo to facilitate future research.
 
 # Summary. An optional shortened abstract.
-summary: A efficient navigation system that takes manipulating movable object into account in complex unknown environments.
+summary: An efficient navigation system that combines manipulating movable objects for shorter path, even in complex unknown environments.
 
 tags: []
 
@@ -52,7 +52,7 @@ url_pdf: 'https://arxiv.org/abs/2404.07447'
 url_code: 'https://github.com/Bottle101/Interactive-FAR'
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 url_poster: ''
-url_project: ''
+url_project: 'https://www.far-planner.com/interactive-far-planner'
 url_slides: ''
 url_source: ''
 url_video: 'https://youtu.be/5FNN5Us8-2o?si=hHZcYXIRq_JeeBYL'
