@@ -9,7 +9,37 @@ Click on the &lt;strong>Slides&lt;/strong> button above to view the built-in sli
 &lt;li>&lt;strong>Upload&lt;/strong> an existing slide deck to &lt;code>static/&lt;/code> and link using &lt;code>url_slides&lt;/code> parameter in the front matter of the talk file&lt;/li>
 &lt;li>&lt;strong>Embed&lt;/strong> your slides (e.g. Google Slides) or presentation video on this page using &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">shortcodes&lt;/a>.&lt;/li>
 &lt;/ul>
-&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Interactive-FAR: Interactive, Fast and Adaptable Routing for Navigation Among Movable Obstacles in Complex Unknown Environments</title><link>https://gfchen01.github.io/publication/interactivefar/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/interactivefar/</guid><description>&lt;!--
+&lt;p>Further event details, including &lt;a href="https://wowchemy.com/docs/writing-markdown-latex/" target="_blank" rel="noopener">page elements&lt;/a> such as image galleries, can be added to the body of this page.&lt;/p></description></item><item><title>Unitree Go2 Navigation</title><link>https://gfchen01.github.io/project/go2-navigation/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/go2-navigation/</guid><description>&lt;p>We present Go2 navigation platform, which uses only the original onboard sensor (the L1 lidar by Unitree) and could run on the robot without modification to the hardware. The system is able to go to a command position and avoid obstacles. Please refer to our github repository for detailed setup instructions and usages.&lt;/p>
+&lt;h2 id="please-star-our-project-on-github-if-you-like-it">Please star our project on github if you like it!&lt;/h2></description></item><item><title>Wheel-legged Navigation Platform using Diablo</title><link>https://gfchen01.github.io/project/legged-wheel-navigation/</link><pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/project/legged-wheel-navigation/</guid><description>&lt;p>We open-source the hardware and software stack for navigation using Diablo, a wheel-legged robot. We used the &lt;a href="https://www.livoxtech.com/mid-360" target="_blank" rel="noopener">Livox-Mid360&lt;/a> for SLAM, and &lt;a href="https://shop.directdrive.com/products/diablo-world-s-first-direct-drive-self-balancing-wheeled-leg-robot" target="_blank" rel="noopener">Diablo&lt;/a> from Direct Drive Inc. as the chassis. Every other component of our system can be bought in Amazon. The system is able to go to a command position and avoid obstacles, which can serve as a robust platform for language or other navigation tasks. Please refer to our github repository for detailed setup instructions and usages.&lt;/p>
+&lt;h2 id="please-star-our-project-on-github-if-you-like-it">Please star our project on github if you like it!&lt;/h2></description></item><item><title>Air-FAR: Fast and Adaptable Routing for Aerial Navigation in Large-scale Complex Unknown Environments</title><link>https://gfchen01.github.io/publication/airfar/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/airfar/</guid><description>&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --></description></item><item><title>Interactive-FAR: Interactive, Fast and Adaptable Routing for Navigation Among Movable Obstacles in Complex Unknown Environments</title><link>https://gfchen01.github.io/publication/interactivefar/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/interactivefar/</guid><description>&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!--
+&lt;div class="alert alert-note">
+&lt;div>
+Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check out the example.
+&lt;/div>
+&lt;/div>
+-->
+&lt;!-- Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). --></description></item><item><title>Search-Based Path Planning among Movable Obstacles</title><link>https://gfchen01.github.io/publication/hppamo/</link><pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate><guid>https://gfchen01.github.io/publication/hppamo/</guid><description>&lt;!--
 &lt;div class="alert alert-note">
 &lt;div>
 Click the &lt;em>Cite&lt;/em> button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -44,11 +74,11 @@ Create your slides in Markdown - click the &lt;em>Slides&lt;/em> button to check
 &lt;li>Robot design: a robot must fit inside a 0.18 meters wide and 0.15 meters high cylinder at any point in time. A dribbling device is permitted under certain restrictions. A vision pattern is a needed for robot identification.&lt;/li>
 &lt;li>Perception: both teams share the same vision information provided by SSL, which contains the robots&amp;rsquo; id and pose. (Extra devices are allowed, e.g., IMU) and referee instructions are sent by a software called referee box.&lt;/li>
 &lt;/ol>
-&lt;p>I am a member of ZJUNlict, the 2nd best team in the history in &lt;a href="https://ssl.robocup.org/hall-of-fame/" target="_blank" rel="noopener">hall of fame&lt;/a>, and probably the best team in recent 5 years. You may find this video of the race helpful, and you can find our team description paper &lt;a href="https://ssl.robocup.org/wp-content/uploads/2019/03/2019_ETDP_ZJUNlict.pdf" target="_blank" rel="noopener">here&lt;/a>, which can give you an overview of our hardware design and competition philosophy.&lt;/p>
+&lt;p>I am a member of ZJUNlict, the 2nd best team in the history in &lt;a href="https://ssl.robocup.org/hall-of-fame/" target="_blank" rel="noopener">hall of fame&lt;/a>, and the best team in recent 5 years. You may find this video of the race helpful, and you can find our team description paper &lt;a href="https://ssl.robocup.org/wp-content/uploads/2019/03/2019_ETDP_ZJUNlict.pdf" target="_blank" rel="noopener">here&lt;/a>, which can give you an overview of our hardware design and competition philosophy.&lt;/p>
 &lt;!-- &lt;iframe src="//player.bilibili.com/player.html?aid=375588815&amp;bvid=BV1so4y1m7U5&amp;cid=339262048&amp;page=1&amp;high_quality=1&amp;danmaku=0" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">&lt;/iframe> -->
 &lt;iframe src="//player.bilibili.com/player.html?aid=970397167&amp;bvid=BV18p4y1r7Vm&amp;cid=258810918&amp;page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"> &lt;/iframe>
 &lt;!-- &lt;video src="https://www.bilibili.com/video/BV18p4y1r7Vm"> -->
-&lt;p>In this blog I will talk about path planning in SSL and propose a mapping &amp;amp; planning method to address the problem better. Of course, path planning is not the main challenge in the environment. But in my opinion, there are two drawbacks of current algorithm: RRT*. First, the sampling process in RRT* is inefficient in a very sparse environment in SSL matches, as there are only limited kind and number of obstacles on the field. Second, RRT* is asymptotically optimal, which is harmful to decision in some circumstances. Take a look at the figure below.&lt;/p>
+&lt;p>In this blog I will talk about path planning in SSL and propose a mapping &amp;amp; planning method to address the problem. There are two drawbacks of our current algorithm: RRT*. First, the sampling process in RRT* is inefficient in a very sparse environment in SSL matches, as there are only limited kind and number of obstacles on the field. Second, RRT* is asymptotically optimal, which is harmful to decision in some circumstances. Take a look at the figure below.&lt;/p>
 &lt;center>
 &lt;img src="./Picture/D_star.gif" width="100%"/>
 &lt;img src="./Picture/RRT_star.gif" width="100%"/>
