@@ -30,8 +30,8 @@ experience:
     date_start: '2023-09-15'
     date_end: '2025-12-31'
     description: |2-
-      * Autonomous Navigation
-      * Localization and Mapping
+      * Autonomous Navigation - Field Robotics
+      * Mapping and Planning
       * Navigation System Development: Unitree Go2, Diablo
 
   - title: Research Assistant

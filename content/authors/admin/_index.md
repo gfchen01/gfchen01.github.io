@@ -23,6 +23,7 @@ bio: Interested in the science and engineering of making trustworthy and agile r
 # Interests to show in About widget
 interests:
   - Planning & SLAM for Navigation
+  - Field Robotics
   - Optimization
 
 # Education to show in About widget
