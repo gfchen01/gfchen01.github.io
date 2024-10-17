@@ -37,7 +37,7 @@ publication_short: Submitted to ICRA 2025
 abstract: This paper investigates Path planning Among Movable Obstacles (PAMO), which seeks a minimum cost collision-free path among static obstacles from start to goal while allowing the robot to push away movable obstacles (i.e., objects) along its path when needed. To develop planners that are complete and optimal for PAMO, the planner has to search a giant state space involving both the location of the robot as well as the locations of the objects, which grows exponentially with respect to the number of objects. The main idea in this paper is that, only a small fraction of this giant state space needs to be explored during planning as guided by a heuristic, and most of the objects far away from the robot are intact, which thus leads to runtime efficient algorithms. Based on this idea, this paper introduces two PAMO formulations, i.e., biobjective and resource constrained problems in an occupancy grid, and develops PAMO*, a search method with completeness and solution optimality guarantees, to solve the two problems. We then further extend PAMO* to hybrid-state PAMO* to plan in continuous spaces with high-fidelity interaction between the robot and the objects. Our results show that, PAMO* can often find optimal solutions within a second in cluttered environments with up to 400 objects.
 
 # Summary. An optional shortened abstract.
-summary: Search based planning algorithms for solving path planning among movable obstacles problem. 
+summary: Search based planning algorithms on grid maps for solving path planning among movable obstacles problem. 
 
 tags: []
 

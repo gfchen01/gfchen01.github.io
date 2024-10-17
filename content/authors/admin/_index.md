@@ -18,7 +18,7 @@ organizations:
     url: https://www.ri.cmu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: Interested in the science and engineering of making trustworthy and agile robotic systems for mobile manipulations in the real-world.
+bio: I want to make mobile robots truly useful in people's lives. I like building and iterating real systems, and try to answer questions I found there.
 
 # Interests to show in About widget
 interests:
@@ -74,6 +74,6 @@ email: ''
 highlight_name: true
 ---
 
-Guofei Chen is pursuing the Master's of Robotics at Carnegie Mellon University. He is interested in making mobile robots useful in real-world.
+Hi! I am Guofei Chen, a Master's student at RI, Carnegie Mellon University. I love building and iterating solid robotic systems and answering the most interesting research questions I found there. I am particularly insterested in navigation systems that actively interact with the environment and human.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.

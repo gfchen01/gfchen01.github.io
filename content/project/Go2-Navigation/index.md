@@ -11,13 +11,10 @@ image:
   focal_point: Smart
 
 links:
-  # - name: Documentation
-  #   url: 'project/tinysql/DOC/html/index.html'
-  
-  # - name: Tech Report(Chinese)
-  #   url: 'project/tinysql/TinySQL_Techinal_Report'
+  - name: Code and Documentation
+    url: 'https://github.com/jizhang-cmu/autonomy_stack_diablo_setup'
 
-url_code: 'https://github.com/jizhang-cmu/autonomy_stack_go2'
+url_code: ''
 url_pdf: ''
 url_slides: ''
 url_video: ''

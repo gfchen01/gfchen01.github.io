@@ -23,7 +23,7 @@ feature:
   - description:
     icon: ros
     icon_pack: custom
-    name: ROS
+    name: ROS 1/2
   - description:
     icon: lua
     icon_pack: custom

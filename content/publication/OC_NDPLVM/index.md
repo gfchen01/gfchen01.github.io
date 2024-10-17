@@ -35,8 +35,9 @@ publication: IEEE Transactions on Industrial Informatics
 publication_short: T-II
 
 abstract: Nonlinear Dynamical Probabilistic Latent Variable Model (NDPLVM) and its variants, essential in industrial inferential sensors, face challenges in latent space inference and deep learning (DL) backend implementation. The first issue arises from the assumption that covariates directly infer the latent variable, potentially leading to inaccuracies. The second issue involves the discrepancy between the probabilistic distribution function form of NDPLVMs and data sample-based operation of DL backends. Addressing these,this study introduces the Optimal Control-NDPLVM(OC-NDPLVM), a model designed to enhance performance by analyzing NDPLVMs learning and tackling these issues. For the first problem, NDPLVMs’ learning is reinterpreted as an optimization problem, solved by alternating direction method of multipliers, and selecting the inference network’s input via studying optimal solution’s structure. To address the second issue, OC-NDPLVM adapts mean and covariance equations for compatibility with DL backends. This model’s effectiveness is validated through experiments on two inferential sensor datasets.
-# # Summary. An optional shortened abstract.
-# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+
+# Summary. An optional shortened abstract.
+summary: An inference framework using deep network derived closely following optimal control principals for large-scale modeling chemical processes.
 
 tags: []
 
@@ -48,9 +49,9 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://ieeexplore.ieee.org/abstract/document/10634990/media#media'
 url_code: ''
-# url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
+url_dataset: ''
 url_poster: ''
 url_project: ''
 url_slides: ''
