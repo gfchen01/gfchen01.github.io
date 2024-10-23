@@ -23,7 +23,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
   - title: Research Assistant
-    company: Ji's lab, CMU RI
+    company: Zhang's lab, Field Robotics Center, CMU RI
     company_url: 'https://frc.ri.cmu.edu/~zhangji/'
     company_logo:
     location: Pittsburgh, Pennslyvania
