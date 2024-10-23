@@ -49,11 +49,11 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://arxiv.org/pdf/2409.11188'
-url_code: 'https://github.com/Bottle101/Air-FAR'
+url_pdf: ''
+url_code: ''
 # url_dataset: 'https://github.com/wowchemy/wowchemy-hugo-themes'
 url_poster: ''
-url_project: 'https://www.far-planner.com/air-far-planner'
+url_project: ''
 url_slides: ''
 url_source: ''
 url_video: ''
