@@ -1,5 +1,5 @@
 ---
-title: 'AI-Navigation Development Environment: A Research Platform for Semantic Navigation and Robot Learning with Mobile Robots in Real-World'
+title: 'AIM-Nav: A FullStack Platform for Data-Driven Navigation Research'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -33,10 +33,9 @@ publication_types: ['1']
 publication: Preprint
 publication_short: Preprint
 
-abstract: Training and deploying deep-learning-based navigation algorithms on real-world robot systems is challenging. A major reason is the cost, calibration, and engineering iterations required to build a robust real-world mobile platform to collect training data and execute higher-level commands safely. We present the AI-Navigation Development Platform, a low-cost modularized navigation system for learning-based navigation research built on commercialized sensors and hardware platforms. The system takes a goal point, then drives the robot system to that position, and handles localization and mapping, obstacle avoidance, and global planning. We also release rich simulations for each hardware platform with the same sensor and motion model to streamline the testing of users' algorithms. In our experiments, we show 1. the robustness of navigation, it can traverse kilometer scale trajectories safely with drift smaller than 0.5m. 2. low-cost but high-quality data collection, examples of generating KITTI-style datasets in both custom simulation and real-world environments. 3. ready-to-use with custom AI modules, examples of language navigation using our system.
-
+We present Navigation Development Environment 2, a low-cost modularized full-stack navigation system for upstream learning-based navigation research. The system has two parts: 1) a lightweight software stack on-board for geometric navigation, including SLAM, traversability analysis, and long-horizon path planning. 2) Customizable simulation environments based on Unity, featuring the same sensor and motion model as the real-world platform, photo-realistic rendering, and automatic data annotation. Our navigation algorithm relies only on a single low-cost LiDAR-IMU module and the onboard computer. This enables deployment on popular platforms without extra costs or extrinsic calibration effort, e.g. Unitree Go2. In the experiments, we show its localization, collision avoidance, and planning performance in various environments. We also show the usage of our system in fine-tuning 3D object detection and language navigation in custom environments. Guidelines and tutorials are provided for the setup of the system on popular platforms and integration with upstream modules.
 # Summary. An optional shortened abstract.
-summary: Full-stack navigation systems on Unitree Go2 and Diablo, aiming to privide a low-cost and ready-to-use platform for AI-navigation research.
+summary: Full-stack navigation systems on Unitree Go2 and Diablo, aiming to provide a low-cost and ready-to-use platform for AI navigation research.
 
 tags: []
 
