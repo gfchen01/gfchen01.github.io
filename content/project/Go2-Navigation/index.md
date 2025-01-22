@@ -12,7 +12,7 @@ image:
 
 links:
   - name: Code and Documentation
-    url: 'https://github.com/jizhang-cmu/autonomy_stack_diablo_setup'
+    url: 'https://github.com/jizhang-cmu/autonomy_stack_go2'
 
 url_code: ''
 url_pdf: ''
