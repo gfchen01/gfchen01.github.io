@@ -18,12 +18,11 @@ organizations:
     url: https://www.ri.cmu.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: I want to make mobile robots truly useful in people's lives. I like building and iterating real systems, and try to answer questions I found there.
+bio:
 
 # Interests to show in About widget
 interests:
-  - Planning & SLAM for Navigation
-  - Field Robotics
+  - Mobile Manipulation, Navigation
   - Optimization
 
 # Education to show in About widget
@@ -31,7 +30,7 @@ education:
   courses:
     - course: MS in Robotics
       institution: Carnegie Mellon University, Advisor - Prof. Ji Zhang
-      year: 2025 (expected)
+      year: 2025
     - course: BE in Automation
       institution: Zhejiang University, Advisor - Prof. Fei Gao
       year: 2023
@@ -74,6 +73,6 @@ email: ''
 highlight_name: true
 ---
 
-Hi! I am Guofei Chen, a Master's student at RI, Carnegie Mellon University. I love building and iterating solid robotic systems and answering the most interesting research questions I found there. I am particularly insterested in navigation systems that actively interact with the environment and human.
+Hi! I am Guofei Chen. I obtained my Master's in Robotics from Carnegie Mellon University, advised by Prof. Ji Zhang and Prof. Wenshan Wang. I am insterested in navigation and manipulation **systems** that actively interact with the environment or human, which spans SLAM, planning, and machine learning.
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
