@@ -1,12 +1,9 @@
 # IDEs
 .idea/
 
-# Hugo
-resources/
-public/
-jsconfig.json
-node_modules/
-go.sum
-.hugo_build.lock
-
+# OS
 .DS_Store
+
+# Local video/source files (convert to GIFs in images/ instead)
+*.mp4
+*.mov

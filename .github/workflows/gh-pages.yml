@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-  pull_request:
 
 jobs:
   deploy:
@@ -18,8 +17,8 @@ jobs:
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: .
-          exclude_assets: '.github,content,config,themes,resources,public,assets,go.mod,go.sum,netlify.toml,theme.toml,academic.Rproj,preview.png,static,layouts'
+          cname: gfchen01.cc
+          exclude_assets: '.github,README.md,LICENSE.md'
