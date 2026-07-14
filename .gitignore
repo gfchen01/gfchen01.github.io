@@ -1,0 +1,9 @@
+# IDEs
+.idea/
+
+# OS
+.DS_Store
+
+# Local video/source files (convert to GIFs in images/ instead)
+*.mp4
+*.mov
